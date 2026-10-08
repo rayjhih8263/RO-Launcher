@@ -1,0 +1,4878 @@
+{
+  "schemaVersion": 1,
+  "purpose": "repair-v1",
+  "files": [
+    {
+      "path": "2021-11-03_Ragexe_patched.exe",
+      "size": 12928512,
+      "sha256": "ec223172760cbe562c5b4117af902f12c30e0b2a3f23bd01b2d67b5bc8c62f1f"
+    },
+    {
+      "path": "AI/AI.lua",
+      "size": 14162,
+      "sha256": "888c645bedd04527025594ead9c8ee1b37ebbeab080c1366938d8c2f9a1bebaa"
+    },
+    {
+      "path": "AI/AI_M.lua",
+      "size": 13866,
+      "sha256": "3afa1f11d45bd088b1bc9b3b79bae2658e704e25c22f0758a2266addbded230e"
+    },
+    {
+      "path": "AI/Const.lua",
+      "size": 3242,
+      "sha256": "54f229ccd1ff0bede7b726c837917ea040a9c7236e548cf2e655f98cdbd54d4a"
+    },
+    {
+      "path": "AI/lua.exe",
+      "size": 188416,
+      "sha256": "079805d5647d469df178455f88bc0b0b32ae7b7518aa1b7f1f9f49cdd626d61b"
+    },
+    {
+      "path": "AI/message.txt",
+      "size": 22,
+      "sha256": "52cab81c30d66194936f1cca5a7ed7d7621e61e831ee7f3d54f0406887c660e4"
+    },
+    {
+      "path": "AI/pcAI.lua",
+      "size": 9693,
+      "sha256": "330d5054e6cf65866fb851187307d95f50091c60538653681711cec022a8d0a7"
+    },
+    {
+      "path": "AI/Util.lua",
+      "size": 2637,
+      "sha256": "f35c563305c82c359d78f50649da26dffbcc435ac487809148628600301c8c7e"
+    },
+    {
+      "path": "AI_sakray/AI.lua",
+      "size": 14167,
+      "sha256": "89031ba7a823d640b4aded0bdcf53cd1d5674ee0feaebb37fb4452fe9116b82a"
+    },
+    {
+      "path": "AI_sakray/AI_M.lua",
+      "size": 13873,
+      "sha256": "6224a154668a2124e704e69f65914a7794d237227490db34ee4e9459e8c53018"
+    },
+    {
+      "path": "AI_sakray/Const.lua",
+      "size": 3242,
+      "sha256": "54f229ccd1ff0bede7b726c837917ea040a9c7236e548cf2e655f98cdbd54d4a"
+    },
+    {
+      "path": "AI_sakray/Util.lua",
+      "size": 2642,
+      "sha256": "8c207f8a2fd0506002f665bcf555d77015bef01d58d32fc0baf84427f106ae21"
+    },
+    {
+      "path": "aossdk.dll",
+      "size": 254083,
+      "sha256": "2a4aa5b75372c7f1aff830f5937b7953442dd3856e8d93e4349a3ef76d877d42"
+    },
+    {
+      "path": "BGM/00.mp3",
+      "size": 2835636,
+      "sha256": "c3404ef898d41215a2c36c7da890520fdc076f3305bd606402aab61fd5e680ea"
+    },
+    {
+      "path": "BGM/01.mp3",
+      "size": 747520,
+      "sha256": "c570271dd5a9b3d32cd6477beaf4a10afc0485415142db664d19624ea9321488"
+    },
+    {
+      "path": "BGM/02.mp3",
+      "size": 1830912,
+      "sha256": "d2df506790bd26131a288c9bd6fa1cd3130d8a436e7a74932a3e269e8c6103fa"
+    },
+    {
+      "path": "BGM/03.mp3",
+      "size": 1505280,
+      "sha256": "7a67f772062b6ca40ddcdd310f5b69189f55eb544f067798e9d0a4d09cb4eb30"
+    },
+    {
+      "path": "BGM/04.mp3",
+      "size": 1669120,
+      "sha256": "179d47393a3e38863f588047f50c025ef0c9e3aae6c1453f7b63108dd29d4b93"
+    },
+    {
+      "path": "BGM/05.mp3",
+      "size": 1146880,
+      "sha256": "38b70bc226f07ca2a5ff41548450fb835dc8be0d70975c252f4f0459e0d683d7"
+    },
+    {
+      "path": "BGM/06.mp3",
+      "size": 1695744,
+      "sha256": "d54629b6c6cb8508786a5101b78495768d5c3d5398cb92f52de54ccfe856dbd1"
+    },
+    {
+      "path": "BGM/07.mp3",
+      "size": 1050624,
+      "sha256": "f160f036a870faddd3091005be28ab8e58a9d53164e7b88931d9c9dbfc445f09"
+    },
+    {
+      "path": "BGM/08.mp3",
+      "size": 2742272,
+      "sha256": "93841c38b5fa8d6f6137198091368ed679c45205470c93a63ca1b352b086b118"
+    },
+    {
+      "path": "BGM/09.mp3",
+      "size": 798720,
+      "sha256": "f4ff038067722764fdc6f410c4f729b525b826f2ba272f91c9c2b2309971b08b"
+    },
+    {
+      "path": "BGM/10.mp3",
+      "size": 966656,
+      "sha256": "029514b7925fba98eeffb61f497d1814c79bcb106999af3daf4f0f36f49932e2"
+    },
+    {
+      "path": "BGM/100.mp3",
+      "size": 1826816,
+      "sha256": "fd900c6a66f1fe0da10934df7433097a3b7f1b99d16d8ef99c18e89141261144"
+    },
+    {
+      "path": "BGM/101.mp3",
+      "size": 1527808,
+      "sha256": "56e2140095225a0c0ea7f979563021b362fed3da3f02a0bd7622db11c25fb9f4"
+    },
+    {
+      "path": "BGM/102.mp3",
+      "size": 2250752,
+      "sha256": "23e4d7071abc1b359d900cc411ead929c1af6c2a65c0f2bb66733d29907b88a4"
+    },
+    {
+      "path": "BGM/103.mp3",
+      "size": 1976320,
+      "sha256": "920d87e909e18bd19924d3cd054846a6ac4e6775d146533d795cdd6f32b63c41"
+    },
+    {
+      "path": "BGM/104.mp3",
+      "size": 1855488,
+      "sha256": "f3014834489c7283904a297ab25ed70e387bf2d852c97dd8e4adf0d64b025ef7"
+    },
+    {
+      "path": "BGM/105.mp3",
+      "size": 1585152,
+      "sha256": "da77edb7c71bfda102520177288d9ddeabe03428162c7e8dcf385f5a6c0ed735"
+    },
+    {
+      "path": "BGM/106.mp3",
+      "size": 1777664,
+      "sha256": "72096c27e23ca22a3b5817ade4f1ec8b02c0df6cb83e407f16cad9fcd6524015"
+    },
+    {
+      "path": "BGM/107.mp3",
+      "size": 1837056,
+      "sha256": "7ae18a8dc943da0cc9d340f3cef46678be4732d2f562537017bcaf4ea626edff"
+    },
+    {
+      "path": "BGM/108.mp3",
+      "size": 2088960,
+      "sha256": "443c32879ed45099019bea9f6365642385abf4b4ccc9bfc7a80db229ba6a91b8"
+    },
+    {
+      "path": "BGM/109.mp3",
+      "size": 1898496,
+      "sha256": "b90954559c44ac9bf56dc33e8f3fae4be1430624a6f21e91fb8311a19388add5"
+    },
+    {
+      "path": "BGM/11.mp3",
+      "size": 1282048,
+      "sha256": "f1b4ed07892587d2056c344a06a016ffe9c457cd8134e11c228f5a39629ad1be"
+    },
+    {
+      "path": "BGM/110.mp3",
+      "size": 1900544,
+      "sha256": "e90268ec77b0fcab4a38fbb953fb9474751d4f554bbcb1a1b18d161e27ce5949"
+    },
+    {
+      "path": "BGM/111.mp3",
+      "size": 3002368,
+      "sha256": "43b432f6f59714d15526851f900381654132b4e01f5e28001c73e3d2ecd79be8"
+    },
+    {
+      "path": "BGM/112.mp3",
+      "size": 2279424,
+      "sha256": "ec4b59f466689b0bcb4f693303c953255f8ade9e8674a72198d079b795b2e9c4"
+    },
+    {
+      "path": "BGM/113.mp3",
+      "size": 3037184,
+      "sha256": "c8693ade272d19b8ad05c6eceb655bce417e4ac7122e49ee1323fe359ad1bc53"
+    },
+    {
+      "path": "BGM/114.mp3",
+      "size": 1460224,
+      "sha256": "3e7ce05c52cd476036e7767822fc930f29b6dda50c1040cfc41cc9d512e412eb"
+    },
+    {
+      "path": "BGM/115.mp3",
+      "size": 1685504,
+      "sha256": "562d89e5a49e527ed5670ba41f8ecefe4c1a7900d479eb905bdda967e7b0897f"
+    },
+    {
+      "path": "BGM/116.mp3",
+      "size": 1470464,
+      "sha256": "ffd4037fd70690ed9062accf7d2d9531355956ad3daca7e823458e8d65e45a85"
+    },
+    {
+      "path": "BGM/117.mp3",
+      "size": 1576960,
+      "sha256": "bcb522ed1fef8c090ae6bca634c16b943d902c273895e04aa5156aa7427b9b7d"
+    },
+    {
+      "path": "BGM/118.mp3",
+      "size": 1818624,
+      "sha256": "a55bb04fb6f4b90c133e7eb380ce828c4730d4b31d66595758c22334ece5ca80"
+    },
+    {
+      "path": "BGM/119.mp3",
+      "size": 1828864,
+      "sha256": "e42afcc39e639d4c45e3272a603a6c9aa0865ff695fd23e2598a25056cf9d521"
+    },
+    {
+      "path": "BGM/12.mp3",
+      "size": 1476608,
+      "sha256": "814a8484603741406bdb5ad0f16f4b9d4bca6218f8c23d88cbf6983e6c6da58e"
+    },
+    {
+      "path": "BGM/120.mp3",
+      "size": 1880064,
+      "sha256": "a68065d040e4c6a95160262ec0431d23b92ffa1a09eaa0ad4234a598b0720ceb"
+    },
+    {
+      "path": "BGM/121.mp3",
+      "size": 4153344,
+      "sha256": "d66ea48e26d49c4da253aa26acbb4963ff20664859d0da781d1fb4fd3ab61796"
+    },
+    {
+      "path": "BGM/122.mp3",
+      "size": 2310144,
+      "sha256": "fc124f03b7fcf8c5d7de7ea722742ed563e5beeb85f74ac48b02a5178ec50ffe"
+    },
+    {
+      "path": "BGM/123.mp3",
+      "size": 2029568,
+      "sha256": "203d3fa467f9d1e93e8d2e2d431cea4f93ba8401496d38611524f981ab28f74d"
+    },
+    {
+      "path": "BGM/124.mp3",
+      "size": 4242393,
+      "sha256": "399faebc6a852d41c3385fe21708d807f5a5e8cf324eb3e1a9b6bc8daf91f5ed"
+    },
+    {
+      "path": "BGM/125.mp3",
+      "size": 2330624,
+      "sha256": "7599ea1244e8adf5018ff555ca0bfb76a15aa4eec5ad0c0747398b832261f27b"
+    },
+    {
+      "path": "BGM/126.mp3",
+      "size": 1767424,
+      "sha256": "a9ca045873aea8c8b8528cd984f1746b0f5cb96432b5c4021f0b13780343f7f1"
+    },
+    {
+      "path": "BGM/127.mp3",
+      "size": 1556587,
+      "sha256": "e16869df38cf8061c82bff9c6432a8feabebea83c1ee2781ee39d18b2ab65618"
+    },
+    {
+      "path": "BGM/128.mp3",
+      "size": 1849681,
+      "sha256": "0df345d5adac8ca5efe9e262f667d1173cdd00b9729efbd8c4bc95445c91f7ea"
+    },
+    {
+      "path": "BGM/129.mp3",
+      "size": 1584712,
+      "sha256": "16d351fdf8e34a9024768c79007d39eecf339f9b5842665a21edb251b0c5e15c"
+    },
+    {
+      "path": "BGM/13.mp3",
+      "size": 1806336,
+      "sha256": "ab670cf1bcaefedc24db8da9150f67418b601f745bb1e4de4dc712a877aeed16"
+    },
+    {
+      "path": "BGM/130.mp3",
+      "size": 1820126,
+      "sha256": "1e88a77a8a92a65724e1e30ca33ab141d2f85b0f6d93dbda10a3fbf964927b98"
+    },
+    {
+      "path": "BGM/131.mp3",
+      "size": 1914569,
+      "sha256": "1eace9e188e34aa390cbdd32010d2da9030e51b1341cac902daea2f571872908"
+    },
+    {
+      "path": "BGM/132.mp3",
+      "size": 1858145,
+      "sha256": "c6b79133244bb155b6aae3a142b77252bcda0bb11781288090ec83e757a2e067"
+    },
+    {
+      "path": "BGM/133.mp3",
+      "size": 2249124,
+      "sha256": "c3867bef05518ab4421020d73bb0d52c362594408223bdabed8c9d3650b18d1b"
+    },
+    {
+      "path": "BGM/134.mp3",
+      "size": 2308056,
+      "sha256": "aef1d16d4f287db4a46a47c6f6278b6cac1d46daf1ceb9f8ac027db9c675092c"
+    },
+    {
+      "path": "BGM/135.mp3",
+      "size": 3076056,
+      "sha256": "904a9fc556fb0a765ea0b6d06205254ac47c347d631e964cd6826690c56c6be1"
+    },
+    {
+      "path": "BGM/136.mp3",
+      "size": 3907584,
+      "sha256": "02c90c46d49d4721b436e73ac1225a8bff72ff2862dd451d772f982ff1e86235"
+    },
+    {
+      "path": "BGM/137.mp3",
+      "size": 2185216,
+      "sha256": "12c626f888e5ba8ec6a9cbdadd378ccd27eb814736d00794e4954d7fabcf5eec"
+    },
+    {
+      "path": "BGM/138.mp3",
+      "size": 2447360,
+      "sha256": "a004c7e8cca75a71567ac09ab8c20579cf61876d11582301573d54ea7667fc25"
+    },
+    {
+      "path": "BGM/139.mp3",
+      "size": 2232320,
+      "sha256": "8c1d620bbf4d7360d5dd5765ddd717b8682865ff452171647fbfb76b2715a899"
+    },
+    {
+      "path": "BGM/14.mp3",
+      "size": 1423360,
+      "sha256": "dd21babc179bab9eafe9fb2e82ff1f6c02f02bc43c7ee76ae4d6582f0dab8130"
+    },
+    {
+      "path": "BGM/140.mp3",
+      "size": 2174976,
+      "sha256": "177f47b0d73d379314b2db8f2903d3c398771ff8f3af61b65338eb38606a3f1e"
+    },
+    {
+      "path": "BGM/141.mp3",
+      "size": 1912832,
+      "sha256": "83fe383c0388397a9d67f8360800a09569448ca71df7317a671942897064a631"
+    },
+    {
+      "path": "BGM/142.mp3",
+      "size": 1868489,
+      "sha256": "363a27ee97879965a893b39f0c3153fc4e60e7f206960c3c0db838416aef45bd"
+    },
+    {
+      "path": "BGM/143.mp3",
+      "size": 1960336,
+      "sha256": "4737d851cc2d2a32d13206d8a72f8c9338baaef9dc22b3b2265eb99d08567770"
+    },
+    {
+      "path": "BGM/144.mp3",
+      "size": 1979771,
+      "sha256": "d53915b84d2890daa4a57fa66379d5f4b9f7e14816ca621cf3ec32f7f3a87e6c"
+    },
+    {
+      "path": "BGM/145.mp3",
+      "size": 1474458,
+      "sha256": "f5c4fb0ddcf8429f6557ee0e911171ac164884372cf90c011a2379931e939e0a"
+    },
+    {
+      "path": "BGM/146.mp3",
+      "size": 1545616,
+      "sha256": "464b70ff87bef5035d466b5f2085c92e2f605a44ff0591730ce3bad06b904c36"
+    },
+    {
+      "path": "BGM/147.mp3",
+      "size": 1484489,
+      "sha256": "4673b49c40410c03a429b9e3452cabe70ac51656e096b5040acc62c678172cfe"
+    },
+    {
+      "path": "BGM/148.mp3",
+      "size": 1530883,
+      "sha256": "924832205142edd9069adf911bbfb19c9e877e5b42bf7e9380876c32ba7f91f6"
+    },
+    {
+      "path": "BGM/149.mp3",
+      "size": 1499536,
+      "sha256": "d6d94f9bc5670f6987a7e8fcbb1c22a968607329ee6ada92378b6d7b6a703ac9"
+    },
+    {
+      "path": "BGM/15.mp3",
+      "size": 2002944,
+      "sha256": "cdb3fc5af447730e5e40a2feb469341aae766e5bdb2257fc03084b919cda2ef7"
+    },
+    {
+      "path": "BGM/150.mp3",
+      "size": 1731190,
+      "sha256": "dbe39dc4223b1ae268df0f710084082f76614595123899ccfff82ed6ec016f85"
+    },
+    {
+      "path": "BGM/151.mp3",
+      "size": 1731190,
+      "sha256": "dc6b2a14edacda0478e99f6a5a671e7ec6f38b7d2b9ce0dd26d7beab800aa7f7"
+    },
+    {
+      "path": "BGM/152.mp3",
+      "size": 1218040,
+      "sha256": "20e76b3889c41199f4b0089643e3e7fbe139fe35b2851e681cb8373aee5f59de"
+    },
+    {
+      "path": "BGM/153.mp3",
+      "size": 1701096,
+      "sha256": "325a2e60fd5d9388a353ed72f3080055d272f5991013a2d97b036c491dc829ed"
+    },
+    {
+      "path": "BGM/154.mp3",
+      "size": 2012999,
+      "sha256": "fef5f6a3f9075a501bd6bd96c31902baad2718658f38fd7376efa65e737efaf3"
+    },
+    {
+      "path": "BGM/155.mp3",
+      "size": 1722412,
+      "sha256": "76b2ae2d2a2aa0c683880194472c2a0870bedb2626c6170439ec2ec6a4c796c5"
+    },
+    {
+      "path": "BGM/156.mp3",
+      "size": 1736519,
+      "sha256": "ef691653a0139c6a1def611b11ccc51a3c68725b703dcfa030730e4ecf460d41"
+    },
+    {
+      "path": "BGM/157.mp3",
+      "size": 1465054,
+      "sha256": "52a0dd5e08f7ce0b4feb798f1dc5e06311672474907ee0697f3434000a596f97"
+    },
+    {
+      "path": "BGM/158.mp3",
+      "size": 1578216,
+      "sha256": "083398c949d5d23bd00c070b78cacc3be0662391c4e7f26455df54325bd50a95"
+    },
+    {
+      "path": "BGM/159.mp3",
+      "size": 1467248,
+      "sha256": "ef5fb4e81c17f35e80b7258bd6de1c69fc48b16d31d599c6f51a405d34f76c15"
+    },
+    {
+      "path": "BGM/16.mp3",
+      "size": 1386496,
+      "sha256": "fc057c4b45596b2ae9df54d1928bb783b426e87ef55b05e7dc5054227164a882"
+    },
+    {
+      "path": "BGM/160.mp3",
+      "size": 1730563,
+      "sha256": "c76638a7dcc23b6a32ca18cef5c2277e5a1ccf9ba91e5b149a505920419ae745"
+    },
+    {
+      "path": "BGM/161.mp3",
+      "size": 1828864,
+      "sha256": "6f2885b998977a7e5b36d6a23f621bbff53989ed239c67ea87f7b89f2c87d74a"
+    },
+    {
+      "path": "BGM/162.mp3",
+      "size": 2338816,
+      "sha256": "19db701e74a793562b5598778d01d88866937681786462a6cde8fba6ad7359a0"
+    },
+    {
+      "path": "BGM/163.mp3",
+      "size": 1902592,
+      "sha256": "76773bb12d1dfc6062f9d348b0b5f3e001cb3d4b5c8922e0b6ac806f7f2a0235"
+    },
+    {
+      "path": "BGM/164.mp3",
+      "size": 1652736,
+      "sha256": "15ee2db5b84a12f19b2d9f8fe7ad976fcdb799f6a01228146c454d578b0efbdb"
+    },
+    {
+      "path": "BGM/165.mp3",
+      "size": 2751739,
+      "sha256": "95aeb4aed51852014740275accfd55f308f6fd206147f06407b9d28596034091"
+    },
+    {
+      "path": "BGM/166.mp3",
+      "size": 2043687,
+      "sha256": "22ebfe05ec8f6226283725d0d9b8faffcca2f02508187ef4b1805e0090a7228f"
+    },
+    {
+      "path": "BGM/167.mp3",
+      "size": 1851461,
+      "sha256": "e3eb6105ed428802679880f2ca178443b576943eb2c36faf8502b4881dd155d6"
+    },
+    {
+      "path": "BGM/168.mp3",
+      "size": 2151808,
+      "sha256": "57aa550e5fc71d15856fff2fb0ba38f5cc594f516bef50937e8fd5956f9f4d38"
+    },
+    {
+      "path": "BGM/169.mp3",
+      "size": 1105072,
+      "sha256": "da06515e93ea2b355dbffddb08dee899316b4beb2016e0288c7178b832078e4d"
+    },
+    {
+      "path": "BGM/17.mp3",
+      "size": 1880064,
+      "sha256": "25111ce5628a283fddd97e28cf54a82056588364bf51241aea947d746a81587d"
+    },
+    {
+      "path": "BGM/170.mp3",
+      "size": 1180240,
+      "sha256": "82734449d1cc1e5a3c6c9050e1bfd9d6ff9df08af89c870c943e9fd211cf25b9"
+    },
+    {
+      "path": "BGM/171.mp3",
+      "size": 1631984,
+      "sha256": "97480a8e080aa2114e003faf4d512e3ad84faee63897c5e10e3d7ec0b0d1773b"
+    },
+    {
+      "path": "BGM/172.mp3",
+      "size": 1654248,
+      "sha256": "0264e1e7605335d043cba7249c81698fee2161a6f1424f6df27f9a0d7a7201cc"
+    },
+    {
+      "path": "BGM/173.mp3",
+      "size": 2558192,
+      "sha256": "25f375a25f0f2e695d9359b6ec3a218bc0445b1eec416caea47dd33d5697a9aa"
+    },
+    {
+      "path": "BGM/174.mp3",
+      "size": 1393036,
+      "sha256": "b08fedabfb930b93e330fc646a9d306041fac22539546801c0523b9490bd1f3f"
+    },
+    {
+      "path": "BGM/175.mp3",
+      "size": 1286476,
+      "sha256": "5c5ebcb8e5d3f7eeabf8bc250606d9d2e12a8efe1955876b96e69c75fa6420dc"
+    },
+    {
+      "path": "BGM/176.mp3",
+      "size": 1463884,
+      "sha256": "42ebac4939b5ebb1cc708b982809263f15eb2cd554ea404c56c9c530da05970c"
+    },
+    {
+      "path": "BGM/177.mp3",
+      "size": 1153863,
+      "sha256": "089594b554f3e9f3470ffd5e58ee6e68158689a618ad602605a7344626fa5f1a"
+    },
+    {
+      "path": "BGM/178.mp3",
+      "size": 1689268,
+      "sha256": "fea35b9cc82b3bd2cd02cf4e41e334318a0ce6bb535563645f4b984ac9bd1e4f"
+    },
+    {
+      "path": "BGM/179.mp3",
+      "size": 1509650,
+      "sha256": "684a3325406583b6f299f8d1f66434ce8874e60fef6bc33731b43f13ebcc16f7"
+    },
+    {
+      "path": "BGM/18.mp3",
+      "size": 2695168,
+      "sha256": "42e99274271dd4609296dbf9742375c6b5315349e0039d454b3a360fc74da010"
+    },
+    {
+      "path": "BGM/180.mp3",
+      "size": 1109977,
+      "sha256": "342358b2a4d5780c3e2a732ad6ec95a4cc2c2d798fed6caa2df24d9072244b77"
+    },
+    {
+      "path": "BGM/181.mp3",
+      "size": 1036625,
+      "sha256": "a74c703c2624d172097b7b60ec609487d7fa4b14d4604ccbe2cb6bf9c46b56d6"
+    },
+    {
+      "path": "BGM/182.mp3",
+      "size": 3267930,
+      "sha256": "9996a4b72b0f71f4dd72fae96115b331927c128cda418e9e9e81404fbe473291"
+    },
+    {
+      "path": "BGM/183.mp3",
+      "size": 2691608,
+      "sha256": "a79beb850130fede6bbc1f0875304d0704745f381022206d3aeb6cbcce94dd10"
+    },
+    {
+      "path": "BGM/184.mp3",
+      "size": 2365444,
+      "sha256": "b81dee08c744427b6c7db0d0a7bb9d3e8e82e363f9754e7738011c3ad00c0297"
+    },
+    {
+      "path": "BGM/185.mp3",
+      "size": 2241916,
+      "sha256": "390c8a7a638d5328695f22b306a95c3bc5ab56a54356ef77716c5ca6a02c6783"
+    },
+    {
+      "path": "BGM/186.mp3",
+      "size": 2219006,
+      "sha256": "f9ce7955f245bcecae332dccf0eec295b5d96915f188565af0d207b11230ffde"
+    },
+    {
+      "path": "BGM/19.mp3",
+      "size": 2430976,
+      "sha256": "8b06764baae3fd8eaa05e562215bd8d2933f28607bb83d4f7d4bac57ad375223"
+    },
+    {
+      "path": "BGM/20.mp3",
+      "size": 1499136,
+      "sha256": "2ccad463651282d4836e9e910b022c923884063b6ffdeb2284ef39e80af8cfbf"
+    },
+    {
+      "path": "BGM/21.mp3",
+      "size": 1214464,
+      "sha256": "18e3b8c4c688d5be1db9401922e511343343e80a081c2056b1a60dcd4853810e"
+    },
+    {
+      "path": "BGM/22.mp3",
+      "size": 1521664,
+      "sha256": "27aa738d7ccf89263f8f5d2287236b9bf787a90b5d17b5d478cb752a0c0b5788"
+    },
+    {
+      "path": "BGM/23.mp3",
+      "size": 2445312,
+      "sha256": "1e76c86f63387bcdd69b884330808d0c8d506c6852986272a415d8dd61d5bffb"
+    },
+    {
+      "path": "BGM/24.mp3",
+      "size": 2650112,
+      "sha256": "b41dfc0938fa642947e50788687f229aecf234aee1a64c7b4a5696eda405907d"
+    },
+    {
+      "path": "BGM/25.mp3",
+      "size": 1873920,
+      "sha256": "aa3a5631e5940ee623b37af0316879d152577e399a450b657bfc13bda6cb79da"
+    },
+    {
+      "path": "BGM/26.mp3",
+      "size": 1556480,
+      "sha256": "3b45fd8fe879fb613c736072d0701c19b5f7f57c9f9d86861e836d6a76441925"
+    },
+    {
+      "path": "BGM/27.mp3",
+      "size": 2404352,
+      "sha256": "0b9a218a1ec2b89a385349bba188f1122ecb381bc3e2ee0ab64c3d9f0a61cfb6"
+    },
+    {
+      "path": "BGM/28.mp3",
+      "size": 1761280,
+      "sha256": "0310827fb78e7c602dd998f2702906acf2c45130ffcf1d937d11d110e2d86d97"
+    },
+    {
+      "path": "BGM/29.mp3",
+      "size": 1757184,
+      "sha256": "c1503d44672a4aff5e4903888f49f3cedfea13a406fedc4fe52bddb3246b75ea"
+    },
+    {
+      "path": "BGM/30.mp3",
+      "size": 2158592,
+      "sha256": "32e597ba13f0119960f39aaab941aa7a239adf9b4a80a45c140696f5d97e4356"
+    },
+    {
+      "path": "BGM/31.mp3",
+      "size": 2027520,
+      "sha256": "7c730ded4b2779bde73b64f5c4ae9e70afa0f70f4287efce795a6596b1e46fa5"
+    },
+    {
+      "path": "BGM/33.mp3",
+      "size": 1722368,
+      "sha256": "2863107dc1869ebc8c371d0e604a8320bcc251532e024d9cb579dfa1d5d30f49"
+    },
+    {
+      "path": "BGM/34.mp3",
+      "size": 1865728,
+      "sha256": "6d69b4ed294a4b2638ad31bd83e75dfe4ea4d2b5f79c1fc95bda412678706ef5"
+    },
+    {
+      "path": "BGM/35.mp3",
+      "size": 2256896,
+      "sha256": "9422d9e871cd8db29dd9eb5a34d39e8660d22e0491cfc8bf8a553668b9e3a10b"
+    },
+    {
+      "path": "BGM/36.mp3",
+      "size": 1382400,
+      "sha256": "e602413c136429e6be6091bc26037500a01ee8a0019c89215958cce26f8968cc"
+    },
+    {
+      "path": "BGM/37.mp3",
+      "size": 1726464,
+      "sha256": "0499a0d9a6247d9196ed02e9b5105f1ba15f0e8f8578fff5844d35f41a78d19f"
+    },
+    {
+      "path": "BGM/38.mp3",
+      "size": 1748992,
+      "sha256": "5af5ef1cf738b9687973da52a9a6c2cd6602761f1b33199c423830b04901a5cc"
+    },
+    {
+      "path": "BGM/39.mp3",
+      "size": 2707456,
+      "sha256": "20d2ebd35a46d33b798be2eff521b51e8b02956e9eba6bc3a7c3bdee0aa9f27b"
+    },
+    {
+      "path": "BGM/40.mp3",
+      "size": 1808384,
+      "sha256": "26d46bfdcb3e5af67bb72e9616acb71253b87c4c710c1f948344341758f978ce"
+    },
+    {
+      "path": "BGM/41.mp3",
+      "size": 1867776,
+      "sha256": "e569e6ba057056a9df5d3f96c294af31684bcd897530d0120816845c05609de9"
+    },
+    {
+      "path": "BGM/42.mp3",
+      "size": 2203648,
+      "sha256": "4a5747ec1b4f2dec43b2d8baf44916ae12a8c596700e73820fe34b8a9f0254b1"
+    },
+    {
+      "path": "BGM/43.mp3",
+      "size": 1685504,
+      "sha256": "20ad3740614ebd391c08daca355c81fc60911cbab2273aa7ec5c0b4ac102d61d"
+    },
+    {
+      "path": "BGM/44.mp3",
+      "size": 1570816,
+      "sha256": "76bd73a8ec20b19315411162105dc76fca6216187632ba77b518a9317a66ec5e"
+    },
+    {
+      "path": "BGM/45.mp3",
+      "size": 1705984,
+      "sha256": "db46e65d9a0d5615a242b09448228a391c7280877bb8578c71f31c890897a018"
+    },
+    {
+      "path": "BGM/46.mp3",
+      "size": 1572864,
+      "sha256": "f4b075463718f6cc99978f29ca5a8ad4633e66699908df4941ab8b374286549e"
+    },
+    {
+      "path": "BGM/47.mp3",
+      "size": 1689600,
+      "sha256": "03c5813e4759eb5b0fab515477e092f64dd302f9b8247cced637644e50097448"
+    },
+    {
+      "path": "BGM/48.mp3",
+      "size": 1908736,
+      "sha256": "069e02272aed8606cda8755dd518256080e761743607ac92f35a306bb3c9a688"
+    },
+    {
+      "path": "BGM/49.mp3",
+      "size": 1802240,
+      "sha256": "bcc9f7c55547ec0716e4fa09b548eca4257d0cde3bed660a1a6aced6141d74e6"
+    },
+    {
+      "path": "BGM/50.mp3",
+      "size": 1662976,
+      "sha256": "20b3ce04df6f4cd03b01fd66f71dc29105df6b815a96b2e565d1413537cfd0d8"
+    },
+    {
+      "path": "BGM/51.mp3",
+      "size": 1595392,
+      "sha256": "d050268611669e1bbdf50e2d231ec10e03557a01b7acd039026ebca7830a4150"
+    },
+    {
+      "path": "BGM/52.mp3",
+      "size": 1245184,
+      "sha256": "a1e49515b8d0821b8f77218b16cda3414041490cedb9e6f40047cc4b906eeabc"
+    },
+    {
+      "path": "BGM/53.mp3",
+      "size": 1556480,
+      "sha256": "bae683a2e066cd93d1fdd5908a4a98fc98a9fea5a0c3d27cfa928ea7ac7c9376"
+    },
+    {
+      "path": "BGM/54.mp3",
+      "size": 1552384,
+      "sha256": "ee173923d3d90c73326ceefa5e8c3399b9bf9320eb5053e01e3930d83f3a9560"
+    },
+    {
+      "path": "BGM/55.mp3",
+      "size": 1447936,
+      "sha256": "31d83317c238cae45c29596d0e10a3dcb2e19ceeb8f422ba13d1783ef83d8038"
+    },
+    {
+      "path": "BGM/56.mp3",
+      "size": 1466368,
+      "sha256": "10693114c77abb8049f99ef25244dd7ac0cfa034ac7ea6caace7a7a0be31d891"
+    },
+    {
+      "path": "BGM/57.mp3",
+      "size": 1492992,
+      "sha256": "6c897deba89846a90a545f1691a8528160d5eef2289e0cf7331a7ab86e936922"
+    },
+    {
+      "path": "BGM/58.mp3",
+      "size": 1517568,
+      "sha256": "182425fc0c107779f29a4624e4f4c6dedf20da1a7d20b1d2bd7933d39551803a"
+    },
+    {
+      "path": "BGM/59.mp3",
+      "size": 2746368,
+      "sha256": "70f3630090fac0ff61ea3330219a734e14831630dc9ae5477429647980d45b7f"
+    },
+    {
+      "path": "BGM/59b.mp3",
+      "size": 5435039,
+      "sha256": "7e9ed1b206054cb577b0711487de5ee69b575739adba4a532a30b404bad37603"
+    },
+    {
+      "path": "BGM/60.mp3",
+      "size": 1413120,
+      "sha256": "1ceb0ca24daab93c1e2bef2f99216a30efdf4440bd2e942b0b21b33e4019771a"
+    },
+    {
+      "path": "BGM/61.mp3",
+      "size": 1667072,
+      "sha256": "89999d3e59e2bc7fd9e2510e4e49ee672dd6de2f7029fa71c2905f3d1c484a8b"
+    },
+    {
+      "path": "BGM/62.mp3",
+      "size": 1746944,
+      "sha256": "37fb55b928ba9c5248028b622adca5137681c3971440a1d56a98a82fae37522f"
+    },
+    {
+      "path": "BGM/63.mp3",
+      "size": 2066432,
+      "sha256": "255c2aed563431853c4265d7de901470a7481b2a917564905383016647f73611"
+    },
+    {
+      "path": "BGM/64.mp3",
+      "size": 1765376,
+      "sha256": "fd0496932b52ea5e8d9cca79e22508098bf5de0670caa873fa2259d48c066d3c"
+    },
+    {
+      "path": "BGM/65.mp3",
+      "size": 2152448,
+      "sha256": "3be5ec4b603525f183d9d8eb5d306a06c38bfb2a98db0426ff2135afb03cdfc4"
+    },
+    {
+      "path": "BGM/66.mp3",
+      "size": 1982464,
+      "sha256": "2c03ed937da0a17418472a8f47837d68352164a9018a8923542b0c9d71bddfd4"
+    },
+    {
+      "path": "BGM/67.mp3",
+      "size": 1660928,
+      "sha256": "1bd43acd16c5a333920faa1bbb443ea3a8b578a9eb78e1f8b010864d5347c701"
+    },
+    {
+      "path": "BGM/68.mp3",
+      "size": 1363968,
+      "sha256": "07d712c244b6af53b249e4b6198e1ae0b54244a756b94ba5ec2a09f0d961eec7"
+    },
+    {
+      "path": "BGM/69.mp3",
+      "size": 1978368,
+      "sha256": "167f3fef946c6905f36109fd68bf07a3c1d19f6eedc75af07653a4611384f8e1"
+    },
+    {
+      "path": "BGM/70.mp3",
+      "size": 1644544,
+      "sha256": "29bf267b14c5202e0c7f0d5b1013550b650db7940c59231c48225aed4838ac3c"
+    },
+    {
+      "path": "BGM/71.mp3",
+      "size": 1497088,
+      "sha256": "0ef1a8fb689f00a0625bbbb135bef3e00174a52931eb7d3e6d003c0a5c201ebd"
+    },
+    {
+      "path": "BGM/72.mp3",
+      "size": 1681408,
+      "sha256": "a4021a191afb2b24f862046cba64007d2c3f0f496f67e8f630784fe849a1cc87"
+    },
+    {
+      "path": "BGM/73.mp3",
+      "size": 1486848,
+      "sha256": "df4965ef9ccd01144d74473d86cf2356ff6a03be2d6b9b5aee5e79c00b100a23"
+    },
+    {
+      "path": "BGM/74.mp3",
+      "size": 1603584,
+      "sha256": "650b0c93a0627160bcc2e2aad7601ec367c4849983d1cc0a64f506d2f509b9de"
+    },
+    {
+      "path": "BGM/75.mp3",
+      "size": 1886208,
+      "sha256": "046f578542131c4f30485e93c0081471ddb4c44ce2393afe2c005126f7eaf4da"
+    },
+    {
+      "path": "BGM/76.mp3",
+      "size": 1894400,
+      "sha256": "428a2ea52c5f6c1f733fe2ea71fdba12d23141b310663c8aa8fe4a4e89fe7008"
+    },
+    {
+      "path": "BGM/77.mp3",
+      "size": 1759232,
+      "sha256": "4974d5a923ff26e06670ac653cad9f870b524ddc5a3b5f03133eb536e825009c"
+    },
+    {
+      "path": "BGM/78.mp3",
+      "size": 1531904,
+      "sha256": "fc2f0d8c1af7e06687017621868b618cf26bdd090c333867403a900d7f1c964c"
+    },
+    {
+      "path": "BGM/79.mp3",
+      "size": 1787904,
+      "sha256": "b8a8ac6b797e54c289214a0188b51274d16754801ee02ba7162a5ce722a9b5e7"
+    },
+    {
+      "path": "BGM/80.mp3",
+      "size": 1454080,
+      "sha256": "15326c667d9ba261605ab3199b6617b2f3b5701b4cdef98ef1b9f39068204595"
+    },
+    {
+      "path": "BGM/81.mp3",
+      "size": 1941504,
+      "sha256": "aca4c3d841bda27c6078443e36643e6dd37b368fa5fb74c5938a6be50ccece47"
+    },
+    {
+      "path": "BGM/82.mp3",
+      "size": 1644672,
+      "sha256": "38fb9652176095905bf527c4112870edd81c25b8892eb12f95cbce377fc30f10"
+    },
+    {
+      "path": "BGM/83.mp3",
+      "size": 1536000,
+      "sha256": "58cdaaa5da951aa3643a9cc3e1960aabe4394a6e62b90750e09dfef40f74bafa"
+    },
+    {
+      "path": "BGM/84.mp3",
+      "size": 1636352,
+      "sha256": "06fab3470782a9f38746c58bcf8407f47b153da400c169021443bb2702d88a93"
+    },
+    {
+      "path": "BGM/85.mp3",
+      "size": 2220032,
+      "sha256": "2c27814965c273b43e6dfee139217e1af36d79e60ac07f6d2a9628c11fb1d1e0"
+    },
+    {
+      "path": "BGM/86.mp3",
+      "size": 2433024,
+      "sha256": "d65c655dba99b84c4b7f9cc5dce881decb3f7720545b7c1a1ce715fa044644d8"
+    },
+    {
+      "path": "BGM/87.mp3",
+      "size": 2187264,
+      "sha256": "6731a75ffd60989ba9afd6b702f006d384043a1997222c8ecc5678a4bfdddf57"
+    },
+    {
+      "path": "BGM/88.mp3",
+      "size": 2396160,
+      "sha256": "1644b3afb93795626c8379b2b243626e5a0140ecccd64ec669714e5f708d78ec"
+    },
+    {
+      "path": "BGM/89.mp3",
+      "size": 1831040,
+      "sha256": "c870f6065aecd7fe9ba97e16e5a265d8ce5deaa4118652592b6171dc7839786d"
+    },
+    {
+      "path": "BGM/90.mp3",
+      "size": 1722496,
+      "sha256": "17dba74ec20738d3dee806ac8434788bd94e54db914ab418e7669a1338836343"
+    },
+    {
+      "path": "BGM/91.mp3",
+      "size": 2037888,
+      "sha256": "3100dcda0d0371b663a567e9db449c900447db4dbb73266d0ec9c06e826dbc9a"
+    },
+    {
+      "path": "BGM/92.mp3",
+      "size": 1806464,
+      "sha256": "f1ff8d3442b03a1002b67169b2607d2a0e115c4d75b4d792259507f5144a7574"
+    },
+    {
+      "path": "BGM/93.mp3",
+      "size": 1609856,
+      "sha256": "a07693d1aa9ca58285c7d618b05eae72cf70e4f3b18f734279b4e8add70b0fa2"
+    },
+    {
+      "path": "BGM/94.mp3",
+      "size": 1683584,
+      "sha256": "a2692c436f39e6fa29f806b4ee8e3885f938dd22df1e46651faf778b2539d9d2"
+    },
+    {
+      "path": "BGM/95.mp3",
+      "size": 1298560,
+      "sha256": "ffe8a84003c63b7eabc362657fde856d55ec2833a91334e179e114002bdc81ac"
+    },
+    {
+      "path": "BGM/950.mp3",
+      "size": 3173556,
+      "sha256": "a47455d63f64f327ec25ec650a268fe404dc2ece7989f9660e259631e5ae5950"
+    },
+    {
+      "path": "BGM/96.mp3",
+      "size": 1859712,
+      "sha256": "e6633b248fd2aad2f910dbbb9157910605e8b0738269752dcf3fab315a97823d"
+    },
+    {
+      "path": "BGM/97.mp3",
+      "size": 1638528,
+      "sha256": "cd2fa987e5130fa4ed295a65e7373822f0763c74c5a95e7f39eb442d07d523b6"
+    },
+    {
+      "path": "BGM/98.mp3",
+      "size": 1271808,
+      "sha256": "32fb7bc2cd2c5723b70e9f586e99057fb1165177db651d58e14e4881ba3dc13f"
+    },
+    {
+      "path": "BGM/984.mp3",
+      "size": 998078,
+      "sha256": "12cca81fb909c51e582fb6565f3a7700bbd205203d030e909290f25d240787a1"
+    },
+    {
+      "path": "BGM/985.mp3",
+      "size": 988361,
+      "sha256": "98ea6ddccd204be8b9f88c67c7beaaa34eba5a77e7bc6f2479309e89fdc7194e"
+    },
+    {
+      "path": "BGM/986.mp3",
+      "size": 1539126,
+      "sha256": "ba0ab8a872f6e0fec2765765936bf676d3f2bdf798ded4869738dced7a13c250"
+    },
+    {
+      "path": "BGM/987.mp3",
+      "size": 1960116,
+      "sha256": "35f976b15d2e8ca0e4920e08f6be2dcb71a2d6b79c32afde96736bd049e7b102"
+    },
+    {
+      "path": "BGM/988.mp3",
+      "size": 1883002,
+      "sha256": "abfacda4f433477676d70552830e120e7b8a9a4d84dc9e9cda8dddd8600f0445"
+    },
+    {
+      "path": "BGM/989.mp3",
+      "size": 2192714,
+      "sha256": "9bc3c4cb48ac59a3fe365ccef30271a61325d78e0085ecf80da7726eba7df5f2"
+    },
+    {
+      "path": "BGM/99.mp3",
+      "size": 1454080,
+      "sha256": "a8ccb69158cca698331ef76e465bb93091ba0a0e5b5dcc2fc6b87e13a6118a45"
+    },
+    {
+      "path": "BGM/990.mp3",
+      "size": 3565898,
+      "sha256": "9c5d64df3ead5ac897289ad1fbb175eda5d163d3b0ff558a9d097f7e7415b77f"
+    },
+    {
+      "path": "BGM/991.mp3",
+      "size": 2947866,
+      "sha256": "1ed7a2002f15989f296ecd4b6a5049f2acd7dd6cb896d6f4ac64d9f5ab4cddd3"
+    },
+    {
+      "path": "BGM/992.mp3",
+      "size": 3174191,
+      "sha256": "e5a3e2d6f0bed3d672149c6338aa6a7f3f59aeaa966e04cacec202dccd2b6b1e"
+    },
+    {
+      "path": "BGM/993.mp3",
+      "size": 3510857,
+      "sha256": "bbc106e2675ec1db4128b500b20ad52dc49dcede402be3c79b443e34c2a4b2d0"
+    },
+    {
+      "path": "BGM/997.mp3",
+      "size": 721588,
+      "sha256": "13ba96afc2c2a21b1eec3491af107cfb23f1fe3c2c4a7221c62babc76bff39dd"
+    },
+    {
+      "path": "BGM/999.mp3",
+      "size": 1819682,
+      "sha256": "e18d5587d96aaf12e1547b1fa76713e72d5a9b614ab468f210510b3c70c9245e"
+    },
+    {
+      "path": "BGM/login@2.mp3",
+      "size": 5435039,
+      "sha256": "7e9ed1b206054cb577b0711487de5ee69b575739adba4a532a30b404bad37603"
+    },
+    {
+      "path": "binkw32.dll",
+      "size": 188416,
+      "sha256": "48b7566c3d94d1dff2866517586b40397ed57f8f238587feadf667a2db8cb995"
+    },
+    {
+      "path": "concrt140.dll",
+      "size": 249600,
+      "sha256": "b721897db5542d5b0c970ec624440442ed9ae781e55147feb9ff264f70f66cde"
+    },
+    {
+      "path": "cps.dll",
+      "size": 73728,
+      "sha256": "0c02edb2952ce0e983de43b7f5919bfe63df1a20be6e151f72c6640e9f2b4d4b"
+    },
+    {
+      "path": "D3DX9_42.dll",
+      "size": 1892184,
+      "sha256": "f8b9cfab7fffbc8f98e41aa439d72921dc180634a1febca2a9d41a0df35d3472"
+    },
+    {
+      "path": "D3DX9_43.dll",
+      "size": 1998168,
+      "sha256": "0b28546be22c71834501f7d7185ede5d79742457331c7ee09efc14490dd64f5f"
+    },
+    {
+      "path": "data.grf",
+      "size": 769,
+      "sha256": "e86debdd14bba4f9778a4f60bdc3e692b6820b5ad52dd8e13eafae5d7b97582c"
+    },
+    {
+      "path": "DATA.INI",
+      "size": 97,
+      "sha256": "ca03576d1c3dea3f2eed3c9629966f94f1401798c2e31e917744e691be441868"
+    },
+    {
+      "path": "data/ba_frostjoke.txt",
+      "size": 5085,
+      "sha256": "0b7304ca7d91b6778e2ffd862b8aad5aba8ec5b3b9ca8d935fe8969bd1df21cf"
+    },
+    {
+      "path": "data/book/11000.txt",
+      "size": 3280,
+      "sha256": "862b3427160ce952d881cffd3856d1226d0a074a41a0346595b6a8bdc4b39de2"
+    },
+    {
+      "path": "data/book/11001.txt",
+      "size": 11316,
+      "sha256": "9018ba14565f7bb5f6fb670b72354f0ebc3e02b519b67bce80a72ddbaa1f111f"
+    },
+    {
+      "path": "data/book/11002.txt",
+      "size": 10798,
+      "sha256": "ca0286d7e516dabe3f88d8a6fc95732b1abaa684bbe2ab9fde091be05e374f0b"
+    },
+    {
+      "path": "data/book/11003.txt",
+      "size": 10240,
+      "sha256": "94e4e9f96d9aa9f2bf0b054d7d4e356d81a3c663839ad1258b433ea40fc8efe7"
+    },
+    {
+      "path": "data/book/11004.txt",
+      "size": 5565,
+      "sha256": "7846c974ccf59bcc03a42bed081fb7d4685e30642e875be4e5b9f7c690382854"
+    },
+    {
+      "path": "data/book/11005.txt",
+      "size": 6743,
+      "sha256": "7a804cfdfe503af2e8e29823273c522413eaa9d15e400eb1571f6beef19b74c3"
+    },
+    {
+      "path": "data/book/11006.txt",
+      "size": 10418,
+      "sha256": "1a2c3c599d7572e13733e77b96282343178fcf615766190533786d305ccda7be"
+    },
+    {
+      "path": "data/book/11007.txt",
+      "size": 8053,
+      "sha256": "9635f5f5672fead78fac53648e6730f741a54dcc6b46eda82459adfc8ad0db3e"
+    },
+    {
+      "path": "data/book/11008.txt",
+      "size": 4100,
+      "sha256": "e1b99b19cc271b3c389920b5248bb70b5a8669c8adb8b8bcf94eaf7cef112cea"
+    },
+    {
+      "path": "data/book/11009.txt",
+      "size": 3717,
+      "sha256": "f3cf6b8c1c4089a095e17aac78aaa343d7aed17ed21e0cf0d3d856e0fff8db20"
+    },
+    {
+      "path": "data/book/11010.txt",
+      "size": 31565,
+      "sha256": "44094d2b0a13887bee218b007cb60299757491bc4836cd2237ccb5589c86ee74"
+    },
+    {
+      "path": "data/book/11011.txt",
+      "size": 6616,
+      "sha256": "1ca6644c826795a63413044b935989e95a6c7ac78532ef5979b8b70308007bb2"
+    },
+    {
+      "path": "data/book/11017.txt",
+      "size": 20911,
+      "sha256": "6e34fda4af5bbfa10964b5b521664f18553a20556eb5e9fb159ed45f6f5de906"
+    },
+    {
+      "path": "data/book/11018.txt",
+      "size": 1013,
+      "sha256": "26f88165c8582e7f730563a50ad7a85dd64062837ec98bb7e7c76037911bdb83"
+    },
+    {
+      "path": "data/book/11019.txt",
+      "size": 1171,
+      "sha256": "5422e7a7cf3f517d3036deb466484855b903d0c01daeb33e3aeeaa0dc4bed629"
+    },
+    {
+      "path": "data/book/11022.txt",
+      "size": 4051,
+      "sha256": "8c1fcd7e6ddb66b53d2a706263378ea12aa5365078d88703221be6f2e355c662"
+    },
+    {
+      "path": "data/book/11023.txt",
+      "size": 7983,
+      "sha256": "4ac0f4ebc19e5c3ad90083684bdc53eb6fdcbf056bff878335991e32285a234a"
+    },
+    {
+      "path": "data/book/11024.txt",
+      "size": 3903,
+      "sha256": "73fde8df35dff7ac15283ca5248ca6ef7bf6d5926d618ede81e9b0d3f4b27ed7"
+    },
+    {
+      "path": "data/book/11056.txt",
+      "size": 5931,
+      "sha256": "a2b55105c72faf3fc17402e665d0e713f9b36b98cc853fa1b00adea39b1d25c1"
+    },
+    {
+      "path": "data/book/11057.txt",
+      "size": 6396,
+      "sha256": "205e53728284cce5d04e9cbb2bffc6c60c00ba448c4c91d49b01c9be9224f398"
+    },
+    {
+      "path": "data/book/11058.txt",
+      "size": 6789,
+      "sha256": "38f19466a01ea869fbc290cad0840da322473565ff66a1d1cd389159136fde57"
+    },
+    {
+      "path": "data/book/11059.txt",
+      "size": 11329,
+      "sha256": "9804befc080575ed191c652da6bf1edcaac506aa34de0d66286b43b4ab8c38a1"
+    },
+    {
+      "path": "data/book/11060.txt",
+      "size": 13174,
+      "sha256": "1d48f4acfede77945084e91699a5064f9a9511e87881f0f0f3211420764e7d53"
+    },
+    {
+      "path": "data/book/11061.txt",
+      "size": 3605,
+      "sha256": "055ff2b8497efa64d989d82249dd16307d41d6a9e54e9bd82704bb9ef780fc4a"
+    },
+    {
+      "path": "data/book/7127.txt",
+      "size": 1763,
+      "sha256": "bdcc5af7d7bb7565d0ef0537637bbe4b39b28bcc898207172015e56eb5bbb569"
+    },
+    {
+      "path": "data/book/7128.txt",
+      "size": 1371,
+      "sha256": "d98732d9f5ecda9d222b6cedd4e9c9e8bc586b14d98ac29ede9cb0dc3a2f67ed"
+    },
+    {
+      "path": "data/book/7129.txt",
+      "size": 1287,
+      "sha256": "6f1864c25b2860661dc48d7abc97d3eeccf6af62f620afa10e84d46245c30eca"
+    },
+    {
+      "path": "data/book/7130.txt",
+      "size": 1374,
+      "sha256": "dc027e06c669f84646f3c59e38e5b4a7ef0697cc7b5e9d183d151d6a2577f782"
+    },
+    {
+      "path": "data/book/7131.txt",
+      "size": 1268,
+      "sha256": "c9aad0e7690c0d243b2a50bed3c925e6635f52cb5891763a42852fc76dbbe64e"
+    },
+    {
+      "path": "data/book/7132.txt",
+      "size": 1435,
+      "sha256": "dd7e6b0cab9e29c2d4aaf3de9d1511e8b1934b4ad66deaa2f1ba274d94f94e89"
+    },
+    {
+      "path": "data/book/7133.txt",
+      "size": 1881,
+      "sha256": "bd8972a33a1b15c6c7dfbe687b4d2aff724a625999528573f54b7dc24927c55e"
+    },
+    {
+      "path": "data/book/7144.txt",
+      "size": 3568,
+      "sha256": "a03039490c5bcf8d33e86ab8172f08475429a2e2efdf7920a15e3d7edce46093"
+    },
+    {
+      "path": "data/book/7434.txt",
+      "size": 2448,
+      "sha256": "8a1059f94e576c56dad33ecfd1654456c718dbec30a2a51a8f41cd4cf5de7a13"
+    },
+    {
+      "path": "data/book/7472.txt",
+      "size": 3280,
+      "sha256": "3e46b25075f24b6c42350c2be1008eb75a8f9933980f8025c90101570a530417"
+    },
+    {
+      "path": "data/book/7473.txt",
+      "size": 4751,
+      "sha256": "5a9726a6fdc34924fa3a4c9e2b900fd863503f5e4e527c45cd148bf9c9fed350"
+    },
+    {
+      "path": "data/book/7474.txt",
+      "size": 5236,
+      "sha256": "37e7723ab9a842bd5e9f5b6eba8c2238e35a9a19260a0ed73d2e31338d45c32a"
+    },
+    {
+      "path": "data/book/7475.txt",
+      "size": 5544,
+      "sha256": "3716da16f50dd9da53f5a4c393f845d9c37d3d48f021cce73354dc77b7363959"
+    },
+    {
+      "path": "data/book/7476.txt",
+      "size": 4680,
+      "sha256": "09c3cf6ce4e068a3d21c45c9be492607a1c17abea62aa116a5fdace7100bd6fa"
+    },
+    {
+      "path": "data/book/7477.txt",
+      "size": 4861,
+      "sha256": "aed96ff501aaa6a518d542d4dca1a1e1a25c93e5834cbe4aff35b5965ca2bb3f"
+    },
+    {
+      "path": "data/book/7478.txt",
+      "size": 4523,
+      "sha256": "8f071092ffdd637422e85e7c3295a61c8d32ddbd063eef83cd3cf9d0a76eec5f"
+    },
+    {
+      "path": "data/book/7479.txt",
+      "size": 6288,
+      "sha256": "52f5f8aefde45df67a012be2286fe36cec182ee9a8a890b1953f54d4b17e3e44"
+    },
+    {
+      "path": "data/book/7480.txt",
+      "size": 5307,
+      "sha256": "4a6889fb90ebabb10bb9f52af5f89c08e51482a7110cf52b7d8e776ad7391066"
+    },
+    {
+      "path": "data/book/7481.txt",
+      "size": 5538,
+      "sha256": "fc1f5ba7de510c6c7962fdf9bd8e0e41a34f071255b62af372a7e45f58de7538"
+    },
+    {
+      "path": "data/book/7755.txt",
+      "size": 1270,
+      "sha256": "c7658a8e154dc88219fac65e920a2fb6e134fffac0f53c52dc713be33e9ed509"
+    },
+    {
+      "path": "data/book/prontera bible01.txt",
+      "size": 3215,
+      "sha256": "506e8f1ba61f699233df69e907d1ae88e8e6b7ca9145e67bede752d9a35fa2de"
+    },
+    {
+      "path": "data/bookitemnametable.txt",
+      "size": 286,
+      "sha256": "1205781f32637608d81361a1879ec4f746330813635c96532fd1361137ab187b"
+    },
+    {
+      "path": "data/buyingstoreitemlist.txt",
+      "size": 23372,
+      "sha256": "6ef8beef6effe1bfe240b45828787f845c6a42d1e201a2facf0cd2597e9cdedc"
+    },
+    {
+      "path": "data/carditemnametable.txt",
+      "size": 6397,
+      "sha256": "7c7fa59bf4481951f3a871011b5c6bdd939faeb883f567f4806ff9271dd3177d"
+    },
+    {
+      "path": "data/cardpostfixnametable.txt",
+      "size": 4330,
+      "sha256": "17e9f4ee52efb7cd7feca2b3972045e3bd596bc2ca5c3610d9d4d17b3bbf4610"
+    },
+    {
+      "path": "data/cardprefixnametable.txt",
+      "size": 25282,
+      "sha256": "4869e8a8e7b93728bc7c8a38e9436502e21bbf71eed804e19f5bcae733c809a3"
+    },
+    {
+      "path": "data/dc_scream.txt",
+      "size": 3598,
+      "sha256": "849359d205c5d79e3f74400019bf4b383fa99d7e858a5d8c2a07eeea49a5ba5e"
+    },
+    {
+      "path": "data/etcinfo.txt",
+      "size": 71,
+      "sha256": "771d79d188df204e389e082da08d59bbb7e5aaa276cd4fd6a9f4e362bf4a2317"
+    },
+    {
+      "path": "data/exceptionminimapnametable.txt",
+      "size": 1581,
+      "sha256": "e34ba3fcfac9e8fcd0ea918eaaf0b527fc32338fd7df69a64722e84c4a35dbe0"
+    },
+    {
+      "path": "data/indoorrswtable.txt",
+      "size": 2753,
+      "sha256": "b1d7be5a14ded063b003137ea06926943fdede2dcb9eb3e90d3a48b25c1d8228"
+    },
+    {
+      "path": "data/itemmoveinfov5.txt",
+      "size": 240139,
+      "sha256": "2d0e1ec85e57eb88f5e468d1e1c6017169d81a6f95bc4c5395c1b7919f000dba"
+    },
+    {
+      "path": "data/leveluseskillspamount.txt",
+      "size": 17371,
+      "sha256": "403a809200eb28e74dee86c7d41aa92d5a7b5d1cf849d36cd00c05b1b774a707"
+    },
+    {
+      "path": "data/luafiles514/lua files/admin/pcidentity.lub",
+      "size": 3348,
+      "sha256": "c6691802c8e661c7ed38e1a81cfe91fbdb561a856c40832c388b4a4144150871"
+    },
+    {
+      "path": "data/luafiles514/lua files/admin/pcjobname.lub",
+      "size": 6206,
+      "sha256": "2a36ad323e1bb2ae41b761fc6e30eb628f6d005dd9a0808625c132e6574354bd"
+    },
+    {
+      "path": "data/luafiles514/lua files/admin/pcjobnamegender.lub",
+      "size": 11753,
+      "sha256": "4e90374282ca5380967497c898808d6845c10e14cd1f013bfea4d2ffa57bf2d2"
+    },
+    {
+      "path": "data/luafiles514/lua files/agit/agitconfig.lub",
+      "size": 7438,
+      "sha256": "d1982be750184eff8d4a7b6f0829dd19ff8f6eedf262330f4c0686676dfb5f17"
+    },
+    {
+      "path": "data/luafiles514/lua files/battlefield/battlefieldinfo.lub",
+      "size": 6324,
+      "sha256": "236b606db5d0b2306dfecfec4c079970649b7055aba89082b6f66928e5b5e625"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/accessoryid.lub",
+      "size": 76602,
+      "sha256": "d8f510f106812d6113ff80da6794eb2420f525511c501f51c1d194f6fd74e43f"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/accname.lub",
+      "size": 139466,
+      "sha256": "5b9576f4db3ba782e6e7d7848ca1b2bd9c7eb69a532157a9e8ae88ac2bd6e3b4"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/accname_eng.lub",
+      "size": 47285,
+      "sha256": "f3b1db8f7498f3f524b7aaf434ffdeaeb51aedf585a62e547ba92f8c8e7c4cec"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/accname_f.lub",
+      "size": 435,
+      "sha256": "44272ed62e2370bb7a28ff5a83d049e379831197295aaa665f80576c756c140e"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/addrandomoption_f.lub",
+      "size": 506,
+      "sha256": "91ce3df217825a5747c4ac2adbf22f1e0512bc689799e6747f1e97caf0a6ae48"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/addrandomoptionnametable.lub",
+      "size": 18630,
+      "sha256": "70c0dc76d9d97d38757dc090936ff2f7dfe6e22992a5da4349efcbff814bff0f"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/changedirectorylist.lub",
+      "size": 1182,
+      "sha256": "bb98b3eab54e34b0e082c6ef4c330c827f544cd81acdc95b04cda151dfe0c060"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/DrawItemOnAura.lub",
+      "size": 724,
+      "sha256": "a34f84155d81da1dcb70fdf0d3ecdc845b8dd3906a777d0d6bbe4403c491d9f4"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/enumvar.lub",
+      "size": 10150,
+      "sha256": "d283c9660b1d48263bd39ca596db82b46d0b4a295c8f1429424e2b6a2bf7e3fb"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/exceptionitemproducer.lub",
+      "size": 718,
+      "sha256": "861ae060135bab2f75dd57937378ca9d3bf94fe7611964275492db242b5c2e5a"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/helpmsgstr.lub",
+      "size": 5208,
+      "sha256": "f4fa4e209768b5900783f7a29cab7776e55aa1b13111a35f8a2145ea165944b9"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/jobidentity.lub",
+      "size": 106555,
+      "sha256": "e68b0b9640fb49a8ae0375c3eb734f3f09df54ae574984d6b927699fead3f6b4"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/jobname.lub",
+      "size": 224165,
+      "sha256": "728b899c4f758de9f320f163b95e13e149771819bea4b2f38ec257cca0b85433"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/jobname_f.lub",
+      "size": 2365,
+      "sha256": "123d6753e463837f83b5e19daea7f48f22a7731329bf4eff28ad55d96069e44b"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/kaframovemapservicelist.lub",
+      "size": 1353,
+      "sha256": "d3a0e5bb1d12f14ecd3b830795392f37f53323f41bc33658c3afa69f900e94be"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/kaframovemapservicelist_f.lub",
+      "size": 362,
+      "sha256": "253244d1a0e3e1b74bf6a6ba15128cad61fe599e01afbd67dad875048ea63315"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/lapineddukddakbox.lub",
+      "size": 157386,
+      "sha256": "0663643dde77bbdf725aa7f8b2f36cb751c3496846ace0a7248d02aacf2da8c3"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/LapineUpgradeBox.lub",
+      "size": 197419,
+      "sha256": "f0c5fb351430fa8671793ba197b228dacbf9a417ad0cd8af9190efb1629e265d"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/npcidentity.lub",
+      "size": 136418,
+      "sha256": "6d0ae84812b0f06e46378fbbad8bfe8a3aa5ba77e865f141cd94b26a61d777b4"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/npclocationradius.lub",
+      "size": 259,
+      "sha256": "d8c39e4b787773d9a130b8a007177ef02919d2297475a2e9683c3cd414f67612"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/npclocationradius_f.lub",
+      "size": 137,
+      "sha256": "bd15235049cb6505bbbbae212fa0ae9da984a7d838d83ecb55dc56bb8c5d7ad3"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/pcjobnamegender.lub",
+      "size": 12173,
+      "sha256": "11ead5e36f6aa313ea7d85a4547531974627549e3f0456d199d98c56bb7be81b"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/pcjobnamegender_f.lub",
+      "size": 3518,
+      "sha256": "60c00074eec660a2b6447003cea8b582c4ffd4b144246ed0d0c9a999f7eb65c5"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/petinfo.lub",
+      "size": 35713,
+      "sha256": "eeb88c95e3592244ed7d8790dc9d58507297aa4f63fa92a61e598b07b507786d"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/questinfo_f.lub",
+      "size": 2449,
+      "sha256": "45ace878d9dd1138e2c6226c88b96233bdb735de5ef36ae0a86bea7773b1765d"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/shadowtable.lub",
+      "size": 37180,
+      "sha256": "6ca821569aa270ed0d7f2a93b1ff7ebbd70a730af0a1262d83f52d43cfa4d624"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/shadowtable_f.lub",
+      "size": 204,
+      "sha256": "21e4245fc63a4779ecab28fce3537e0d2ba3538f4235a2e7ba8924211e3be788"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/spriterobeid.lub",
+      "size": 3705,
+      "sha256": "240e717c2ce9640faee2c48bc8f94c62910dcad99ccf2cae64bec38adcac2025"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/spriterobename.lub",
+      "size": 17575,
+      "sha256": "37f134439f18415b1a8e9ab469b483c4f3e4bc73dbb039e19ae819943a569863"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/spriterobename_f.lub",
+      "size": 680,
+      "sha256": "becd952e8cccb6ef6979972f725f7fdf64de9a21bbae14d7e69588128179784d"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/tb_cashshop_banner.lub",
+      "size": 467,
+      "sha256": "923d3bbd04d75c7f3fc7fe01e1f28c7ef47374d2a7614ea7c30553d1cbc778ca"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/TB_Layer_Priority.lub",
+      "size": 27629,
+      "sha256": "d8bccb039e49b3dcadd3b9c4f8a451f6289093ae7842c34d7dafaaeeef046c39"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/titletable.lub",
+      "size": 1407,
+      "sha256": "bb891b54aab97f5b0638a7128be3adfae9930713352163ea131ff59eacc7648c"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/weapontable.lub",
+      "size": 14759,
+      "sha256": "64f233bca340f848425d92ca7d638c0ac93b26f2d9ea1e0e761bd18ca9fe20ff"
+    },
+    {
+      "path": "data/luafiles514/lua files/datainfo/weapontable_f.lub",
+      "size": 979,
+      "sha256": "4d8eb3865ad48a29f519f85983cc9c30f1c71fc08e2a8a5166c1676ca8a9b7d6"
+    },
+    {
+      "path": "data/luafiles514/lua files/dressroom/dress_f.lub",
+      "size": 1651,
+      "sha256": "bd09e4efd4f09014a03ab3e42f210d7cb21e87f579d9629fe0eb9211564f2e74"
+    },
+    {
+      "path": "data/luafiles514/lua files/dressroom/jobdresslist.lub",
+      "size": 6363,
+      "sha256": "9a8b7d37c5628fe99675db25e5fc133a1d251b8cac7fd6c12e3a2c36ec5e4674"
+    },
+    {
+      "path": "data/luafiles514/lua files/effecttool/forcerendereffect.lub",
+      "size": 855,
+      "sha256": "2422e8e1ba1f31fbeed119d12f1ec5e10395bbf2f660436a46ccb4a94ef58d5a"
+    },
+    {
+      "path": "data/luafiles514/lua files/Enchant/EnchantList.lub",
+      "size": 261957,
+      "sha256": "c7c73eb08997205bdfb4ef31b3aca6fba48a5592ad060729c60bccb093753375"
+    },
+    {
+      "path": "data/luafiles514/lua files/entryqueue/entryqueuelist.lub",
+      "size": 2804,
+      "sha256": "e2ddf7e38fa132a4414bfc7d4915a1e00f9a41e0d91aa54bead64c5399bebb0f"
+    },
+    {
+      "path": "data/luafiles514/lua files/hateffectinfo/hateffectinfo.lub",
+      "size": 29819,
+      "sha256": "e79ec27f0873cadb1c2e65d15d7a91d083d9ee06b955872d8b69cc4a45cd23fb"
+    },
+    {
+      "path": "data/luafiles514/lua files/ItemDBNameTbl.lub",
+      "size": 48687,
+      "sha256": "1652812e78faf6097a79e96f2196c7f818289782a795ec714119e91d4506dd61"
+    },
+    {
+      "path": "data/luafiles514/lua files/ItemReform/ItemReformSystem.lub",
+      "size": 333042,
+      "sha256": "9d5e06646c836929a8b376e4529401be121ed5c3e502b7a3eda5d8c901cd3f9f"
+    },
+    {
+      "path": "data/luafiles514/lua files/msgstring_kr.lub",
+      "size": 23612,
+      "sha256": "7fd855f17666702c01ebfe2fb901c85a072c924e28fa9280cc2700653fa2297c"
+    },
+    {
+      "path": "data/luafiles514/lua files/msgstring_kr_s.lub",
+      "size": 23056,
+      "sha256": "633df9444d683b1b47294dd22d6024bbdb02d521ab062399cde32ae8a80c3944"
+    },
+    {
+      "path": "data/luafiles514/lua files/navigation/navi_f_krpri.lub",
+      "size": 5203,
+      "sha256": "8f27a5b3d65e46cd8ed926208047cc45f31b0133a79d2fc4797f021f14f50a0d"
+    },
+    {
+      "path": "data/luafiles514/lua files/navigation/navi_f_krsak.lub",
+      "size": 5203,
+      "sha256": "8f27a5b3d65e46cd8ed926208047cc45f31b0133a79d2fc4797f021f14f50a0d"
+    },
+    {
+      "path": "data/luafiles514/lua files/optioninfo/cmdinfo.lub",
+      "size": 2851,
+      "sha256": "c2c6790f7635b551863c4baf0ed798b78415075095a13f025589c371476eacec"
+    },
+    {
+      "path": "data/luafiles514/lua files/optioninfo/optioninfo.lub",
+      "size": 3303,
+      "sha256": "9b39b203c5b7b4bffdba4d0f239655ad37292d6348697864a89874365c086b61"
+    },
+    {
+      "path": "data/luafiles514/lua files/optioninfo/optioninfo_f.lub",
+      "size": 2100,
+      "sha256": "8c06dabe8a95485feee7f25ee99e92dbb8f1e3f7d575488ba806fbeca6d2e3ad"
+    },
+    {
+      "path": "data/luafiles514/lua files/service_korea/ExternalSettings_kr.lub",
+      "size": 3134,
+      "sha256": "5e0097fe72a73727437faf10c1560c4746a10470dbaf56751139c626403b4cba"
+    },
+    {
+      "path": "data/luafiles514/lua files/service_korea/ExternalSettings_kr_qm.lub",
+      "size": 3136,
+      "sha256": "059383a13347f50562193afb6d80ee9b6df4740c41d2f904ed7b8eef78875cfd"
+    },
+    {
+      "path": "data/luafiles514/lua files/service_korea/ExternalSettings_kr_sak.lub",
+      "size": 3136,
+      "sha256": "581a3619bbedae3450c5b271ff7027ac306dccf50e63db9e3bf6def1f3112fd3"
+    },
+    {
+      "path": "data/luafiles514/lua files/service_korea/ExternalSettings_kr_sak_qm.lub",
+      "size": 3136,
+      "sha256": "059383a13347f50562193afb6d80ee9b6df4740c41d2f904ed7b8eef78875cfd"
+    },
+    {
+      "path": "data/luafiles514/lua files/signboardlist_f.lub",
+      "size": 1254,
+      "sha256": "846bd1e8a6a2e60076478b956171369e5e1513e613257d1be20fe58aadd5065e"
+    },
+    {
+      "path": "data/luafiles514/lua files/skilleffectinfo/actorstate.lub",
+      "size": 895,
+      "sha256": "c1661c4e4cfc45afc17a1d8be414df595ea840e79cad0720751d9741fea7a4f5"
+    },
+    {
+      "path": "data/luafiles514/lua files/skilleffectinfo/effectid.lub",
+      "size": 2944,
+      "sha256": "e3d432fa4a39fd11763cb962f3530e8994f5ff6825fbdf4222636302d4463d3b"
+    },
+    {
+      "path": "data/luafiles514/lua files/skilleffectinfo/skilleffectinfo_f.lub",
+      "size": 3315,
+      "sha256": "fdc51a981c62aa92f53e7ac36ac785ba2b7776de73ed8f942f70f366c32bf4e9"
+    },
+    {
+      "path": "data/luafiles514/lua files/skilleffectinfo/skilleffectinfolist.lub",
+      "size": 9515,
+      "sha256": "00ec62d21647293429d3408889ff7061d7c8aa3f6aac27a532e6661edcb8cc7c"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/jobinheritlist.lub",
+      "size": 15486,
+      "sha256": "21263da7d076f7fe7aa8184a3a025324c41f55f0af5e346c3b5fabcd72d0ddb4"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/skilldescript.lub",
+      "size": 1070913,
+      "sha256": "0d79fbb622bf6128466e30e40c7f87f93eb0b404c377ccac4fa154578bf0a403"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/skillid.lub",
+      "size": 43983,
+      "sha256": "c0617438cb4fd79ee059980e96af21f3c8d926ce132560ff776f638d388e67eb"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/skillinfo_f.lub",
+      "size": 8402,
+      "sha256": "1185b57b03bb0d327cc569c8c2d0e463bc2285bf786a43d57253ed7fff2fb534"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/skillinfolist.lub",
+      "size": 393328,
+      "sha256": "89bf5a4ab83c594efca5ff97b61f071fe4dc9f05a5733ccfd846d1ec3062721c"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/skilltreeview.lub",
+      "size": 44386,
+      "sha256": "3b2e8c7370a02c83902ed3ae038ed190c0ff6ab5b0596318c4632818994afb09"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/skilltreeview_web.lub",
+      "size": 28963,
+      "sha256": "7032f771bdd9ef64d11a20435e9ceff2a5a3e1ee16af7b5700625578b89013ca"
+    },
+    {
+      "path": "data/luafiles514/lua files/skillinfoz/test.lub",
+      "size": 372,
+      "sha256": "de56bd2ba40c11d64ebf2a28d93920d250a77fc39ba41bda85c5a674a186b535"
+    },
+    {
+      "path": "data/luafiles514/lua files/stateicon/efstids.lub",
+      "size": 33144,
+      "sha256": "f98cc3377e0112da673b2a9e4a96cf7f7e9c48ebcf76f9d3d4c7b1de772b99cb"
+    },
+    {
+      "path": "data/luafiles514/lua files/stateicon/stateiconimginfo.lub",
+      "size": 28692,
+      "sha256": "51274db0f5fb6035f330b91af8b31dc8463740167eec3de12810e035d1b5960d"
+    },
+    {
+      "path": "data/luafiles514/lua files/stateicon/stateiconinfo.lub",
+      "size": 177465,
+      "sha256": "450db45f6d12242aec2019937f7c61f49890d6ccafed0624720260cfed647868"
+    },
+    {
+      "path": "data/luafiles514/lua files/stateicon/stateiconinfo_f.lub",
+      "size": 12804,
+      "sha256": "77adae0ac26cdf6e9b5257f7fdcf2d45fe4f89027c12ebb19bfcf02691dad97a"
+    },
+    {
+      "path": "data/luafiles514/lua files/stylingshop/stylingshopinfo.lub",
+      "size": 5085,
+      "sha256": "d25060316270da0d4a312be0dd6c973510ab7ea15199ef03929eacf0693f2da9"
+    },
+    {
+      "path": "data/luafiles514/lua files/transparentItem/transparentItem.lub",
+      "size": 3521,
+      "sha256": "a264cee6d8fbd0acd20f1d2c9102170a0548ac40c8e06eb0d7393800c1155003"
+    },
+    {
+      "path": "data/luafiles514/lua files/transparentItem/transparentItem_f.lub",
+      "size": 258,
+      "sha256": "fa99583e88c0394aa503f1e597a683e1881b5ca8d9a85e91588ed5a744340d32"
+    },
+    {
+      "path": "data/luafiles514/lua files/worldviewdata/worldviewdata_language.lub",
+      "size": 15901,
+      "sha256": "74b8daf4045a70a263e6ca76bffc03be033cbf280462931a229473aea31f72dc"
+    },
+    {
+      "path": "data/luafiles514/lua files/worldviewdata/worldviewdata_list.lub",
+      "size": 683,
+      "sha256": "30effb5615605a77b26a3eccf2e0c39fbf30de2041c0b0ac92228bfbc98ad79d"
+    },
+    {
+      "path": "data/manner.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/mapnametable.txt",
+      "size": 42095,
+      "sha256": "aa2595b5df4238fca1de33850bb50fd75d29277c42d05d61f605af80380e1e4e"
+    },
+    {
+      "path": "data/mapobjlighttable.txt",
+      "size": 6204,
+      "sha256": "57bc94a0e4d0f39e097ffde3c10e9943baba237a91f110cff18ac98ac8a84787"
+    },
+    {
+      "path": "data/mappostable.txt",
+      "size": 4833,
+      "sha256": "5e290a9f03cc0e24c1d50b197af8b0e6932bb8bb169157a69bd8b23079947dc7"
+    },
+    {
+      "path": "data/metalprocessitemlist.txt",
+      "size": 3015,
+      "sha256": "32f411e4f940e7a217bcb071bf269e1874f5d68a147724ecb31248bfefa775e4"
+    },
+    {
+      "path": "data/metalprocessitemtable.txt",
+      "size": 129,
+      "sha256": "22482c3a7ead5daf545f3f508e7075e5ddf3589ce9175281221bbba5f33007a4"
+    },
+    {
+      "path": "data/monstertalktable.xml",
+      "size": 96,
+      "sha256": "4e54efe830dfb256677acb8782f19e7475c0ea47ad8cd96000e77e9be7b49b0f"
+    },
+    {
+      "path": "data/mp3nametable.txt",
+      "size": 36003,
+      "sha256": "40f5433ae107ac732c6a16d9efa264f59bc6ee8131fd01c75ccb71cf8e0af21a"
+    },
+    {
+      "path": "data/msgstringtable.txt",
+      "size": 136462,
+      "sha256": "5af29d76ce4f4aefa57c807e03d69154c24504e3e552d26d3e0c2ddcb70f1347"
+    },
+    {
+      "path": "data/num2cardillustnametable.txt",
+      "size": 30192,
+      "sha256": "37337fb2772f12313b7798453d1a02ef66519e137f9c6b22a7f341cb9bc5b8a1"
+    },
+    {
+      "path": "data/pettalktable.xml",
+      "size": 368484,
+      "sha256": "8e6db4584dac0c44a22f33fcfa29bf28d411c8af42c76d59fa8a96dbd0c2ca2d",
+      "url": "https://github.com/rayjhih8263/RO-Launcher/releases/download/patches/pettalktable-0003.xml"
+    },
+    {
+      "path": "data/resnametable.txt",
+      "size": 85038,
+      "sha256": "61751b387305fde34a58942ce4a3ae0fe506ab687a69034bf902fc1329827ffd"
+    },
+    {
+      "path": "data/sclientinfo.xml",
+      "size": 2662,
+      "sha256": "c9e27b9c9adfaa826c1459f69324e911f4207748c139d31deeb61bcc2e437588"
+    },
+    {
+      "path": "data/sprite/捞蒲飘/箭磊.act",
+      "size": 1084,
+      "sha256": "87fa27a6049e15cd3f07979b2625bdfc184559e071bc2ea4c6942b7e12eb69ca"
+    },
+    {
+      "path": "data/sprite/捞蒲飘/箭磊.spr",
+      "size": 2231,
+      "sha256": "ce7038b7bc0598cdb1f31d5c5849558a1686f943c53c7bbddf9fc3f2a0e47cab"
+    },
+    {
+      "path": "data/texture/scr_logo.bmp",
+      "size": 95288,
+      "sha256": "e03b3bd71c245dc391b499b1d483e676a43c1d0dd2d1e3ec59b49d329fc4b2be"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement/reward_a.bmp",
+      "size": 13336,
+      "sha256": "2e8a36c8f62c23d08c1306460c80a5d74e01d45e2aa5877f1c4fb82b53e46bfe"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement/reward_b.bmp",
+      "size": 13336,
+      "sha256": "4922bbfe6fe35d4b43c51889a17b463443c101f3fab8d4c2b180a287f46add8b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement/reward_c.bmp",
+      "size": 13336,
+      "sha256": "dc321dcf85ecbead3cb3f902cdffcb1bcb4576770a673eea4426747d6e31b45f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement/reward_d.bmp",
+      "size": 13336,
+      "sha256": "6d5e03ad86700c24167da4566217fd13b60104e12623e09983feca2814709ec0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/btn_receive_disable.bmp",
+      "size": 8936,
+      "sha256": "aa4a262cc65640ff59ea93e70ee7adf7ba921759bed884b7367a4e021e9e81a6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/btn_receive_out.bmp",
+      "size": 8936,
+      "sha256": "f9c3b9a9f4167c39c60efd670035303c412c4227e49a8da0c3fc8d92e23b2c64"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/btn_receive_over.bmp",
+      "size": 8936,
+      "sha256": "30ea863caae137fd5e8587d950aea2f0aefe992ab9d1d742ef83f21d82d5d6be"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/btn_receive_press.bmp",
+      "size": 8936,
+      "sha256": "85a16f7c2ceafde370830b93637e0330faba5b012b979a407e8e16525d4d3706"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/reward_a.bmp",
+      "size": 13336,
+      "sha256": "abe6e09a6859ab5998424638fd672c9b9c998b540568d0954d67d62f3babf4b6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/reward_b.bmp",
+      "size": 13336,
+      "sha256": "52e6a44c1d77a555c464300721d59de23f812ffe4dd3ed4b4a8f42f52e18023c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/reward_c.bmp",
+      "size": 13336,
+      "sha256": "4445d4502e4c8e270ce2457993d45dc2bdbefe0a8b4ae7599362deabbf314fe5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/achievement_re/reward_d.bmp",
+      "size": 13336,
+      "sha256": "a8534eaa977ab87b366a651288e2c3a199febdaa2c2e173976275cdcab4096f8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/apply_individual.bmp",
+      "size": 5176,
+      "sha256": "625a9779a3aa931d2fb0f13c53d514dbd2052cb53d45971f51dbaabf230f2e2f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/apply_individual_a.bmp",
+      "size": 5176,
+      "sha256": "f84d6dffaa421505737f14ddd9e0847238f517b7a51c33dea4241a9768238647"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/apply_individual_b.bmp",
+      "size": 5176,
+      "sha256": "6fb47ff19fe74a2c729fd5073b55612f0ccd813503242055673c62eec1cca43e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/apply_individual_c.bmp",
+      "size": 5176,
+      "sha256": "8fb3b8813f7634fd57d359280664f7adaa3c7034c0ddd248b4fc93e8a25b1e27"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_1000mil_out.bmp",
+      "size": 2296,
+      "sha256": "3b075de22a982844152ef727e354e4e65c9361a485e5f820da17ca94160a1ed3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_1000mil_over.bmp",
+      "size": 2296,
+      "sha256": "37526fefd831a5ad7288b4b3353d8815da72530647c5d6c1db5eb7f343aa71f5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_1000mil_press.bmp",
+      "size": 2296,
+      "sha256": "6c50f61e4c790bb635c06d16914379a970b188a9ddc2008a977c8b873e091c80"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_100mil_out.bmp",
+      "size": 2296,
+      "sha256": "3e390dc2495d04dc4c098a4eaa4f8fa787cb2f900388cd524d221eb31264a8f5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_100mil_over.bmp",
+      "size": 2296,
+      "sha256": "06ff4ac41c7485a99163c76746df5be8e268d8ee8aecac80ea21ba3b57c904dd"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_100mil_press.bmp",
+      "size": 2296,
+      "sha256": "21896577d82ec7066957668193ea6528838c3f203933c429f1ae792f9bd7c6ff"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_10mil_out.bmp",
+      "size": 2296,
+      "sha256": "3032328285ef5fe0fb36735f3758953a5d9d79be9f5f5d9a4c7dbc28ae4cc498"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_10mil_over.bmp",
+      "size": 2296,
+      "sha256": "b09f09a3f0f8afe2b4ac207d12c78a00253c95dd0b0ed38f119618ac2ad46d1d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_10mil_press.bmp",
+      "size": 2296,
+      "sha256": "27c9aacf35724058a6543fa56e47984719543f3ce084c268e4be41b991d1ef26"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_deposit_out.bmp",
+      "size": 2616,
+      "sha256": "f87c452b99cf7f39faff3f6a6b1abf3f348349eebb6d1b78cabe18a15a3dae89"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_deposit_over.bmp",
+      "size": 2616,
+      "sha256": "ee592bbe8ef5f2132ebea10041648d0210927c9dea3f2be10bd18a2b6928a08f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_deposit_press.bmp",
+      "size": 2616,
+      "sha256": "9f478fffd89a54303d5c7483a6074bb11d88f077aa398a9084db90a79966dedf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_max_out.bmp",
+      "size": 2296,
+      "sha256": "a858335880809fbf0730b124eb5cfcb2ffbecc4a509bab111c8e986e81a8ccd9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_max_over.bmp",
+      "size": 2296,
+      "sha256": "94e632cbd93f9cd4d750f3fc9129387e9fc1226b98ed3f8075dab5aeba7b962b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_max_press.bmp",
+      "size": 2296,
+      "sha256": "982b7bedf9656edc3d1372dd3b2786df18aa0a0481eebc4f610440b2e6181dea"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_withdraw_out.bmp",
+      "size": 2616,
+      "sha256": "ab5820fbd2d6fe47c514eace71a2b2d5093eea8833b1a750c31f6a2d2e5cc558"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_withdraw_over.bmp",
+      "size": 2616,
+      "sha256": "e88e41872b22dec1dcd41ef7efa6e10147db3b68a9e1c57e09ebd3736fca1f8a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/bank/btn_withdraw_press.bmp",
+      "size": 2616,
+      "sha256": "bf84f91eadaa0206b0f5c5b73f23c613597ebef72348a42f81b92038bf761d8a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/add.bmp",
+      "size": 1664,
+      "sha256": "3b79665676feedcb73a2c7b72c95d2b565eea2b195085c88b97d031627590ef0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/add_a.bmp",
+      "size": 1456,
+      "sha256": "e7403ea1ebae78ca798e91bcec31d94f66ae6ad6f105b23f3848df3b7cd8ca8f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_add.bmp",
+      "size": 2392,
+      "sha256": "13f9d98c7e492b2afc02cbe2eee2b96d416b8a544831d85159da0ebbad41553e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_add_a.bmp",
+      "size": 2812,
+      "sha256": "9f478819e15ca1a8cca7ab6a2c5d94f2776e84ef3edcb595e45e60912611478d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_buy.bmp",
+      "size": 2380,
+      "sha256": "f51ba0ac9253fba60fd6b9561a50cfddde4a6e72ee6df82912adca1cce023453"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_buy_a.bmp",
+      "size": 2756,
+      "sha256": "23b8fd4867fd1eb8c6ef1afb24aadd626bb58caedc5ab1e41800cd837504faf7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_menu.bmp",
+      "size": 2308,
+      "sha256": "fdb9757d7b6e736a3559825ebb7f2280d8e7f2c6558d17b0dc6064f23ffc3d10"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_menu_0.bmp",
+      "size": 1188,
+      "sha256": "a63a28115db54952746e1673bee4c6b23e4854df877331295bfe2e098cb03793"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_menu_1.bmp",
+      "size": 1188,
+      "sha256": "d9fbb49392ddd3d91f4c2283e5eee23dead5a0e88e459ec18c06b77e1ee8f3c4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_sell.bmp",
+      "size": 2376,
+      "sha256": "865c3a591b3b8c6ec6c1b009464961172acb555cd9193257b5f99360ce06973c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_sell_a.bmp",
+      "size": 2788,
+      "sha256": "c19e1a2f861dd65ed6ff71e66ce252bd813e4e878c42baf6fad754d57afaf34b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_view.bmp",
+      "size": 2392,
+      "sha256": "a9f69d9e04ce4125ba04b2979de77c071622b968123df6c77ce1acad3afc61b5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/auction_view_a.bmp",
+      "size": 2820,
+      "sha256": "b047ff0d05f7d8bf0f857602311a9619b3c601d0aee40794385ebf6f5b993362"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_back.bmp",
+      "size": 1244,
+      "sha256": "ec5065cde41232530d93fd94808145b9af5d391ff98d6f06d2807b931c881fd6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_back_a.bmp",
+      "size": 1956,
+      "sha256": "74864db0ca8c5251b5499be0ccb63c2979f6e76926b8a7a505eac4e35753d31e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_back_b.bmp",
+      "size": 1956,
+      "sha256": "37bc0af155d916b75c5195ecf5f97b4a090c177c97b3d508802a1b8ac2e4359a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_close.bmp",
+      "size": 2616,
+      "sha256": "1fd23b8835a984ef5cd197168bb0b0cd2306be58c055fd3912dd615368915bc2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_close_a.bmp",
+      "size": 2616,
+      "sha256": "8f42815c0536d63b6b6e4bbb1b80d39482170b8c23fc9af9b1f92d3454172b41"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_close_b.bmp",
+      "size": 2616,
+      "sha256": "ea3daa301c17ebdf83ff2ab646176e77d7392b9ea3ef035d0fe6a407bf2b897a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_deposit.bmp",
+      "size": 2614,
+      "sha256": "06a7dc5a35ddbbcf1d4cd32b1b1349f1ab59dbb111d82712da5d7b0ad0c321e3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_deposit_a.bmp",
+      "size": 2614,
+      "sha256": "fae193942155a9775b90b36c439f4d87e5dd9c7cca456aabc109ee7251792864"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_deposit_b.bmp",
+      "size": 2614,
+      "sha256": "ec38153098e8bd275f5fcf1afc6acf88b07952774e5c81f77c0ebbcb50f8dcaf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_ok.bmp",
+      "size": 2614,
+      "sha256": "633a9837b4d6d97f3c471c154f9f20124bcbabcaa9e12898b364fb62a2c36f09"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_ok_a.bmp",
+      "size": 2614,
+      "sha256": "49a3ca0eda4be5a205352afa72f25be8212743bec7d8b0c87d0fc4ba61082738"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_ok_b.bmp",
+      "size": 2614,
+      "sha256": "a2a1a2e66e67378cacf083b80db2dfcc5396235f7b0be765a32b4f6cacbd3e5f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_withdraw.bmp",
+      "size": 2614,
+      "sha256": "8b82264f293e11bfd5abc19af40a402b26ae8e84181606cce89a0a1eced3ff99"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_withdraw_a.bmp",
+      "size": 2614,
+      "sha256": "685150ec508c023c1dd2eafa76af3401a040471c6a279771eae65c1be5c30746"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/btn_withdraw_b.bmp",
+      "size": 2614,
+      "sha256": "55ddcbd22b8d32927f69470a81bc824331b835453a71303fd1fa2e39dd5276b5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/buy.bmp",
+      "size": 1648,
+      "sha256": "4d1579a9d656c1569f9a874f0f50be72a76ce3f0d327f659a40f9fb145e1f0bf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/buy_a.bmp",
+      "size": 1420,
+      "sha256": "88f3998646af826f6e6feba7cd7ea9e55452f04df90a203c9e6f4f057bc7f092"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/cancel.bmp",
+      "size": 1676,
+      "sha256": "c202ad4570c349fb69f2771f9a5eda094752d6bb71f173a1c3cfd3f98e20ecdc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/cancel_a.bmp",
+      "size": 1456,
+      "sha256": "3ef7db2667c3f058c4c8afcadacedbaa0784205986049d40f1a0f08cceee791f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/cancel2.bmp",
+      "size": 2828,
+      "sha256": "d4d5920c4c2a83f396fde55485a8a137dbfd35ff1980d8f89723ce8b62126d3a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/cancel2_a.bmp",
+      "size": 2828,
+      "sha256": "c35dfa928412a503343756ce6c0a81037f1467b3bca422615a33268e9488d65a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/chatwin0_bg.bmp",
+      "size": 28936,
+      "sha256": "2c681cfe6dacbd0691a7bda2c1f7e8b24aa61da23955e30a9b5beb359790f877"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/del.bmp",
+      "size": 2828,
+      "sha256": "80f02a875b8f1683fdb1af73da9edc35bebad1d3a87c9fff97a1a49903fbb2c0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/del_a.bmp",
+      "size": 2828,
+      "sha256": "cbff9763087ada53754bbee94aeb2385ed633f6e4427401eb4196f1b72491da1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroom.bmp",
+      "size": 1452,
+      "sha256": "cbb0f310255510ecc95eb8ab25cd02fccb729d67a99002083f9830454b4960d2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroomback.bmp",
+      "size": 108056,
+      "sha256": "e91545493827e1a9139b3bc58f599d0d2941fabe44b42db76907570e84acef91"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroomback_0.bmp",
+      "size": 108056,
+      "sha256": "e91545493827e1a9139b3bc58f599d0d2941fabe44b42db76907570e84acef91"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroomback_1.bmp",
+      "size": 108056,
+      "sha256": "ed6dfc23666fde8bff1bca02e39377573a7218088d7eb0fbddc03113d0311e8a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroomback_2.bmp",
+      "size": 108056,
+      "sha256": "2f0d5ddce57de4c3813eb0bd4a9f02d9008d6aba4cde5d7cc218590496486791"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroomback_3.bmp",
+      "size": 108056,
+      "sha256": "8b8963e78c218bf1a2d61a53ac0cc9a1e018b9031358b5de928401e7192f5bbf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/dressroomback_4.bmp",
+      "size": 108056,
+      "sha256": "93feea2d6fbd6f983ced3c3c1cc3fc3e62bd602ff2075c728171b16e94182866"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/finish.bmp",
+      "size": 1672,
+      "sha256": "700763994980728ed7b71a0743a2b1640be875a8c151c5eb2e6e793316257fd9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/finish_a.bmp",
+      "size": 1444,
+      "sha256": "3c28eb68caa7d83c94dd44c3155f5c088d2a8f3de8785b8a8f3b74e1f118b6e0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/inputzeny.bmp",
+      "size": 3332,
+      "sha256": "8df7d2a22c9fce641d2b75bb59ae286c5f88c5f837e15a4d968d708c17f024da"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/inputzeny_a.bmp",
+      "size": 3332,
+      "sha256": "7da032af7759577d176b8803f4475f1723ad73e3afe9d4ec369ddefd6aa244c1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/maillist1_bg.bmp",
+      "size": 121078,
+      "sha256": "02539e9cfdf056627f450b0edae67253c88ecf3f2a1fd76366d5df912c729539"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/maillist2_bg.bmp",
+      "size": 121078,
+      "sha256": "4bd7919514f02b437533afc58438492fa7fd0174c51a6ed3e984295cec44098e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/maillist3_bg.bmp",
+      "size": 121076,
+      "sha256": "3ebe9d0de914a230310b1f5c3e6ecb9fb347e794481c8dc6c25bbf7ab2928d1d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/more_info.bmp",
+      "size": 6194,
+      "sha256": "71022c410960371c45a21180fc3e41bf7eb9925931d501b46e5cc587ed9f5812"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/nc_background.bmp",
+      "size": 921654,
+      "sha256": "6daa66111c29f50b70814833fb55aa14f84536c8e2f2fb738959acb90c3301df"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/nc_background2.bmp",
+      "size": 975416,
+      "sha256": "eb7eeabb9670b7d372c6d50b5a795228faee7613cf47cf015c08def8a14900cc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/nc_background3.bmp",
+      "size": 1036856,
+      "sha256": "e9c589c068460e30ca6e556a8f0f0e83e41128a2231522e061d419977396864f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/nc_background4.bmp",
+      "size": 983096,
+      "sha256": "ab59aa3fa0f0a03be6f5ff8810ec1f6e7d15a118b615a5de2981824bc7b1e897"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/ok.bmp",
+      "size": 1648,
+      "sha256": "4f7135ef01ff8411232d8da7a416b041194d37a2c9f24c8293ffcc630762f5cc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/ok_a.bmp",
+      "size": 1436,
+      "sha256": "83d7e3d438edd09bcbb7b04c7994df283d2053c87590393edf0d84f888f8a71b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/optwin0_bg.bmp",
+      "size": 28948,
+      "sha256": "9905e6bffda0c2704c22afe9c9a215ebca99112b66eb49fdc49a9f21c636d89a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/remail.bmp",
+      "size": 2828,
+      "sha256": "a95a1ceaa6e13e5c0b9250fbd7478900ffd4d97815911179b7f5aab062630e4c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/remail_a.bmp",
+      "size": 2828,
+      "sha256": "3dc90007f0895dadebc4dee8fe62cca2c851c29074f9db14b87700be4049f4e9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/return.bmp",
+      "size": 2828,
+      "sha256": "b0e0533e4da2f88952b386dff437529db7fa3894a6bf3e7bb55532f3fb633dcd"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/return_a.bmp",
+      "size": 2828,
+      "sha256": "4d3a4d5d92290a49d58f3b99637ee78d2dcc3112a3282a7fd6a787d333106894"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnCheck-1.bmp",
+      "size": 3656,
+      "sha256": "fba99bbc22fbbe2723b832a3054ba65e4b8fe72e06ad884f0546d38ffeb6bf0d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnCheck-2.bmp",
+      "size": 3656,
+      "sha256": "d4b57be14005a2e698da5cd215b6a86745b5f79739d9a9684db6ab4fd7d71805"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnCheck-3.bmp",
+      "size": 3656,
+      "sha256": "8487bc5f6fda867c9373d6f98c10c71410abb8cbc75bd50cb81b24c78a7f733e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnDelete-1.bmp",
+      "size": 2616,
+      "sha256": "902976742d2152a1067e05e2556e36fa8720dec41818adbdcf1342042e1acbe5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnDelete-2.bmp",
+      "size": 2616,
+      "sha256": "9b136652a218b54b5e8331bcbfed77117d1c71396057de87a3228ab5c6b6248c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnDelete-3.bmp",
+      "size": 2616,
+      "sha256": "4590c41147ec4af5364cad54700151d7b69860053630256646f83fba290f5ab3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnReceive-1.bmp",
+      "size": 2616,
+      "sha256": "a47fa43401320b8479311da5698e646428587c34dda662e7884255d90b6d7078"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnReceive-2.bmp",
+      "size": 2616,
+      "sha256": "aaf46c6502480c0c34fb31653d27393522cbbcfb4fe41c18b4d88eefbae6e0d2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnReceive-3.bmp",
+      "size": 2616,
+      "sha256": "01a2f7ccd8fc39f4e1f9e96a0f63b8ea07c76d9a06d39b95212fdaa5d9e7ad94"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnSend.bmp",
+      "size": 2616,
+      "sha256": "74c736dad068fa9cffb99e49649a8d4a528249dc3bb38c4c57e23143500c5f84"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnSend-2.bmp",
+      "size": 2616,
+      "sha256": "8698a99f4b51bd298fed5eec295d6ee12543491c4d22978537ded74ed8ce8596"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_btnSend-3.bmp",
+      "size": 2616,
+      "sha256": "1c773e6486a0322d62f59df01eac6eb964aa6fcfd2e3f974a5ccbb17c1ef0b82"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_notice.bmp",
+      "size": 7136,
+      "sha256": "ca188810f85f860d3f60cb5d84b001418dee62b6c116e8c156d2d32104f6ecd0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_return.bmp",
+      "size": 5216,
+      "sha256": "796da6d9e7f99fcd176db683700e6348ac6a1accb3a928cb783e4f48d7bdbe5c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/mail_user.bmp",
+      "size": 6176,
+      "sha256": "ca8934097f6f8aeac4013fea5e2dee0281724853ed799cdc6e5df869974147b7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_confirm_id_disable.bmp",
+      "size": 3872,
+      "sha256": "47933dc5f5e5a45cf5fbcb08a9bdbcad135ce6aa3c7f2fb32a04dd60daf3fd2a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_confirm_id_out.bmp",
+      "size": 3872,
+      "sha256": "d0d65177a22dd39505999fbe0da0100824589db31209937769dfbc5eb5c836f9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_confirm_id_over.bmp",
+      "size": 3872,
+      "sha256": "362f88926145a2144aca78eab2e05a01150f84ebde3ff6aa02e6408cd2d84c5a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_confirm_id_press.bmp",
+      "size": 3872,
+      "sha256": "81695bad480ea05cf6d3fd530faaa576d6f5f6a3e1393ce9a0192c7b80f9ad2d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_delete_disable.bmp",
+      "size": 3336,
+      "sha256": "831516f1b6fe118b9fb0060c3214dc338b2191f1d291daca5a9d9ada31cde604"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_delete_out.bmp",
+      "size": 3336,
+      "sha256": "28975ef9f486833a8ae4b83adec550b12f22ac58b52ae999d3298b01e54f13fc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_delete_over.bmp",
+      "size": 3336,
+      "sha256": "b7485e50d64531d3459ae335159b6e6b52f1ae3a7720885b4852b7cda5eecc2f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_delete_press.bmp",
+      "size": 3336,
+      "sha256": "28a13fb4939d252ca8e5da9269c5a0b2a372b1f284e893c445d4429c89e5c86a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_admin_out.bmp",
+      "size": 6328,
+      "sha256": "201a516dd4c23df14865075c5dcbba671e3bee72224a453983f59ac494df2a18"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_admin_over.bmp",
+      "size": 6328,
+      "sha256": "a39c44a51091ebc829acb0b924d35914dcc76305b7b55e3e80a043ed9ca1037e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_admin_press.bmp",
+      "size": 6328,
+      "sha256": "b84d524851157e6bc5bae3c23458b9fb516b1f0f4f98c416c82e021eb65e59e2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_default_out.bmp",
+      "size": 6328,
+      "sha256": "d5f85702a44e5cf4661cf3ce8a4fc083ff38e9e7924efc64624c381d95212176"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_default_over.bmp",
+      "size": 6328,
+      "sha256": "449b96c30ec7ac74cd1df593afd5727ed676981392aceaa41be62936a7cd91ce"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_default_press.bmp",
+      "size": 6328,
+      "sha256": "b465e1c532c45096b2b1e5129e7dd03c5f40edfec3dc84828ccbe80f8601eeb0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_return_out.bmp",
+      "size": 6328,
+      "sha256": "3a423d4367282eb0d31c113e5a6efe5f9495df349a581aa5eff2ce018e77d750"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_return_over.bmp",
+      "size": 6328,
+      "sha256": "e5b72901aa94ff2154ac04858f5e10a76801cc378ca682e1ddbbe5e36050aaf3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_return_press.bmp",
+      "size": 6328,
+      "sha256": "01a6165d694dcaf1f4180100a8df1b27bbab343ebed4a4099904217e691c4b68"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_search_out.bmp",
+      "size": 6328,
+      "sha256": "551d8300c1c9bfc451cddd434323f869eba612c623d782751f056e2eeae8a290"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_search_over.bmp",
+      "size": 6328,
+      "sha256": "89efb1948e09df03c51655fbebbe6f65b4506b4499d44e5f8b5d94692a699fb5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_listtab_search_press.bmp",
+      "size": 6328,
+      "sha256": "cdd6f2ac7194ae7263c3742b8ab0b80cc2334dc3a6ed5cdf73a77352cbe0f982"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_reply_disable.bmp",
+      "size": 4296,
+      "sha256": "705d719428e183ff310747cc119dcd24055a6bd0bfeac15e7c0cf3b4c306c74a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_reply_out.bmp",
+      "size": 4296,
+      "sha256": "6b9a8868747fe831352fbb7b1bc66f152eece1f98d6687c3dd8d0a19113eb724"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_reply_over.bmp",
+      "size": 4296,
+      "sha256": "7d1f7d8a439cc85cfd957810ab3e8a4df8646fdbb0bb70e0b694faf500c22dce"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_reply_press.bmp",
+      "size": 4296,
+      "sha256": "4c5440ca30d61b0dc350d23cf7e24497af4b955b0dbb49253cc1ae6e0bfbd526"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_send_disable.bmp",
+      "size": 4296,
+      "sha256": "eca817e17285acbefe44e62ccc8f1e7f37b6d96e64b9324f6aafbc605a2b3f33"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_send_out.bmp",
+      "size": 4296,
+      "sha256": "eaaee2a86ca9e27782ee6998a3c2a808de16a63b22def6dffd07ee0cc7689770"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_send_over.bmp",
+      "size": 4296,
+      "sha256": "64f9a8117588ca51dbe14b077b7ad1ceb8ee32d5e3a308585118f3fd26ef1125"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/rodexsystem/renewal/btn_send_press.bmp",
+      "size": 4296,
+      "sha256": "68a0086dd7c613cc0ba566eb0900722528c7432f6f93bb2ffe12260b40d9c76a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_blacklist.bmp",
+      "size": 4296,
+      "sha256": "82e01ebb62e04d3cc9b7aff561e92097f97a473de92fb443158671e7e664cf41"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_blacklist_a.bmp",
+      "size": 4296,
+      "sha256": "f1d8e6f248bc064eb0631ee6b56a68ae5a6b70b0e6f9ca399a92f8e752b7ea7c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_blacklist_b.bmp",
+      "size": 4296,
+      "sha256": "b3082d24afc7f74b53297415d1d3f55ad1674141e539a4e79c8ccd9492d5ae71"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_callmember_a.bmp",
+      "size": 2616,
+      "sha256": "c962e34b7a7e9145b6642ebeaf9804d8e74648e71462ccef8d18f5995c58417e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_callmember_b.bmp",
+      "size": 2616,
+      "sha256": "77c0bd61f0310169e227c36501be8a5d3be4c6becc798cc3917f2f1a63b609a9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_callmember_c.bmp",
+      "size": 2616,
+      "sha256": "f78cdddbb33e5256d478e15e3bc05821bb04852740e810abce202083e54f8d72"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_clear_a.bmp",
+      "size": 3336,
+      "sha256": "874a8ee1d7acacac4e0f51938d2e8b33cd8fb25365f5a4f6853eb6a2e5af1ee2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_clear_b.bmp",
+      "size": 3336,
+      "sha256": "c0369a62c3c59a1629f9bdb4f84c179befc0771910af96acc09bdc8e29b7331a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/btn_clear_c.bmp",
+      "size": 3336,
+      "sha256": "e44ee2c815a0cc266e9284d906aec8bbb7053ec36afac296635b80db3723e6d3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/recruit.bmp",
+      "size": 3336,
+      "sha256": "bd8e8576d7bea55c9ff478bfda61cf5ab82daac410d232ca63ed3c9c1c6d6681"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/recruit_a.bmp",
+      "size": 3336,
+      "sha256": "c407f21031ce65c3e983615f4d0b9fa179872aaae88d9a476593abd9839dbccd"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/seekparty/recruit_b.bmp",
+      "size": 3336,
+      "sha256": "dd020fdf687e9117c1532dfbb36367f17d70c1cb696858096d3c5dff5184edaa"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/send.bmp",
+      "size": 2828,
+      "sha256": "e16e8375f06f73c730f0ab78d8a75e96c24168c12c7520897fb1debfaff4f987"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/send_a.bmp",
+      "size": 2828,
+      "sha256": "e4a4ed6aad22cd25d8596baec6b10608b5c5ac77cd504cc62afc026611bce44b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/setzeny.bmp",
+      "size": 2828,
+      "sha256": "df67507bcf52f7a993b564865468dc728e136d9a895bf65b6b370480c6be046d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/setzeny_a.bmp",
+      "size": 2828,
+      "sha256": "6e63ef9783ac7cef36e567671cad9a4551c1fb38f006d05c68df1936758f816f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/statwin0_bg.bmp",
+      "size": 29000,
+      "sha256": "722c7d2d513348c3b5cc119a8e8df12b4a508ca2babbae10d9b3a5e388f8a17b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/statwin1_bg.bmp",
+      "size": 29052,
+      "sha256": "e677a626e7b56b8d3a06994a0bd26a45a455aafcaa0217c151a5c108ddcb8b07"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_01.bmp",
+      "size": 14156,
+      "sha256": "23d735040bd789c7bebd25af34e16ab83e67dfdb2685576d7f339857a2601c9d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_02.bmp",
+      "size": 14156,
+      "sha256": "a9dfe57da594d5ac56e8ad5f5a8f842a8b210bd7257bf8f1e2da6c750c5f3efc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_03.bmp",
+      "size": 14156,
+      "sha256": "df2605ccd106dcc7665a29314a8702494ef3cd8b5d3c57183fa239c331051d96"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_04.bmp",
+      "size": 14156,
+      "sha256": "d90f515497f4dc7bf08550f0f56125791bd5a3d1d6823dd75a55e2448500e4e4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_05.bmp",
+      "size": 14156,
+      "sha256": "3d8c51944e2731e00a0db6e10714ccf6f62f72b5e16161ca7a57092b574bc117"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_06.bmp",
+      "size": 14156,
+      "sha256": "c1e910b778dc3580ed987c24b7732354ce1f9963f0aa3dbcee247c7bb87934be"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_07.bmp",
+      "size": 14156,
+      "sha256": "dcffde1c18ce29698c54280bbeac2da97e4057106c9d1a76caddf87e6ba0e4ae"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_item_08.bmp",
+      "size": 14156,
+      "sha256": "9f2e6c8113aa579a0f25ffe84fe45862bdec50e688ae89a70774c593571e2328"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_01.bmp",
+      "size": 1768,
+      "sha256": "78cae8a0fb863ade1c63106c179324d4e52410ca021ce6c10ab05e5a505b4366"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_02.bmp",
+      "size": 1764,
+      "sha256": "a760c34ca65be35598894ff84cbd180e54bc7e65ac3072103fe47c088ba70bc7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_03.bmp",
+      "size": 1752,
+      "sha256": "2c02276663053028a974144b4fe15e3506942391f9e363cdc831dfd1046bb7d5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_01.bmp",
+      "size": 12596,
+      "sha256": "1ad4fa2baf774d05aa5c568ca997f79d80f4744812360c3626e60a967af63ee6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_02.bmp",
+      "size": 12596,
+      "sha256": "d36ec944c5a86be389e57731b4adc7aea94215bc7b48fa534d2fd9b1734a6034"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_03.bmp",
+      "size": 12596,
+      "sha256": "b3f4163f1aa540686bed1fe004f9ae6c8d8e04927038542dde843049a077b141"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_04.bmp",
+      "size": 12596,
+      "sha256": "bd5ab7faafe89baa90c5fadb7147984c7505d0836932a197285bea5f33e81d80"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_05.bmp",
+      "size": 12596,
+      "sha256": "13c584b6cae61e81399f7fec8ad949bd7c933f08f51d6d944fcb3e2b1eb6dc39"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_06.bmp",
+      "size": 12596,
+      "sha256": "e74a69c8a501c18c5b586861164115aba24b043d38190088656c8a0555bbb599"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_itm_ex_07.bmp",
+      "size": 12596,
+      "sha256": "2aef305b6fbe38c6d1b0adcbd9440761086e2a52285b7f26b7aa28bf85640faa"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_que_01.bmp",
+      "size": 2092,
+      "sha256": "bc41e407d22b45ae785b2332497b7a1f2fcf5bf2722360c723526c9bd5db8e63"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_que_02.bmp",
+      "size": 2068,
+      "sha256": "406ded1c07e3bc0d850d32f270d9dfac49554f4bad3f01aae42a9cb83cfeab07"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/tab_que_03.bmp",
+      "size": 2044,
+      "sha256": "5f5859ba2f694bb8144b723c8ae27a99abb4d11638775e4cf47044d1600c52b5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/basic_interface/win_bank.bmp",
+      "size": 43744,
+      "sha256": "043ca4337123339056f572b835fc7442cf6e9cb5a8a709e311a73fe6b1f87a33"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_guild.bmp",
+      "size": 5176,
+      "sha256": "03abf97c297535e97b91532c3a98edb899ce63d5748f9c60b74b0e07d087e95a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_guild_a.bmp",
+      "size": 5176,
+      "sha256": "cbd19cb0e38056ccd15a540b37c7b938ff2d2f6988d7b5152be0f77291c46f38"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_guild_b.bmp",
+      "size": 5176,
+      "sha256": "e066e90715bfb8f21bf8993c83627793b51519ff27f08f2c2eb63277dd6589e0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_guild_c.bmp",
+      "size": 5176,
+      "sha256": "57d5d15c88577a9ffc68428a4f7be76710453576ffc1b724a34aa1fc23ed2aa6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_individual.bmp",
+      "size": 5176,
+      "sha256": "625a9779a3aa931d2fb0f13c53d514dbd2052cb53d45971f51dbaabf230f2e2f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_individual_a.bmp",
+      "size": 5176,
+      "sha256": "f84d6dffaa421505737f14ddd9e0847238f517b7a51c33dea4241a9768238647"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_individual_b.bmp",
+      "size": 5176,
+      "sha256": "6fb47ff19fe74a2c729fd5073b55612f0ccd813503242055673c62eec1cca43e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_individual_c.bmp",
+      "size": 5176,
+      "sha256": "8fb3b8813f7634fd57d359280664f7adaa3c7034c0ddd248b4fc93e8a25b1e27"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_party.bmp",
+      "size": 5176,
+      "sha256": "4b0344fbac18e82573ab3444777d4ec2b2be6d90a278f1ba425b99b4b1a316b1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_party_a.bmp",
+      "size": 5176,
+      "sha256": "0bc343042c02cac1857f0252388e023bdc3d10b6cfbe896a04f9b29685c301ea"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_party_b.bmp",
+      "size": 5176,
+      "sha256": "70a7a9dbbf5a921964c04a00060bfea0150a9751cacd49d280f159b4fd86b375"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/apply_party_c.bmp",
+      "size": 5176,
+      "sha256": "ebc384424dd729e7e0ff9eae9547423b825677c0138e33166016962972f23ccf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_help.bmp",
+      "size": 3336,
+      "sha256": "5981ce3c9b1be327edc4de26ce35b1fae151d0e572b08adf758079ac0c04b6b9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_help_a.bmp",
+      "size": 3336,
+      "sha256": "bac4ee6f0007af461a3e59e0347065e8c06a12c364041f38d3f876db69023e25"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_help_b.bmp",
+      "size": 3336,
+      "sha256": "7d1db0a75c3001ddd51d226ac498d884dc291725e2c1371f228551784112281c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_join.bmp",
+      "size": 2616,
+      "sha256": "b76c476c4fa9cd5c07013c5f3959da56136f9579231b8bc62e1502cc8b8ce98c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_join_a.bmp",
+      "size": 2616,
+      "sha256": "b729c67587ad5f6cbc6470b6dd545c33cf327fd17193d60eea4e95e26c15058b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_join_b.bmp",
+      "size": 2616,
+      "sha256": "f45c342f024517aa5b3a4d1c269d40a22680b1f34f46286258134e3485f580e7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/btn_join_c.bmp",
+      "size": 2616,
+      "sha256": "dc3e294d21038afda1f928af0ea9ade6d31dd1a672dbd29af151ee659a2b5ba2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/cancel_waiting.bmp",
+      "size": 4136,
+      "sha256": "3faeb8b879228b67ac9b5baf09ac8c540ed24c6a375e0de0004fb547526aeaab"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/cancel_waiting_a.bmp",
+      "size": 4136,
+      "sha256": "1a28eb407f4d3716be0cc138bdc8be13093e581b1a8dacf4c805d607833c82c1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/cancel_waiting_b.bmp",
+      "size": 4136,
+      "sha256": "fe0d3346005c309affef3a2e8fa1edfc05af018c7cabba218ebe460d4b6ca3e3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/cancel_waiting_c.bmp",
+      "size": 4136,
+      "sha256": "6b46032b1a962b15776584accf3faaae359cb127b2e0229b705cea0d3c48a8b5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/battle_field/no_battle.bmp",
+      "size": 83094,
+      "sha256": "7a4ddbaf57af5d457ed51f94021412a5f05f647c0e963a9999d94195d67e8741"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_add.bmp",
+      "size": 2616,
+      "sha256": "2a5edc85e2cedac60468e072bcae8a6e97eefc086c668f0be9b6944d00baebfd"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_add_a.bmp",
+      "size": 2616,
+      "sha256": "fbbfa6532f9b02c66609ef8b6bac30361cc7b6e3f7d1fa914512f3cf61364a7b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_add_b.bmp",
+      "size": 2616,
+      "sha256": "50e5bf28ffdcb63505e3f201763c5d2e947f488b78577dbf0943f51feaa7f9a4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_agree.bmp",
+      "size": 2616,
+      "sha256": "3b1ef2ae1a37a932c732d915a87da51d07ee355ddcbeaf11d2d5f9d04d382e90"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_agree_a.bmp",
+      "size": 2616,
+      "sha256": "e7cf115e68c8dbbbc5a320bb19e9a3b29d1fdb3e092fdd89be6c7fcb05c36663"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_agree_b.bmp",
+      "size": 2616,
+      "sha256": "6f909c76c68eb6dc7e80ba75188ad86cfe49afdd5c363b924d83ff958394de85"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_apply.bmp",
+      "size": 1196,
+      "sha256": "f005fe3a7db5efc003ba06c0ea955a6907c854de06bdebc13103cd493fae0d2e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_apply_a.bmp",
+      "size": 1924,
+      "sha256": "c9a5dbf220b9d8e9a9025568c8ec542a156eac8743d770a173e9f14c4dffc71f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_apply_b.bmp",
+      "size": 1900,
+      "sha256": "5fb45b5b5d5f5b7c4476549b535137fa44c413d6cd3b5475b3ffb7d07b1c2ecf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_back.bmp",
+      "size": 1264,
+      "sha256": "f413bf71cecb50c93411c29c83404d8115df7bead9a2aee6a667d3564759056e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_back_a.bmp",
+      "size": 1960,
+      "sha256": "730b3855f5610718154a14a227409b9d1a7c3e043424c0cb0f8bf04bc2b71d6b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_back_b.bmp",
+      "size": 1960,
+      "sha256": "544a88446d73259e808bc6d42a5301461eb796e64424dc85a05fdc3320205744"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_cancel.bmp",
+      "size": 6056,
+      "sha256": "24a4a18a9d00c9266f1693156463328f17ed8e11397ab2015aaa82523322a138"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_cancel_a.bmp",
+      "size": 6056,
+      "sha256": "83f3c921e3800c96a8b234376af4420fab05df469c3deee3aeac3127ff41caef"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_cancel_b.bmp",
+      "size": 6056,
+      "sha256": "2b99df0e90046f99d04ba347f66b9aa7f2db710bc666252bcd51ee999c188817"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_change.bmp",
+      "size": 6056,
+      "sha256": "094ca4c8be1f007cd91bf74ec1d7878ca102c30e5e7c02432b189beb6279b48c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_change_a.bmp",
+      "size": 6056,
+      "sha256": "da2b675836d25c8fd87dcbd638fb35187b58fe8e0b4359d873836cdadad7ac9a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_change_b.bmp",
+      "size": 6056,
+      "sha256": "b885331548ab22e18480ab2b9ff80fff2d4657d9c75e6c06224a1267b748078f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_change_c.bmp",
+      "size": 6056,
+      "sha256": "edbd4c040f65641a12aea7a865edae39d33ffeecfe33bbdae555505c3d03caad"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_next.bmp",
+      "size": 6056,
+      "sha256": "07241324adc02780b480f0b7b71c352954939c49313bce36f84fe079462da960"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_next_a.bmp",
+      "size": 6056,
+      "sha256": "29e97aac9c9db5f5e70f8447388eda889ccd184141027eddab15979e1a5e4ea1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_next_b.bmp",
+      "size": 6056,
+      "sha256": "523e65cc35cddbbcb8cda6235c1ef01ce89a10316be9f0b47b9cb903c655e3fa"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_ok.bmp",
+      "size": 6056,
+      "sha256": "39c7c4560b7a0bd8855ee4c76f3309b2e6be784784e39e4d3382755cfa0b0347"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_ok_a.bmp",
+      "size": 6056,
+      "sha256": "908d9d2dc4380fb26d9ef48b4b81b7cd921c56bcf6de3b4e6d1aff3b92c7d744"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_ok_b.bmp",
+      "size": 6056,
+      "sha256": "87b4dfabb4a32fe1de4c2600910a7b3c9db2fdcc8f3a40ec34d8cb48a8551341"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_unused.bmp",
+      "size": 6056,
+      "sha256": "b3799f61a465df6485b24b495e16321fd415975cfe693b20bfb3a7dbe399b0bb"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_unused_a.bmp",
+      "size": 6056,
+      "sha256": "240297fc14d6c7c062f02ea647c57b1169bceb7b12e3d6f9373e4c65ee479442"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_unused_b.bmp",
+      "size": 6056,
+      "sha256": "05fe219234b0e359843d1f8c70320a61c78851e813bfe2372cabc8089ef4e60e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_unused_c.bmp",
+      "size": 6056,
+      "sha256": "788b460dbefa28e3726443913aba327da3013843f737490c8e2c43c8bc50cc00"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_used.bmp",
+      "size": 3656,
+      "sha256": "5dfd486a3aa216eefce9de7c43f9d4d1c56f746f08af20ec07a5173becc14a17"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_used_a.bmp",
+      "size": 3656,
+      "sha256": "7b6b0bcaa137ee42b61086189d1221970a562114405f5b6197cf75d9ba70063a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_used_b.bmp",
+      "size": 3656,
+      "sha256": "8c8e4e2b6e3605b9a71a959d546f186f9d9458896b999f1290572f122c324c9a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_big_used_c.bmp",
+      "size": 3656,
+      "sha256": "04738a48c89fd852dcf275d3423b64698f318b37705fcdf1b11b11a64022f8f8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_buy.bmp",
+      "size": 1264,
+      "sha256": "69f306898fc35a313c49116dd83baba7ecca3001cfb2fe37ae634b227e46a387"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_buy_a.bmp",
+      "size": 1960,
+      "sha256": "625f7b341df63f054235c70b7a7350938a9a8bf0e0d1ea1e88bb7d7401cdb800"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_buy_b.bmp",
+      "size": 1960,
+      "sha256": "104d721e06f090fe38363cfaceaaf4ec44ed961c5ba60efc01257199d756b48a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_cancel.bmp",
+      "size": 1272,
+      "sha256": "125efee8d9f9190e134a7dc802596a3f3ae8660be34ea4a7dc3ecef91d3ea341"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_cancel_a.bmp",
+      "size": 1960,
+      "sha256": "cf1c8ed5deefae490c411e231203cbac6d9f458a584c666520bd5f92056ec8f2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_cancel_b.bmp",
+      "size": 1960,
+      "sha256": "1a66f1bc414c730767894adb5109ac6bc555ca40f8da7fb10d76d68ca9e3a845"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_cancel_res.bmp",
+      "size": 4136,
+      "sha256": "17c263a86703fba6fef24e964ceee5c309ed5a792216612542cd01be71700b6a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_cancel_res_a.bmp",
+      "size": 4136,
+      "sha256": "c8bc25e62c6009881572b7a2134db6d62d589f375f0889fc36048c41833daf53"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_cancel_res_b.bmp",
+      "size": 4136,
+      "sha256": "ed69c794fd540fe69cdc5905891ecd7520c35bf22fbb4601a97a449ec91175ca"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_charge.bmp",
+      "size": 3896,
+      "sha256": "4bb0ed746812d2895a8b18f513b6085d2f4c1fa85c984f44fa700e014e1c41a5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_charge_a.bmp",
+      "size": 3896,
+      "sha256": "3232b2b72e4e376b0549a9c9f08d96cd51b8f4c2763ac6575638b442e467acc1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_charge_b.bmp",
+      "size": 3896,
+      "sha256": "11bc08ac8b5202697affae7b4ce0f08aff64224fe3dda08d2484bf2c8de0bf34"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_close.bmp",
+      "size": 1268,
+      "sha256": "6916582ffcf334c330d7382c8405d7e710a0366a70cb5bebd0efa9c4cfcce281"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_close_a.bmp",
+      "size": 1452,
+      "sha256": "107974b7b19e67efec39ff1223dc53e6a1d72b71fa47c57b8555f08f6a9a505e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_close_b.bmp",
+      "size": 1452,
+      "sha256": "f39ccaee117683e15f4814db3cb6daaf5f00aba081bf05c56ada422e862391dc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_del.bmp",
+      "size": 1252,
+      "sha256": "0572dafc6597a78fd9790eddae70ba9f54df11f77f5ec4c4afc938bbd6c9fe49"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_del_a.bmp",
+      "size": 1960,
+      "sha256": "dc209a053937ea41bdfc08163f99913381338938a648b4c62346dea055af08db"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_del_b.bmp",
+      "size": 1960,
+      "sha256": "68c69b429a0faf111373e91d4006779e5b82f8b2f4c1f6e1b475f978bcf609c2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_del_res.bmp",
+      "size": 4136,
+      "sha256": "3ccbcbafc870880c541a64387f4247c7f4af6ee3f47307d36eff30e37e390640"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_del_res_a.bmp",
+      "size": 4136,
+      "sha256": "13fb437a8ec8ef264e137ab26901ed76fcfd11b974cf9e30b8de3c1d80406ade"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_del_res_b.bmp",
+      "size": 4136,
+      "sha256": "377409e8a4d86ef071037a467064954808b98ce231cc32dc73b5ddfd55635607"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_disagree.bmp",
+      "size": 2616,
+      "sha256": "72d96116f6f00c8cdddd0dead314ac2935f847b184a7f363df27e149d8be3d38"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_disagree_a.bmp",
+      "size": 2616,
+      "sha256": "c91e50ae57866c9833bfe9a608f52bd3869cb46eb9c4359e96c9a24ef8640dbc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_disagree_b.bmp",
+      "size": 2616,
+      "sha256": "53da9eb888e2b50f8c21efa1299d5c7aa789bdf60d25c88638cb9784ddcb3f81"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_disband.bmp",
+      "size": 4376,
+      "sha256": "f0bf4892a3a161f6e1c982cc519a3dbc7963dc379689c57ae5c6124f4c28293c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_disband_a.bmp",
+      "size": 4376,
+      "sha256": "9bc2ac4e93604eb6ff4e31b00c61501c8d02c7a89e304ebb08b1a2a012966551"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_disband_b.bmp",
+      "size": 4376,
+      "sha256": "59aec5cf04366f2b1458951a179847cf48d99d225d5c8a98d721dd98b23ec622"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_edit.bmp",
+      "size": 1276,
+      "sha256": "7c845000fae0c8846964cda71bb5508708c56d9e37aeecb716fe0b2fe9414f8b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_edit_a.bmp",
+      "size": 1960,
+      "sha256": "2978f421209eb4b16663c792f7c47228857754cc6a7522ed2ee08d0989d89302"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_edit_b.bmp",
+      "size": 1960,
+      "sha256": "886eac1f43d69db7c44b41e9a5a5e0147cd5b1f259867bf21205b3e6757b61ee"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_emotion _a.bmp",
+      "size": 2616,
+      "sha256": "ea57241732a11e906dbef710217275b8aa3809095a4b6970e1f723a60ae70ce0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_emotion _b.bmp",
+      "size": 2616,
+      "sha256": "a7d426d1efcea1e60d452726882b560bf57f932d2eda2c5572668a56fcbd5d3d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_emotion.bmp",
+      "size": 2616,
+      "sha256": "d01dcfef17f1f5c4142a5f3bf7b86bc5d69738b1b3888d246ce69c382358e431"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_exchange.bmp",
+      "size": 1264,
+      "sha256": "a5284a492c3986668075cb3e91ed89a30f7bf16745253a1a13746c47c95b5a8e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_exchange_a.bmp",
+      "size": 1960,
+      "sha256": "09b42731fdee610f224646ac10a4905797956d2d1e5e87143ecf42bb4190810e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_exchange_b.bmp",
+      "size": 1960,
+      "sha256": "dab72c45302a54d118b06b4ffd88a0550b5a46080ff57838228dd4a16fd81ccf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_exchange_dis.bmp",
+      "size": 2616,
+      "sha256": "a8e08a2889934403eb54577482efe0c949c5067de694599761fbba1399c7da45"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_feed.bmp",
+      "size": 2358,
+      "sha256": "5dba4a436497b35ecbb4efa1eeb1135ea16c0f3b2869e9837ee5e0b9665e7f15"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_feed_a.bmp",
+      "size": 2358,
+      "sha256": "326cd330be8cdde83eec454952ce4b905e8df4ebe11fa35783d27da37191d846"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_feed_b.bmp",
+      "size": 2358,
+      "sha256": "95b7f0740f3e6668ef53b5a8435660643c48eeae90f687698ee5aa399db9b32e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_find.bmp",
+      "size": 1252,
+      "sha256": "f44d6ea3c71bd5937e531c82022924fa5c0079fc9d87d2bf8dcda394940a3f29"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_find_a.bmp",
+      "size": 1956,
+      "sha256": "d8133dbbf6d3f51c220d54bd8d030b4f26c466efcd349b31e8ec0fb69f5b2c46"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_find_b.bmp",
+      "size": 1956,
+      "sha256": "82ee7bf3768d756548d9496a6ef116008d3b9173aadc8d823e8328020a57b6b8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_fired.bmp",
+      "size": 1284,
+      "sha256": "ab5671a6e592ccf7379327fc930dedbf0b232676e52db258bbdf0a3a60eb1d1b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_fired_a.bmp",
+      "size": 1960,
+      "sha256": "838bdabbf5c426e5ab74c63c119b19ee7e00220b10f649d15e73070c424c39c8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_fired_b.bmp",
+      "size": 1960,
+      "sha256": "e4bc2a493626a3ff4b9c00c4246ba7be35c7fc73dcb45c99f1b2d647cb549b95"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_friend.bmp",
+      "size": 2616,
+      "sha256": "91db9ba90d6e8fa25db399e9f0bd922246660e600ca9b325d42fd974c62e5944"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_friend_a.bmp",
+      "size": 2616,
+      "sha256": "924e9b97d316e44e36d61508e7dac8d8aa771c1ab2b079230496ea4019b65525"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_friend_b.bmp",
+      "size": 2616,
+      "sha256": "6e9615107518538993e5d2b79d60596b04bc87ab51113c66fd5a4fc15bf46770"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_get.bmp",
+      "size": 2616,
+      "sha256": "9d56b0b8bc4f8214cade889f293eec36886d1516e5b9a48fed3bca634e38690c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_get_a.bmp",
+      "size": 2616,
+      "sha256": "f9089e7089e9cb5eb3bc4eed96ac29569a1acfa2f8307b1f946128873b4c2db6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_get_b.bmp",
+      "size": 2616,
+      "sha256": "f0e8e06a305916c3b59b63471cbb1dd425ad77f085726a45cb9b6f0f52069b60"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_help.bmp",
+      "size": 2616,
+      "sha256": "13ef9343b009c9c827f2666d5e818000c1ff292f60c609437c86b3f0f6b3bbd7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_help_a.bmp",
+      "size": 2616,
+      "sha256": "29d019cbed1bf5bbd63d00c408ab63ee5b8b233d2d1c8c7df8649a032a09d536"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_help_b.bmp",
+      "size": 2616,
+      "sha256": "f717c88a0a1449fda3d6217a19b95b918b02afef0acc68f6635df49b8568a408"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_help2.bmp",
+      "size": 1024,
+      "sha256": "a1d5fcffd8cbd16d35f5b7536121ad585ad703234d7b565acc571d8d773a85ae"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_info.bmp",
+      "size": 2616,
+      "sha256": "cdd5acf4dc9740748bf6d58bb3d4de1080fc5c9d079d6adc6ce7e09432ef6c13"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_info_a.bmp",
+      "size": 2616,
+      "sha256": "11435e3e46eb3cc522573222e09b7fc7d7c90d517076a6055ca83f40bb179b87"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_info_b.bmp",
+      "size": 2616,
+      "sha256": "adc0e76bb9004edea057e03b27915b40fc5611eccc745ced6c83c54a3c548116"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_intro.bmp",
+      "size": 2616,
+      "sha256": "cf0c33b20a6669098db8b19d09e8208c64664817ef0caf4a4639604f3ec89ba3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_intro_a.bmp",
+      "size": 2616,
+      "sha256": "054be0087241c75bb89b7dfb49bba2c3b4862b7c8dcba03163dd23cb2fb901f4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_intro_b.bmp",
+      "size": 2616,
+      "sha256": "3991e27fd53c27a4454cf9ab980c01d555c7f0b3021842c888056595547bd801"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_learn.bmp",
+      "size": 2616,
+      "sha256": "ae0e503222d157f7abd85c9bcec31030e94866a5e176de49c5e6bfe1b10f986c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_learn_a.bmp",
+      "size": 2616,
+      "sha256": "1af3ee0aa547200bdbdb97d402e1dfd830bc90aff075939337f13eaa0eadeebc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_learn_b.bmp",
+      "size": 2616,
+      "sha256": "f2475fc5110ce6febe93d2478d601a4ed7acd5bfc10b221d6466047f760354e5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_list.bmp",
+      "size": 2616,
+      "sha256": "d54acc3e41198a10c5912bbd28ea466bc25d2e82fc5fced984c37ec5b694cbe4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_list_a.bmp",
+      "size": 2616,
+      "sha256": "16eb9d652a4d4a36589c194bd645caa30cd918729f055aa7c373caf92abdde2b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_list_b.bmp",
+      "size": 2616,
+      "sha256": "5de914b0c9fa57fb2e07c7304fcda78d16c94c74c428d68b39a001a0c69aee0e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_make.bmp",
+      "size": 2616,
+      "sha256": "c9140d1cbf1b144811da680206f2ea72d3a97c1e252502f2dc57dd97a6ea344d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_make_a.bmp",
+      "size": 2616,
+      "sha256": "c186de852ed2dd5eb82ee7d49d764aa3e9221e2c406f53fe8d2c64288c70d576"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_make_b.bmp",
+      "size": 2616,
+      "sha256": "65f8d42dab4a56a8aa9ebe622e018e48ebdf4db9011f9b37fbcfe17501c85405"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_memo.bmp",
+      "size": 2616,
+      "sha256": "2af0dab176a978ad5feccb815122ad472949a7e624e8600dce061c96156c4837"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_memo_a.bmp",
+      "size": 2616,
+      "sha256": "e393127bf124b79ea35a5f82fd52325e6783342c691f7f7e6fda518d00f571b8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_memo_b.bmp",
+      "size": 2616,
+      "sha256": "c3f69e07801eb2d1cc1551056b2b7ba44902244cc155e7c9b0aaebe8577002ff"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_next.bmp",
+      "size": 1268,
+      "sha256": "9dfde23ae5b16c53665d061c090c214e5079a2ecc1c3195186c320c601ee3a95"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_next_a.bmp",
+      "size": 1960,
+      "sha256": "cb5a5ce08365dc090ff8d9f4269ac9f38c57888dddf4b96dcb9b00802e166431"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_next_b.bmp",
+      "size": 1960,
+      "sha256": "f2246439a0bbc15c445bc4e36788d1ce8c06d0fd7bc032ce4505bc4626f5e7d4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_ok.bmp",
+      "size": 1268,
+      "sha256": "da108031b9038355ed6c3f40e498fc9dceffe7b391697e6d70a3f38bd125109d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_ok_a.bmp",
+      "size": 1960,
+      "sha256": "0b31bbf4f6ff62e5015970727d5214d81ac5ec3b13e412eb535f789fbb978fa5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_ok_b.bmp",
+      "size": 1960,
+      "sha256": "2b63273e6c4baf4e30aa83e8db5b9c51e80818a5e872ac3b6655f965e3e2a078"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_ok_c.bmp",
+      "size": 2616,
+      "sha256": "7b18b951bfe9c00cc4e1eba12f3b85743afc680d29540d30ea7d76cc9822fa00"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_ok_dis.bmp",
+      "size": 1232,
+      "sha256": "29522b5b740ee4f87c5d7dd410ab5fc8a23fcc1d17571c96422de212f9ee769c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_q_active.bmp",
+      "size": 1348,
+      "sha256": "16d3dab891601c5f884a15fba3db1e5f711fba657e94f4e51a5cb21799fc28db"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_q_active_a.bmp",
+      "size": 1604,
+      "sha256": "d7c82a3b4d26782e63f791ef399510a5d3fe30ea53789acf8d023a47c0bbb973"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_q_active_b.bmp",
+      "size": 1528,
+      "sha256": "6fc910db8376fbbddcc0990baff13b7315ed609796cb89e196d2602d085bdaa9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_q_inactive.bmp",
+      "size": 1360,
+      "sha256": "432d45e3a8dc7c4c76faeebe52e37647803577d5372449ba3121cae9e2a1201e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_q_inactive_a.bmp",
+      "size": 1628,
+      "sha256": "1a98263208e8d6d7c447ac5a13a17f330345823e97f961202d7d66a508258fd1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_q_inactive_b.bmp",
+      "size": 1472,
+      "sha256": "9469feebd20b7cf891b6251976235ecda2cce4e89c59c806aea2fd9e300d196d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_refresh.bmp",
+      "size": 3656,
+      "sha256": "83622ce3908d09a5ce51b0d3e13851efe56041ad8e6a3dacc2023be617049632"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_refresh_a.bmp",
+      "size": 3656,
+      "sha256": "d96ad25d095b60843e85723a4339998494ba57291a3d033330466eba1391145c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_refresh_b.bmp",
+      "size": 3656,
+      "sha256": "bfa2c3a6c75bfefa8d01d80ce4463ef058a97dcb1e7179dd586612fcd2edc36e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_reply.bmp",
+      "size": 2616,
+      "sha256": "7924ec6812933a061fcabef1cce2c520d0dd927e8bc65ff63990b60ece0b90c6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_reply_a.bmp",
+      "size": 2616,
+      "sha256": "67fd167068b17ce83290718307f9d55f0a3f1563da4cc7ea894163303123bad3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_reply_b.bmp",
+      "size": 2616,
+      "sha256": "4832d03dfabccfbfe19e3bfcb09976cd3b341db8b7c8cd49bdec350b948b0808"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_reset.bmp",
+      "size": 2616,
+      "sha256": "cd91a78d3c75db5c1144ae5cfb50060083c9a5368a5c5d741b948564f914d218"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_reset_a.bmp",
+      "size": 2616,
+      "sha256": "39ba186272c7d5bcb601b4d24235aa17dedb762d9db06a668567d6377113b5db"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_reset_b.bmp",
+      "size": 2616,
+      "sha256": "adafbe04bc0bd393f92ed41aa9627410d381dd98a6976850e0f90b88ca13d579"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_restart.bmp",
+      "size": 2616,
+      "sha256": "05eb811ea583620be02a329cd8a5b7e890f463128a7d7edbce770b1eec2e41bf"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_restart_a.bmp",
+      "size": 2616,
+      "sha256": "f7391289298aa25a391a5f665def0db188a403cd6db27719ec54b553025b1d1f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_restart_b.bmp",
+      "size": 2616,
+      "sha256": "b0b532bf709d622c4723dbd089882fe22d0f770be75ff9b5d9a3afc352bf8523"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_rewrite.bmp",
+      "size": 1184,
+      "sha256": "a452a1a5aeed1b3da90102a647efd2d5e34e6fd59c59278e1fc21dc0eab8786a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_rewrite_a.bmp",
+      "size": 1464,
+      "sha256": "e89230d6b3a6b9d6812c231155c037135260fa18c4dffe3bb634d2e63f50c8c8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_rewrite_b.bmp",
+      "size": 1448,
+      "sha256": "c1dc7189a4d4365ca8bd6eea9dce471d4a23beff62b6ea5340fe5bf9b7111350"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_sell.bmp",
+      "size": 1252,
+      "sha256": "a2446b6a281c4d898f0f8e65b192b63acef5c738db7214192cbb489003710c03"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_sell_a.bmp",
+      "size": 1960,
+      "sha256": "dfff01d07077e011a1d6a504fd4cbebad00cb73d4ed7a91755675ac04d19de53"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_sell_b.bmp",
+      "size": 1960,
+      "sha256": "03be4ddc2a25e7fd568cbd596ec21ae94b65a99279fc9f19a777e5138a7bcdb9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_send.bmp",
+      "size": 2616,
+      "sha256": "c72f221bfa72e42c87709645552a4a23a8674701f6db8dc05963d77d561431b4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_send_a.bmp",
+      "size": 2616,
+      "sha256": "e1f594b22b4deca1b6e09b15d4ad15027f2f5a97f5e113debcf104ae644aa5df"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_send_b.bmp",
+      "size": 2616,
+      "sha256": "a4fbf63d9692f370afb9533ad495aa12e7bad36b1e1d8c3babeefd6589ed7411"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_shortcut.bmp",
+      "size": 2616,
+      "sha256": "03af2933a5bc0379c0294516a021d888d3e11ecf75008f42d5d35aa3dcd5f360"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_shortcut_a.bmp",
+      "size": 2616,
+      "sha256": "5f2783f1157eb319f724674d5516609cb91932be5c3889beb64bb076d5fb5bdb"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_shortcut_b.bmp",
+      "size": 2616,
+      "sha256": "6837f3732377fa4897cca663ffcdb51e5f613b7095f5f1cd816fe52c90db5003"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_skill.bmp",
+      "size": 1958,
+      "sha256": "e29b338243355e835eea76e239a8bac51c46a3f7fb4640c6be8d5d908f35acf0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_skill_a.bmp",
+      "size": 1958,
+      "sha256": "4f87aaf0c17bfbcd93e4056174875b9578202b3904c84528d1542e4f37450838"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_skill_b.bmp",
+      "size": 1958,
+      "sha256": "0f6275a6081831f5dd9d35c2c484913bf4c1cd3cd11188973834c20ef2149ef1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_sort.bmp",
+      "size": 2616,
+      "sha256": "c4717e7906fb8c7bfeeffa3bd0e4176be4b3e2ab54ccfc0d34f3f6ada0aace85"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_sort_a.bmp",
+      "size": 2616,
+      "sha256": "340c71fe032c253bce3cf32001c7f1a97bb6a7208b84fb25e17c90bf5ea4d05c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_sort_b.bmp",
+      "size": 2616,
+      "sha256": "3b02db9585fe3bad65428acf4311d52616c38174d54cc4043024ebd14836582d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_use.bmp",
+      "size": 1268,
+      "sha256": "15294d3d66cccf4e23f3ec1750200d66dd73f2e30805268bda4fa48043fda25a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_use_a.bmp",
+      "size": 1960,
+      "sha256": "e147d9bd27e861574a25f5f767bdf678a8db86975f0316df2f0d6e874e13990d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_use_b.bmp",
+      "size": 1960,
+      "sha256": "fd52f234df83ff42ad4f21e3a298e3c1cc06b399ed035534825fee31dbd263c6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_view.bmp",
+      "size": 1252,
+      "sha256": "125543903824136ff56389499d28c3598a4d07d6df254e7833473f5e48c4f2f8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_view_a.bmp",
+      "size": 1960,
+      "sha256": "65ed278ee9446a9f0def0ee59f25c83d1c072d880dd264d805e3f0b79743fc51"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_view_b.bmp",
+      "size": 1960,
+      "sha256": "255c0738aaa73bd528dfc3a915e579e88470d193d9468b56cece093eb10120c5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_write.bmp",
+      "size": 2616,
+      "sha256": "d3771a548caee32d571397f4ef8a5d77d8f645eb7e27cd90b437bc11fb438c06"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_write_a.bmp",
+      "size": 2616,
+      "sha256": "4bf674fa63a348b1c5a529a96223b224f749e697616a111988dc93647dcf9f52"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/btn_write_b.bmp",
+      "size": 2616,
+      "sha256": "3cf2171a7ad62e37722488739b0872a3cf32114518f2da4a2768afdbf7310b05"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/cancel_waiting.bmp",
+      "size": 4136,
+      "sha256": "6094ad107aaa461363b841de24b23e709eb2de9f6cc839687f744de6b06bc144"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/cancel_waiting_a.bmp",
+      "size": 4136,
+      "sha256": "1c7955aaa729fa27f69d278e0592c82a7df930a60188a33c9b37dc470ac4778d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/cancel_waiting_b.bmp",
+      "size": 4136,
+      "sha256": "e23519420407b0cc4b80ce239e2a4dac711c33f1194d7eaa59a536155e958a66"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/cancel_waiting_c.bmp",
+      "size": 4136,
+      "sha256": "34ab89f8875cefd9799577015519129007efb6a033740e8437b51678c4e2466e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/cashshop/rAbanner.bmp",
+      "size": 84512,
+      "sha256": "5e1dd7ee47bf96b44cfe8c331ed2b7bde0a511771b62dc91da5d142aba0b85b8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/change_slot.bmp",
+      "size": 2540,
+      "sha256": "d69cadd84cd18d9a3404dde4cdd840b82c136065bb8b5d18ccf5e980cc3d878c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/change_slot_a.bmp",
+      "size": 2540,
+      "sha256": "6339831494a72e9d3e689f6370c69680872b8c13d66d616f0a14289e38bfbace"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/change_slot_b.bmp",
+      "size": 2540,
+      "sha256": "2938fc4d71c01b5f7d8b691a3e58a70b99c8e4c1b3fff208f3c23c9043c5a6eb"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_001a.bmp",
+      "size": 13336,
+      "sha256": "b36bc420a8ccb97412bb4451752ab2a1eb88540efad5d03b12d4e2e82a9d5e81"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_001b.bmp",
+      "size": 13336,
+      "sha256": "ce33ab80ca35b045171889d2b6c31341a638f3c262e97f9169ad7c8ef03edaa9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_001c.bmp",
+      "size": 13336,
+      "sha256": "2a76c666220fd2d41cedfc6541029185541f13844a6114e7941e2427bcc707b7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_01a.bmp",
+      "size": 4884,
+      "sha256": "8569c541ea12e52447fc4c0c29ddbb9da58badd42b3412e83b86d3593ac091d4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_01b.bmp",
+      "size": 5560,
+      "sha256": "9b6006940d7677635ebd6322a1b27b960c4fba12884bffe868b2348ce056d56d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_01c.bmp",
+      "size": 5560,
+      "sha256": "44cbe11297c0d99362d7dabdd4eaabe1192f05ed59000c74b5134cbf5dc1ad81"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_02a.bmp",
+      "size": 4888,
+      "sha256": "97786b9b9269977d9d921a507d528b643ff20388b08eeb1ed91dbb041b6effad"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_02b.bmp",
+      "size": 5560,
+      "sha256": "52f0298ba4888541d1f407d10719e8b4e92b5eccbd3d2d117d26a5412c222c99"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_02c.bmp",
+      "size": 5560,
+      "sha256": "1bbae5c9bbb60da87976a69c22e0ea3bfa068babf52cad08e425ec92338139b0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_03a.bmp",
+      "size": 4876,
+      "sha256": "033676303460ed487376a140bfa23b380c8ba33219dedd4ea5276a88e239cfc9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_03b.bmp",
+      "size": 5560,
+      "sha256": "744cade7ce50fc95dda8b3f73bbc1192e784a463e350309d032a178f76e1cea7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_03c.bmp",
+      "size": 5560,
+      "sha256": "d8b52de8dfff9da720da623ed43cb83dbf54e8a0feb78459ad98b1f50d40c0a3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_04a.bmp",
+      "size": 4876,
+      "sha256": "af000b93ae40691f6af7e2c03a7707b1221ba809356914e809ce7fff492883c4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_04b.bmp",
+      "size": 5560,
+      "sha256": "3e2b6105726005584f2aab2dec884cad4805b927aa693fb710110622c2909c84"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_04c.bmp",
+      "size": 5560,
+      "sha256": "51613a849d3a9613338fec238b6bfcbf4e44a145cd8acb2115e24f7adadd5a24"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_05a.bmp",
+      "size": 4840,
+      "sha256": "abd1fee58f50c2fa5ae3ceca6d86ed8722008353f42780a5c48caba9d55b08c4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_05b.bmp",
+      "size": 5556,
+      "sha256": "3c2d93a20e7b25bbd4cad8cb676e6ec8ea7517bb759aa9eee1abf5dc8bd98929"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_05c.bmp",
+      "size": 5556,
+      "sha256": "24911be060fce74218973325e0f52b720fe67ccb04db35910f72b79f76f538b6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_06a.bmp",
+      "size": 13336,
+      "sha256": "652d71c98255f6434c3f692a6f66a028f5ea43892f364751dcf611c532d8b814"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_06b.bmp",
+      "size": 13336,
+      "sha256": "fb817814ddc0960aa72091687249406233c52ff742946aa5be59230c54b27acb"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_06c.bmp",
+      "size": 13336,
+      "sha256": "64805f5a6eaf1d6606b87eca9845570c1880aba4d065f65992ce1b453a9c630b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_07a.bmp",
+      "size": 13336,
+      "sha256": "6213df820e39b97efc1aabeed2f941d3c62527fd06c18b0ca81139369dadae28"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_07b.bmp",
+      "size": 13336,
+      "sha256": "b6580e44a6346c0ceff3eec829177b59aab1a31ae3118581772c9f7a600d7b56"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_07c.bmp",
+      "size": 13336,
+      "sha256": "dc0baae41942a37fbb4a2459ebb52eea06bae0904c0492b49737b124b79a08ff"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_08a.bmp",
+      "size": 13336,
+      "sha256": "fcd940026cf8dc947f5c489cab849406150c48006957a075abbc685d8e0f3dfc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_08b.bmp",
+      "size": 13336,
+      "sha256": "1afe511efbcbf4bb339fab6f8e5534066af4082be68b4a9705b8f8c76e9b1097"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_08c.bmp",
+      "size": 13336,
+      "sha256": "256f57acd0d972054048826c1bf66bcf43ff854a20f96493f378408fd27c6c03"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_09a.bmp",
+      "size": 13336,
+      "sha256": "cb4876cd8ca16336a87801173cf7328c5edff5d64ac058f41cdb7722697aebb4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_09b.bmp",
+      "size": 13336,
+      "sha256": "d2d33b50e0488b685120205b094c02edc2e80ea0a208686de8006b4d80a90c52"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_09c.bmp",
+      "size": 13336,
+      "sha256": "730531903373eb07a66e635619c549eae9d433832f860ad7fdb90347c3cb9030"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_10a.bmp",
+      "size": 13336,
+      "sha256": "609f7865ede16169dbc1bf78341fea96f0024b7327eb27176c52b11759b61c98"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_10b.bmp",
+      "size": 13336,
+      "sha256": "dec3b8c8d42985a747c970181fdefd94efd241c41d2544f81b2d5da947723e03"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/esc_10c.bmp",
+      "size": 13336,
+      "sha256": "dc853ac90aef1a40993769285df70ff02fb83abaadb8b7ea7fa334ed8ae88625"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/grade_enchant/btn_unbroken_over.bmp",
+      "size": 3416,
+      "sha256": "a61ee354891c08a0c54691fa6ac748f090a79178665a91e43cc2f5b44c55d829"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/grade_enchant/btn_unbroken_pick.bmp",
+      "size": 3416,
+      "sha256": "614a4cf1338eaff6095c73282202ffef5639027225c6501f020cb2651916c1e6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_help.bmp",
+      "size": 2198,
+      "sha256": "6399aec93dd4330f07e7989711011120c6f3d12f7f15ef82615e551e8197e1c2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_help_a.bmp",
+      "size": 2198,
+      "sha256": "8510bd49e9dfc11a000b0fb2f5fa56ae35ec5ab3cb08bd53f71f4b7dc2422d1d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_help_b.bmp",
+      "size": 2198,
+      "sha256": "cdfed7f1e5837f4220a6bd1795aa2124b6e2a901ee2d62abd2d768ca232744c3"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_ok.bmp",
+      "size": 1958,
+      "sha256": "430a456fa50f2bd6d68fa55d80b940cc0abfebd0d5804852a7785a53c43e8da2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_ok_a.bmp",
+      "size": 1958,
+      "sha256": "abad68c4814574730fba9387792f7f9c87202040d042512740e62d1fe27540dd"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_ok_b.bmp",
+      "size": 1958,
+      "sha256": "9aba66a2d63c15d5026c9bfd3e4f6b94f0928cf61a2fa1d0287fc34a55349745"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/btn_ok_dis.bmp",
+      "size": 1192,
+      "sha256": "a247506e3e026436849ffaf7a9f51a7cb498424d2a71df8be98e6e3052f339c7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/create_guild.bmp",
+      "size": 2518,
+      "sha256": "8285d821653f9ea7a8005f91e7588afd879529272a15307dae3c39640d8cbf8e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/create_guild_a.bmp",
+      "size": 2518,
+      "sha256": "3dcbf7bbb1c4ad76ffc30b8fa7fa535e984544f1f64bb3863f8fdb7be717792e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/guild_helper/create_guild_b.bmp",
+      "size": 2518,
+      "sha256": "327a46b40801a412a45658fed5e4fe1624bf0efbcac917b09c300900945c079c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/2013anninotice.bmp",
+      "size": 322998,
+      "sha256": "687957f9c3b0ca66f06a440406c8d36f9478f9f2d5f3b0489eb92e2c9da7f993"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/eden_event.bmp",
+      "size": 322998,
+      "sha256": "e1305e94aee98243461a423852813b9c06700249f56187db6c624f13afc5ec4d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/navi01.bmp",
+      "size": 460856,
+      "sha256": "b97efada3e365e5063510d3f3c9dafe21dab7d5c8be89cbbc7a03ef925fa6919"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/navi02.bmp",
+      "size": 460856,
+      "sha256": "1ef8e755c19ae3abc0a5a0c5dc1946d95100e12e66016983a36042e3d13f0849"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/sign_01.bmp",
+      "size": 323000,
+      "sha256": "6975194c0e4a41b0b0ce86d44424d24da57e438ef4a9ead44193b21d2fefd78b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/sign_02.bmp",
+      "size": 323000,
+      "sha256": "9f6617c14b8610a0112ff055fe1c5a755e0fb14b84b94bc9d4962de35759a6f1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/sign_03.bmp",
+      "size": 323000,
+      "sha256": "f8291e9afa86e8680c5107e4eb6548260711aae369eed0e85cb86302beee22a2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/sign_04.bmp",
+      "size": 323000,
+      "sha256": "24c5ce07c9e913042cc1d83a98370076f95adbd9e2347e5164a7dee0d3e04702"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/tutorial01.bmp",
+      "size": 1843256,
+      "sha256": "d3cc9ef0e09facef515ed8d6fc657526d1fafb38991a62c91ae5cf19e56bbf90"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/tutorial02.bmp",
+      "size": 1843256,
+      "sha256": "0613888ee0f5da22a79fd1d751c224df8db6e1ba856faf8191c520adb0fc442f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/tutorial03.bmp",
+      "size": 1843256,
+      "sha256": "d2289233b53e2b4370e3c2a0da05017fc7d3bacef70db20b64dccab483087ff1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/tutorial04.bmp",
+      "size": 1843256,
+      "sha256": "2628ebf8559ea81e81a45dc61de434ee3b5a14d11a13e2a9a79699e2c468a105"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/illust/tutorial05.bmp",
+      "size": 1843256,
+      "sha256": "727539cac9708fa8ed39e81095bc2b24e7f96554d3c066c0897381cd041a8d7b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_array_out.bmp",
+      "size": 2616,
+      "sha256": "cf6aa7f04d3a159ae9f56ccf9e599293d8e46bbc681fddbb4edf75d018453ae2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_array_over.bmp",
+      "size": 2616,
+      "sha256": "5fc6612d80a5c7c4dbc9c5ecf84c2a14ccf39087d716cab6f603d9d51b677068"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_array_press.bmp",
+      "size": 2616,
+      "sha256": "d4835c226415ad0a92504b1c22879da9cdad3b5a6acd10475ecc770bbaa2591c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_close_out.bmp",
+      "size": 2616,
+      "sha256": "1fd23b8835a984ef5cd197168bb0b0cd2306be58c055fd3912dd615368915bc2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_close_over.bmp",
+      "size": 2616,
+      "sha256": "8f42815c0536d63b6b6e4bbb1b80d39482170b8c23fc9af9b1f92d3454172b41"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_close_press.bmp",
+      "size": 2616,
+      "sha256": "ea3daa301c17ebdf83ff2ab646176e77d7392b9ea3ef035d0fe6a407bf2b897a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_prev_out.bmp",
+      "size": 2696,
+      "sha256": "7573f91fd78e0970a6baa73fb962d418b6f70265f44928776d2ae9bfd8e85639"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_prev_over.bmp",
+      "size": 2696,
+      "sha256": "0dbb3c73da31dafe758a64956ee6007fe7c494404aa1a8f4f5215d0f3c4d5162"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/inventory/btn_prev_press.bmp",
+      "size": 2696,
+      "sha256": "732a277d091830c978533462a5b6fd8ed2d0686f61bf0149dc3c391ae8d952ea"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_cancel_dis.bmp",
+      "size": 3416,
+      "sha256": "967ad79357ad6e27178ab5eb0d1de15e6a8464f63cf12e0e00e7b6dd3c232641"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_cancel_out.bmp",
+      "size": 3416,
+      "sha256": "6dd1eb9da63f8815aee9284af9d6e930b92216427288c1fef2b3ce9878a10f56"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_cancel_over.bmp",
+      "size": 3416,
+      "sha256": "262e00a87dd1e103f97eaa21b674f8c9a4416c9cebe6ec7212450e36ee9820e6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_cancel_press.bmp",
+      "size": 3416,
+      "sha256": "00630fa14973b90849e76eff93a64c53c135cfe9edc17086c721b6f7e3b63808"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_make_dis.bmp",
+      "size": 3416,
+      "sha256": "5f6521dac2a5eddbdf4a6272ce5995c8ecfe1d44bae98624a70bcbfe74069b23"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_make_out.bmp",
+      "size": 3416,
+      "sha256": "5db3b4c437bca763d4c1527468e10abc5cb15d712cd2b641d441c761394e9e5a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_make_over.bmp",
+      "size": 3416,
+      "sha256": "c41a1be6afdcfb4146260503e2941426318db6c49fd8a1067e531135b19393de"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/lapine/btn_make_press.bmp",
+      "size": 3416,
+      "sha256": "4f9d353592f1cd0ab0708beb11bde4bcf34fd95a8743837553c9ac5b917076de"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_back.bmp",
+      "size": 1264,
+      "sha256": "f413bf71cecb50c93411c29c83404d8115df7bead9a2aee6a667d3564759056e"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_cancel.bmp",
+      "size": 1268,
+      "sha256": "1124a98b7ae66d8daefb3dacd98151a603cd3f13b16109c022df21fe98f3db1d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_change_name.bmp",
+      "size": 3896,
+      "sha256": "f1d3fd5694b63440194e10543d9ce36ce16cd02f5f6ea03b181d3b6f94e9b29b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_change_name_a.bmp",
+      "size": 3896,
+      "sha256": "e09e6ceb0f2a7cb127bf8a8fff4e7818936992312de98f40733a547a95ce7563"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_change_name_b.bmp",
+      "size": 3896,
+      "sha256": "4b79122bb3444d03427ef4d6c6192abdda9bba12744a6c05065342186a40fb30"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_close.bmp",
+      "size": 2616,
+      "sha256": "1fd23b8835a984ef5cd197168bb0b0cd2306be58c055fd3912dd615368915bc2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_connect.bmp",
+      "size": 1256,
+      "sha256": "cf4c554e3becf4d82267a603e12071c9ba15cdb2e30ae4b0734e2144dfc71e50"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_connect_a.bmp",
+      "size": 2616,
+      "sha256": "bf563a7579392c5df4833c7af698955bd886a5b88d870f15d87145c319ff90f7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_connect_b.bmp",
+      "size": 1960,
+      "sha256": "31e6d2fdf3a93aa13db90fa41626ba8b4bf56efaf79f4ba68bd52b54d9b15c1f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_exit.bmp",
+      "size": 1958,
+      "sha256": "25265318ac0f2bcb936627a245fcfc72c048b34f068177b622690b42d7d930e9"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_exit_a.bmp",
+      "size": 2614,
+      "sha256": "4504f47e6bc962c83726dec9fd277626fbe61ad5f52cafa3273f23c6a885991c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_exit_b.bmp",
+      "size": 2614,
+      "sha256": "934d15761405830dd308ac2c8fa8146b6144f996a95b7eb4c601173a1ac5a070"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_help.bmp",
+      "size": 2616,
+      "sha256": "13ef9343b009c9c827f2666d5e818000c1ff292f60c609437c86b3f0f6b3bbd7"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_intro.bmp",
+      "size": 1592,
+      "sha256": "520d3543324cd447648d51aa3e8c87351fc48d77b32191da54263d0311aa3c71"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_intro_a.bmp",
+      "size": 1160,
+      "sha256": "3b56a883375aba50102541125150928623bc0ad0aa7e2cb7282dfa145cde9129"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_intro_b.bmp",
+      "size": 1160,
+      "sha256": "d23b1a1840920a30fbfd19c13cb8a3aceb8d3649438e69e5e29d87fec844d555"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_make.bmp",
+      "size": 2616,
+      "sha256": "c9140d1cbf1b144811da680206f2ea72d3a97c1e252502f2dc57dd97a6ea344d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_next.bmp",
+      "size": 2616,
+      "sha256": "3b0c1203274fff14dc775d72e0fcc5a48e367e14234490a294b4e0afc881e0cc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_ok.bmp",
+      "size": 2616,
+      "sha256": "c525630794d27741d0ce2fbc352945f8ffb7b86029980ea01cda0540c5e627ef"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_request.bmp",
+      "size": 1256,
+      "sha256": "b461f1f2989ddfdac66414628b596343f179cd977b7d082074c297be8d85e304"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_request_a.bmp",
+      "size": 1960,
+      "sha256": "5b92c78af31bf21d907a337e8ff5730fe59745e727c82614888d8d1eb9032a56"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/btn_request_b.bmp",
+      "size": 1960,
+      "sha256": "0604d0d03c074850fc27e628cd4d6f1343b7f0167a4afeee29e586758657d1fe"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/change_name.bmp",
+      "size": 20398,
+      "sha256": "d351c1390e7a7a5d29976d3664e58ac66cf9e3af84afd8b3e90e90c1aa111a66"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/chk_saveoff.bmp",
+      "size": 1438,
+      "sha256": "a2e8207af462800144b323d0cf4209376b7940b1e260b8894dd5e7359ae975cc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/chk_saveon.bmp",
+      "size": 1094,
+      "sha256": "ecdb098267831665aed45a4acd639edaa9bafc3e29dca47138cc29e2b385cb20"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/selcharforintergration.bmp",
+      "size": 216532,
+      "sha256": "86e3a34b04958f6c643588b7da549407e24abbc2f24677c8512d836b2191f996"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/selcharforintergration2.bmp",
+      "size": 314132,
+      "sha256": "ccfaa7f7dc3c00f89cda5ec8d8f13295e1880d56e8f59b5cbfa72e106ede1163"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_login.bmp",
+      "size": 100856,
+      "sha256": "991dc54485a2422750c6938278c474e258ea9a26036ab713226e39f3c6664aff"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_login_k1.bmp",
+      "size": 34632,
+      "sha256": "66dd7642ef589141b82b7c9f02d39a80d60a24acdcdc194bfffc4bf469eb599b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_login_k2.bmp",
+      "size": 34636,
+      "sha256": "0efbf62831f1d62aee5b8e557d988d95181684ecc31efeedb839b011fce981ee"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_make.bmp",
+      "size": 198056,
+      "sha256": "0c2ed51ba7051785f170ab290028d506c0045022f368cba3ba5209a802daacd4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_make2.bmp",
+      "size": 108536,
+      "sha256": "a33e222c45a92fe185889156c97c98d0c4acad4568b15fae8ce9ae63c95800c4"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_select.bmp",
+      "size": 198064,
+      "sha256": "7b302b7f44019c224c816b22c3a871eb519c09b4b2fb55b597b4123d2cdc0822"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_select2.bmp",
+      "size": 618678,
+      "sha256": "c2a06a5ed5db94830ce41e7a2498ff26b5363097034fdaa7a4d25911497bc55a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_selectmap.bmp",
+      "size": 34628,
+      "sha256": "a504172b82c75515aeeffa7bd360bd1b1850dafd203a021ce9b56a27d221a83c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/login_interface/win_service.bmp",
+      "size": 34616,
+      "sha256": "ffa70e4ea58ba10af528068dc7d886d795cfeeef3262603b7f5ba96643c0c857"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/make_character/btn_create_out.bmp",
+      "size": 4136,
+      "sha256": "e49e1f2cdbff08a95a6a1962cdca74eb1232de0d109931cc58b5e8adcca7ed4d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/make_character/btn_create_over.bmp",
+      "size": 4136,
+      "sha256": "b4d8aa3fb8c5fdb4169017ff28b349c3890c77c0e287c656e907da856fd7cee1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/make_character/btn_create_press.bmp",
+      "size": 4136,
+      "sha256": "74a7de30365cb668c45393058f9419e6c2516a56bf7dd8e01bfdc54140db2f53"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/minimap/memo_ok_1.bmp",
+      "size": 2616,
+      "sha256": "c525630794d27741d0ce2fbc352945f8ffb7b86029980ea01cda0540c5e627ef"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/minimap/memo_ok_2.bmp",
+      "size": 2616,
+      "sha256": "9b2ecacac3a7e81597c2dddd524187b390f7937848dba93a9699b5b5806f07cb"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/minimap/memo_ok_3.bmp",
+      "size": 2616,
+      "sha256": "a98e1a0484a86120c428e3a2b665b2896621a544c2cc63c8fdc8e67aa4c78c95"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/minimap/memo_ready_1.bmp",
+      "size": 6056,
+      "sha256": "f0598a98546976039c259a4ef2eed4ff05957c17da3949613a861c37c0fc7fac"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/minimap/memo_ready_2.bmp",
+      "size": 6056,
+      "sha256": "92c7975cdba8b6d1a037097b20972c6bf5e9a2756289ed2a592c103e5a545a28"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/minimap/memo_ready_3.bmp",
+      "size": 6056,
+      "sha256": "fa1942b940154b6efdaf4be75813d5735831bf99e6b49235f53a21f40c6f1919"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/navigation_interface/interior.bmp",
+      "size": 49206,
+      "sha256": "944faba6b67191967c273a91bc0848dd9ffa7bebc0786fdf2c8eb4fb75dcaad8"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/renew_questui/bg_quest1.bmp",
+      "size": 533160,
+      "sha256": "933e1650218905a44f355c52af83f1fdd2c62faccacaaf1ebe9690f0849c8ce1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/renew_questui/bg_quest2.bmp",
+      "size": 533160,
+      "sha256": "dbcc50e6a65e96425a9cd98f8983a8e82764b4835e4cc04c54c112d99afff367"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/renew_questui/bg_quest3.bmp",
+      "size": 533160,
+      "sha256": "66d45756e54fde4da8012cfec49c95960a3461bffcc3c798cf9ef3ffdfcc4974"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/renew_questui/bg_quest4.bmp",
+      "size": 533160,
+      "sha256": "1602b448188543f88d5cf2e21abe60ca87a5156c00410d53146f96ede33c941d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_create_out.bmp",
+      "size": 4136,
+      "sha256": "457766b42b1cfd2d8c111b0b786dad3cf83c75c19e29cd1aa719d670296c3e29"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_create_over.bmp",
+      "size": 4136,
+      "sha256": "130477c8126fa358ace686f32dc2a94b67e07a0427d4fb56134c4887be2d4805"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_create_press.bmp",
+      "size": 4136,
+      "sha256": "130477c8126fa358ace686f32dc2a94b67e07a0427d4fb56134c4887be2d4805"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_cancel_out.bmp",
+      "size": 4136,
+      "sha256": "1bd8848f59ff036379432b2028caabfcb36e89db252eab7d9815e173241a958c"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_cancel_over.bmp",
+      "size": 4136,
+      "sha256": "5eefd4a56f4abbcc0715e1f9382cf364d41a3a814e125a9585bfa988a7075212"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_cancel_press.bmp",
+      "size": 4136,
+      "sha256": "d1a5ccdf62f53d03a7fb7ddcfbaa911cc3d2c00befe72aa50e0d6733d839808f"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_disable.bmp",
+      "size": 2936,
+      "sha256": "d516a8ca9fb9e1562c4750f768200dd465a820ac6a72a78f237743dbae9ad77b"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_out.bmp",
+      "size": 2936,
+      "sha256": "1e47220fbfb3967abaa1634e73c69d232ad0406e649d28b91a4869295f4c69a6"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_over.bmp",
+      "size": 2936,
+      "sha256": "ea78bcb5b7b3a758978a3689ff3f180e2985b155bd94368b0e7f153bcd003a9d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_press.bmp",
+      "size": 2936,
+      "sha256": "ea96641835b5eb5ced87ccee09ac6141129b9c39388fd8c768ef92edd4ca84b0"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_reserve_out.bmp",
+      "size": 4136,
+      "sha256": "5c70f86b5ef76b4e59ec0e47898a408a62298b945691c774d7c9cd580f303e69"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_reserve_over.bmp",
+      "size": 4136,
+      "sha256": "59f8710f2149de7dd33c78a978c586d4eba2cf47973482c2b600b0ab95cc9607"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_delete_reserve_press.bmp",
+      "size": 4136,
+      "sha256": "5b4eeb46770fbf94b9e0720f415f4947200e05819acd66cd6f6563ff16364733"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_ok_disable.bmp",
+      "size": 6056,
+      "sha256": "01d34b24266aacec9f7ff03c9f5e1f653829a808ddef3f1e8a6ca63792436d73"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_ok_out.bmp",
+      "size": 6056,
+      "sha256": "01d34b24266aacec9f7ff03c9f5e1f653829a808ddef3f1e8a6ca63792436d73"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_ok_over.bmp",
+      "size": 6056,
+      "sha256": "2921597fc536ed27a485b513c38905f85e6a7ed8404af21425acf60a2c8b8a63"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_ok_press.bmp",
+      "size": 6056,
+      "sha256": "69d5c163dad226f49c9692f091e5bcc3d8e82c7be6a2af48ad1b2a8e9086e2cc"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_payinfo_out.bmp",
+      "size": 3896,
+      "sha256": "4bb0ed746812d2895a8b18f513b6085d2f4c1fa85c984f44fa700e014e1c41a5"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_payinfo_over.bmp",
+      "size": 3896,
+      "sha256": "3232b2b72e4e376b0549a9c9f08d96cd51b8f4c2763ac6575638b442e467acc1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/select_character/btn_payinfo_press.bmp",
+      "size": 3896,
+      "sha256": "11bc08ac8b5202697affae7b4ce0f08aff64224fe3dda08d2484bf2c8de0bf34"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/sns/btn_send_normal.bmp",
+      "size": 3416,
+      "sha256": "a52ee0bbfd7103206e19e0a41f2e1d78147a1f8c6a8b9064b5879e7b05be64e1"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/sns/btn_send_over.bmp",
+      "size": 3416,
+      "sha256": "1c310cca6260aa863088caabbda3241ef426790e835d72b17f87c0fd176b13ca"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/sns/btn_send_press.bmp",
+      "size": 3416,
+      "sha256": "478fdd62e9af58a11d5a688a59af1c1b4083b71f63ca96dd45a4438d213bbfb2"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/styleshop/btn_buy_disable.bmp",
+      "size": 5176,
+      "sha256": "8609630d4394288dbd43f3921e2449f6b6f3d1dae5a620032185aaec13be2709"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/styleshop/btn_buy_down.bmp",
+      "size": 5176,
+      "sha256": "98f822d59d54d704408ca7c4f1b2b4015874b7588a279f947927ea485079170d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/styleshop/btn_buy_out.bmp",
+      "size": 5176,
+      "sha256": "ed0fe027e54c5eb114c4b046f8eddad7ab74436fae92dab5763194c420da7e2a"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/styleshop/btn_buy_over.bmp",
+      "size": 5176,
+      "sha256": "cbdf87eb4d91c56c48105a551089e6a16d70b23bba1314587bb14e696c1520fa"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/styleshop/btn_buy_press.bmp",
+      "size": 5176,
+      "sha256": "98f822d59d54d704408ca7c4f1b2b4015874b7588a279f947927ea485079170d"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/win_msgbox.bmp",
+      "size": 34572,
+      "sha256": "f3c86803fb967c9807a562115f7c1fb9a198290ca795bbb88d8a670d7222a687"
+    },
+    {
+      "path": "data/texture/蜡历牢磐其捞胶/win_msgbox1.bmp",
+      "size": 41012,
+      "sha256": "79ec2b5a4d5dee56cab7f63f83183074ef489a1444abae2deb938385bce4dcfe"
+    },
+    {
+      "path": "data/viewpointtable.txt",
+      "size": 3133,
+      "sha256": "9e52bc51269785b5aac30efe7bffdde65a536df2d059ad72dac690dcf074bccc"
+    },
+    {
+      "path": "granny2.dll",
+      "size": 230455,
+      "sha256": "befa33fb43f03c6d0b9cbb302bfd7eb7efa2ba8ec682f75f63ac5cd03653570d"
+    },
+    {
+      "path": "ijl15.dll",
+      "size": 372736,
+      "sha256": "334aa12f7dee453d1c6cb1b661a3bb3494d3e4cc9c2ff3f9002064c78404e43a"
+    },
+    {
+      "path": "libcurl.dll",
+      "size": 268288,
+      "sha256": "f328d32208562535cf364abe37d878cd0bad997ad055bd0705625e5338ae029a"
+    },
+    {
+      "path": "luafiles.grf",
+      "size": 270163516,
+      "sha256": "cd38e5dc63180ab9ba27367ee5c71d335d01327f9c6b1c2c7a9a74748ab3722f"
+    },
+    {
+      "path": "map.grf",
+      "size": 841151442,
+      "sha256": "2c57ec51317c2a4fe06d89caca1c062ef5ad8ddf4b9a8f842aa4853779fb7387"
+    },
+    {
+      "path": "mfc100.dll",
+      "size": 4397384,
+      "sha256": "cac58c98f7e587ba1b2a4f41874764b59bdf6cb684a4a44aee93f91b3b9a019b"
+    },
+    {
+      "path": "mfc100u.dll",
+      "size": 4422992,
+      "sha256": "bc50848aeef466dff4a3d8c386bf0d0ec35b8e5b438031ae885aa5371f2e1a42"
+    },
+    {
+      "path": "mfc110.dll",
+      "size": 4421192,
+      "sha256": "8809265003cc78cc7bfe708d0140f4045c86b2379b49b1b772eb25df1a27e1be"
+    },
+    {
+      "path": "mfc110u.dll",
+      "size": 4456520,
+      "sha256": "33f631c0b561199b5feb9020faa99e50efa9f421d7484ffa640c5561494726da"
+    },
+    {
+      "path": "mfc140.dll",
+      "size": 4756736,
+      "sha256": "79808c7b51377c75ceefcca636ce23362ec94509f19ba4f364ffc7414ed7ee5a"
+    },
+    {
+      "path": "mfc140u.dll",
+      "size": 5051648,
+      "sha256": "dde3c8e9e7d414913a29979798311d095c1b8869ee405a1c3fcbba14da90446d"
+    },
+    {
+      "path": "mfc90.dll",
+      "size": 1156600,
+      "sha256": "287bd98054c5d2c4126298ee50a2633edc745bc76a1ce04e980f3ecc577ce943"
+    },
+    {
+      "path": "mfc90u.dll",
+      "size": 1162744,
+      "sha256": "e30aabb518361fbeaf8068ffc786845ee84abbf1f71ae7d2733a11286531595a"
+    },
+    {
+      "path": "mfcm100.dll",
+      "size": 81744,
+      "sha256": "ecb4abce8a92f459b0da962a629d0beb66d417a209225ffd321eda60666d36b1"
+    },
+    {
+      "path": "mfcm100u.dll",
+      "size": 81744,
+      "sha256": "5104d9b832d6be34d8ffbfa1eacc1a95e7ef8864e2c3c5720f04d217f8dccf51"
+    },
+    {
+      "path": "mfcm140.dll",
+      "size": 92416,
+      "sha256": "17eab4820c1a328871ba2ce1b118157975cfb3cbdf6038d72d66f6f4aaaf5a62"
+    },
+    {
+      "path": "mfcm140u.dll",
+      "size": 92208,
+      "sha256": "a84b6c2efa315b693c2dafd45d11a8d260de85bc02d8a90eb5a561ba9932710a"
+    },
+    {
+      "path": "mfcm90.dll",
+      "size": 59904,
+      "sha256": "c4243ba85c2d130b4dec972cd291916e973d9d60fac5ceea63a01837ecc481c2"
+    },
+    {
+      "path": "mfcm90u.dll",
+      "size": 59904,
+      "sha256": "5b08fe55e4bbf2fbfd405e2477e023137cfceb4d115650a5668269c03300a8f8"
+    },
+    {
+      "path": "Mp3dec.asi",
+      "size": 125952,
+      "sha256": "d3f3217fac27bcaf06bd47174eac0f20f0b00b71d96762962d141f646308a5a6"
+    },
+    {
+      "path": "Mss32.dll",
+      "size": 346624,
+      "sha256": "d0db426ebac97dc410b5130c9c74d19bc04151236df85b012823d6cb3d7fb87c"
+    },
+    {
+      "path": "msvcm90.dll",
+      "size": 224768,
+      "sha256": "b371af3ce6cb5d0b411919a188d5274df74d5ee49f6dd7b1ccb5a31466121a18"
+    },
+    {
+      "path": "msvcp100.dll",
+      "size": 421200,
+      "sha256": "b2ad109c15eaa92079582787b7772ba0a2f034f7d075907ff87028df0eaea671"
+    },
+    {
+      "path": "msvcp110.dll",
+      "size": 535008,
+      "sha256": "c8d5572ca8d7624871188f0acabc3ae60d4c5a4f6782d952b9038de3bc28b39a"
+    },
+    {
+      "path": "msvcp140.dll",
+      "size": 449280,
+      "sha256": "2db7fd3c9c3c4b67f2d50a5a50e8c69154dc859780dd487c28a4e6ed1af90d01"
+    },
+    {
+      "path": "msvcp140_1.dll",
+      "size": 28440,
+      "sha256": "f1efc4a0f0aef50477fc979642a51b1cdcd23c689f98afa9f5a039f5f05904f0"
+    },
+    {
+      "path": "msvcp140_2.dll",
+      "size": 172824,
+      "sha256": "53a0aeac7d59a707a10a95707788015f1824a34a69905a1728d9987b955f4b45"
+    },
+    {
+      "path": "msvcp60.dll",
+      "size": 401462,
+      "sha256": "f1fd0f1a54f196b19a6f21044092c89c02353dad173c236d80f6474cb8a7ea7f"
+    },
+    {
+      "path": "msvcp90.dll",
+      "size": 568832,
+      "sha256": "4f7ed27b532888ce72b96e52952073eab2354160d1156924489054b7fa9b0b1a"
+    },
+    {
+      "path": "msvcr100.dll",
+      "size": 773968,
+      "sha256": "8793353461826fbd48f25ea8b835be204b758ce7510db2af631b28850355bd18"
+    },
+    {
+      "path": "msvcr110.dll",
+      "size": 875472,
+      "sha256": "b30160e759115e24425b9bcdf606ef6ebce4657487525ede7f1ac40b90ff7e49"
+    },
+    {
+      "path": "msvcr90.dll",
+      "size": 655872,
+      "sha256": "ed0170d3de86da33e02bfa1605eec8ff6010583481b1c530843867c1939d2185"
+    },
+    {
+      "path": "setup.exe",
+      "size": 1624616,
+      "sha256": "56a516eab5a026a0d80fc4f82146a77befc6e7de033103c056602d5750b9f0bf"
+    },
+    {
+      "path": "Setup_Plus.exe",
+      "size": 622216,
+      "sha256": "950e46e63c53aeda7a49e5b5d60fbf8393fbb08151ec24830985950a9801d482"
+    },
+    {
+      "path": "sprite.grf",
+      "size": 808880982,
+      "sha256": "a792cf0715122d26d4f718bede1afc8ff75099c1efd4a47b37f3ab96983bef96"
+    },
+    {
+      "path": "System/achievement_list.lub",
+      "size": 152028,
+      "sha256": "1cc9fc22fb9fc0509b9b469992a878d4178c375bbd91f58afe760c347d7da22c"
+    },
+    {
+      "path": "System/CheckAttendance.lub",
+      "size": 841,
+      "sha256": "a1d0a80de7d708fd5fed55256d6056a3a8133ff8a94146c7e22ab1c9e9c5dba3"
+    },
+    {
+      "path": "System/Font/NHCgogo_10.eot",
+      "size": 46673,
+      "sha256": "4e9abfe88551594c343334f3ed6702400ef4aac2da154a6524532fc99323bbee"
+    },
+    {
+      "path": "System/Font/NHCgogo_12.eot",
+      "size": 51867,
+      "sha256": "e0fbb58aa5fdc974446ed7558d5669c0409d63c30aaf0f5100aa2a7193c4a9e7"
+    },
+    {
+      "path": "System/Font/RixDiary_10.eot",
+      "size": 41775,
+      "sha256": "84a8f4987c31833362b8517e3ced3e121a02ae76a29bea8dfd7b49fd94c7f8b1"
+    },
+    {
+      "path": "System/Font/RixFreshman_10.eot",
+      "size": 40277,
+      "sha256": "1f39ba39b92b98b4cdd0050a6a263d9d85b6b67ba3feaae32ce3fd3b14d4d807"
+    },
+    {
+      "path": "System/Font/RixJJangu_10.eot",
+      "size": 38396,
+      "sha256": "8786df95dd23837fcc3b9b74c18621e226a4d90baffa2a6134e6459df62155f1"
+    },
+    {
+      "path": "System/Font/RixKid_10.eot",
+      "size": 38534,
+      "sha256": "765b1b8cb327c639931abf5f3f6757b9cfe3535b2066cabbc91493d10b359544"
+    },
+    {
+      "path": "System/Font/RixLoveangel_10.eot",
+      "size": 40190,
+      "sha256": "68732ae1cff8cae6046cc309787c77d8c9b3c7aaeb5549b8f577340e153b8ae9"
+    },
+    {
+      "path": "System/Font/RixLoveangel_12.eot",
+      "size": 47196,
+      "sha256": "1a69a0421819b8e6d81dbf135a0d8a9755976c605d8a5537726d16fb34348d2b"
+    },
+    {
+      "path": "System/Font/RixMagic_10.eot",
+      "size": 45347,
+      "sha256": "d9bc08b5671dc7f4f02a22545de6da26302f5ba9ae861096cfa70c3d68fe70dd"
+    },
+    {
+      "path": "System/Font/RixMiniHeart_10.eot",
+      "size": 41273,
+      "sha256": "0d37f04a313e1390d907a925ed328091d919d8182802cada72ef6fb1752a096a"
+    },
+    {
+      "path": "System/Font/RixNHCgogo_10.eot",
+      "size": 46253,
+      "sha256": "71c51e9435295c07e749160bc0e567ab154c18a55fe6b0d4581c6a12c60412f5"
+    },
+    {
+      "path": "System/Font/RixSquirrel_10.eot",
+      "size": 42850,
+      "sha256": "636fa9199b594e5ff93e0ff0248c46aa858fb372b025687073ba4e84bf5bf0ce"
+    },
+    {
+      "path": "System/Font/RixSquirrel_12.eot",
+      "size": 46460,
+      "sha256": "f8ec59c3f0883a84128e28b2bc139bd73d0a120394f3d4bf944c47182c21a526"
+    },
+    {
+      "path": "System/Font/SCDream4.otf",
+      "size": 729724,
+      "sha256": "1dc288e8cfdf96eb083c0b016fb5f107bc83208e748b6a61422404b9e42a95a4"
+    },
+    {
+      "path": "System/Font/SCDream6.otf",
+      "size": 743480,
+      "sha256": "7dd3e0240002feedd37d0f33033a44e17b1ab11f84a93acf8482184adc33aa1a"
+    },
+    {
+      "path": "System/itemInfo_Sak.lub",
+      "size": 16981299,
+      "sha256": "4ebd90615e533839eefe47032318537d54ecc8f6be21b54b6191b96f5f505937"
+    },
+    {
+      "path": "System/LuaFiles514/MsgString.lub",
+      "size": 2083,
+      "sha256": "ae3ea92a2c07ead144a3661c787c751f93427dd7709cabe19e92650543e6e0fc"
+    },
+    {
+      "path": "System/LuaFiles514/MsgString_backup.lub",
+      "size": 2083,
+      "sha256": "ae3ea92a2c07ead144a3661c787c751f93427dd7709cabe19e92650543e6e0fc"
+    },
+    {
+      "path": "System/LuaFiles514/OptionInfo.lub",
+      "size": 1535,
+      "sha256": "e24923694abc806874a4a2bb6ebe55aba01f4e42455d1ab4181f2f162c20c6e9"
+    },
+    {
+      "path": "System/mapInfo_sak.lub",
+      "size": 168868,
+      "sha256": "317dd3d94ffbc4850ab604b827f81cd4ca207244c69770448f07396e6d6b2a0f"
+    },
+    {
+      "path": "System/monster_size_effect_sak_new.lub",
+      "size": 124179,
+      "sha256": "3ec171a33625bf8ac966221966b53c6457aee39b67ae298c91ed64c1f7bc9cb0"
+    },
+    {
+      "path": "System/OngoingQuestInfoList_Sakray.lub",
+      "size": 2218237,
+      "sha256": "1647c740fd8a145bc6d1a86672dc1c3112f05f72ccf92e633d049e65f314fb4f"
+    },
+    {
+      "path": "System/PetEvolutionCln_sak.lub",
+      "size": 7939,
+      "sha256": "abaae5d184dd00ee015480c3d179605d9c00b3b77020449213f80a6938501292"
+    },
+    {
+      "path": "System/PrivateAirplane_Sakray.lub",
+      "size": 11003,
+      "sha256": "bbe5f4773296427743f422b99c811e411cc8bd30fa4490d06ce72752f1625256"
+    },
+    {
+      "path": "System/RecommendedQuestInfoList_Sakray.lub",
+      "size": 13856,
+      "sha256": "3c2043497ab4227490dca2306397ac5c839fe014fb75b0bc15850d2452be863c"
+    },
+    {
+      "path": "System/ShadowTable.lub",
+      "size": 40213,
+      "sha256": "bc4f21230a9c54254f05c89e7a29f2d4b92aabfd9c4ff328b22b2e4c5527cbd9"
+    },
+    {
+      "path": "System/tipbox.lub",
+      "size": 915177,
+      "sha256": "36b86f3a9eea232dfb8c37304892db1a50cf2be1d3045275ab6497945ad6de80"
+    },
+    {
+      "path": "System/Towninfo.lub",
+      "size": 19926,
+      "sha256": "53e4e9b6e375dbbf238304a3b9391fa4980200a24777c119a42fccbd6a13a4df"
+    },
+    {
+      "path": "texture_01.grf",
+      "size": 849898478,
+      "sha256": "0987fee18d1a3ac548dc8b4c110245d1dfdcdbe670536d16950c90fadd8210ea"
+    },
+    {
+      "path": "texture_02.grf",
+      "size": 1143958835,
+      "sha256": "cd8271b8c6b6da0a385738b041531ba9e3d637c18db9b3ed5162c9d9ce7b233d"
+    },
+    {
+      "path": "v3hunt.dll",
+      "size": 131201,
+      "sha256": "f4afe407bea443adbb18387de30bf139e8ff8cd6028464f200efc55d1348cce9"
+    },
+    {
+      "path": "vccorlib140.dll",
+      "size": 269568,
+      "sha256": "5970e64321d2cc32352ed3bd513f36e28a7034d6ae02f870a782aef369d44045"
+    },
+    {
+      "path": "vcruntime140.dll",
+      "size": 80128,
+      "sha256": "9d02e952396bdff3abfe5654e07b7a713c84268a225e11ed9a3bf338ed1e424c"
+    }
+  ],
+  "archive": {
+    "url": "https://github.com/rayjhih8263/RO-Launcher/releases/download/repair-v1/client-small-files.zip",
+    "size": 415631234,
+    "sha256": "7579dc0c029b93964cc2978a1682dd0ef01b791bad159d9721c8c5780dbf8702"
+  },
+  "baseUrl": "https://github.com/rayjhih8263/RO-Launcher/releases/download/repair-v1/"
+}
