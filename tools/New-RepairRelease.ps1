@@ -1,7 +1,8 @@
 param(
  [string]$ClientRoot='C:\RO-Server\RO-Client-Master',
  [ValidatePattern('^repair-v[0-9]+$')][string]$ReleaseTag='repair-v2',
- [string]$OutputPath=''
+ [string]$OutputPath='',
+ [switch]$PrepareFullRelease
 )
 $ErrorActionPreference='Stop'
 Add-Type -AssemblyName System.IO.Compression
@@ -12,7 +13,6 @@ if(-not(Test-Path -LiteralPath (Join-Path $root 'DATA.INI'))){throw 'Select the 
 if(-not $OutputPath){$OutputPath=Join-Path (Split-Path $root -Parent) ('publish-'+$ReleaseTag)}
 $out=[IO.Path]::GetFullPath($OutputPath)
 if($out -eq $root -or $out.StartsWith($root+'\',[StringComparison]::OrdinalIgnoreCase)){throw 'Output must be outside Client.'}
-if(Test-Path -LiteralPath $out){throw 'Output folder already exists. Use a new tag or move the previous output.'}
 $folders = @('data','System','BGM','Navigationdata','AI','AI_sakray')
 $rootNames = @('DATA.INI','RO-Launcher.yml')
 $rootExtensions = @('.exe','.dll','.asi','.grf')
@@ -41,6 +41,36 @@ foreach ($file in $files) {
 }
 
 if($records.Count -eq 0){throw 'No game files found.'}
+# Compare before creating an output folder or archive.
+[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12
+$baseline=Invoke-RestMethod -Uri ('https://raw.githubusercontent.com/rayjhih8263/RO-Launcher/main/repair/manifest-v1.json?t='+[DateTimeOffset]::UtcNow.ToUnixTimeSeconds())
+if($baseline.schemaVersion -ne 1 -or $baseline.purpose -ne 'repair-v1'){throw 'Invalid published repair manifest.'}
+$previous=@{};$current=@{};$changes=@()
+foreach($f in $baseline.files){
+ if($previous.ContainsKey([string]$f.path)){throw 'Duplicate published path.'}
+ $previous[[string]$f.path]=$f
+}
+foreach($f in $records){
+ $current[[string]$f.path]=$f
+ $old=$previous[[string]$f.path]
+ if(-not $old){$changes+=('ADDED: '+$f.path)}
+ elseif([long]$old.size -ne [long]$f.size -or $old.sha256 -ne $f.sha256){$changes+=('CHANGED: '+$f.path)}
+}
+foreach($path in $previous.Keys){if(-not $current.ContainsKey($path)){$changes+=('REMOVED: '+$path)}}
+if($changes.Count -eq 0){
+ Write-Host 'NO CHANGES: Master matches the published repair files.'
+ Write-Host 'No archive created. No upload needed.'
+ exit 0
+}
+$changes|ForEach-Object {Write-Host $_}
+Write-Host ('Changed paths: '+$changes.Count)
+if(-not $PrepareFullRelease){
+ Write-Host 'Comparison only. No archive created.'
+ Write-Host 'Review the changed paths before preparing a game update and matching repair release.'
+ exit 0
+}
+if(Test-Path -LiteralPath $out){throw 'Output folder already exists. Use a new tag or move the previous output.'}
+
 $limit=2147483648L
 foreach($f in $records){if($f.size -ge $limit){throw ('Release asset must be smaller than 2 GiB: '+$f.path)}}
 New-Item -ItemType Directory -Path $out|Out-Null
