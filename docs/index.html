@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta http-equiv="Cache-Control" content="no-cache"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RO 遊戲啟動器</title>
-<style>body{margin:0;background:#101925;color:#e7edf5;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{display:block;max-width:760px;margin:0 auto;padding:18px}h1{color:#f5cd86;margin:0}small{color:#aab9cb}article{display:block;background:#1a293a;border:1px solid #34465c;border-radius:10px;padding:20px;margin:18px 0}button{padding:12px 18px;margin:5px;border:0;border-radius:5px;background:#f5cd86;color:#172131;cursor:pointer;font:inherit}button:disabled{background:#546273;color:#ccd3dc;cursor:default}#status{min-height:50px}footer{color:#aab9cb;font-size:13px}</style></head>
+<style>body{margin:0;background:#101925;color:#e7edf5;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{display:block;max-width:760px;margin:0 auto;padding:18px}h1{color:#f5cd86;margin:0}small{color:#aab9cb}article{display:block;background:#1a293a;border:1px solid #34465c;border-radius:10px;padding:20px;margin:18px 0}button{padding:12px 18px;margin:5px;border:0;border-radius:5px;background:#f5cd86;color:#172131;cursor:pointer;font:inherit}button:disabled{background:#546273;color:#ccd3dc;cursor:default}#status{min-height:50px}footer{color:#aab9cb;font-size:13px}.progress-track{height:16px;background:#34465c;border-radius:4px;overflow:hidden}.progress-fill{height:16px;width:0;background:#f5cd86}.progress-note{margin:6px 0 14px;color:#aab9cb;font-size:14px}</style></head>
 <body><main><small>RAGNAROK ONLINE</small><h1>RO 遊戲啟動器</h1><p>伺服器公告與遊戲更新</p>
 <article><h2>歡迎來到我們的 RO 世界</h2><p>目前正在準備啟動器與更新服務。開放時間、連線方式及遊戲設定將於此公布。</p><p>更新時請先關閉遊戲，完成後再開始遊戲。</p></article>
-<article><h2>更新狀態</h2><p id="status" role="status">介面 v3：等待啟動器連接；若文字未改變，請按「重新檢查更新」。</p><button id="play" disabled onclick="invoke('play')">開始遊戲</button><button id="setup" disabled onclick="invoke('setup')">遊戲設定</button><button id="retry" onclick="startUpdate()">重新檢查更新</button><button id="exit" disabled onclick="invoke('exit')">關閉</button></article>
+<article><h2>更新狀態</h2><p id="status" role="status">正在連接啟動器…</p><div class="progress-track" role="progressbar" id="progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-fill" id="progressFill"></div></div><p class="progress-note" id="progressNote">等待檢查更新</p><button id="play" disabled onclick="invoke('play')">開始遊戲</button><button id="setup" disabled onclick="invoke('setup')">遊戲設定</button><button id="retry" onclick="startUpdate()">重新檢查更新</button><button id="exit" disabled onclick="invoke('exit')">關閉</button></article>
 <footer>更新包檢查不等於完整 Client 檔案修復。</footer></main>
 <script>
 var nativeHost=false;
+function progressText(s){var el=document.getElementById('progressNote');if(typeof el.textContent!=='undefined'){el.textContent=s;}else{el.innerText=s;}}
+function setProgress(done,total,label){done=Number(done);total=Number(total);var percent=(isFinite(done)&&isFinite(total)&&total>0)?Math.max(0,Math.min(100,Math.floor(done*100/total))):0;document.getElementById('progressFill').style.width=percent+'%';document.getElementById('progress').setAttribute('aria-valuenow',String(percent));progressText(label+(total>0?'：'+done+' / '+total+' 個更新包（'+percent+'%）':'，請稍候…'));}
+function downloadSpeed(speed){speed=Number(speed);if(!isFinite(speed)||speed<0){speed=0;}return speed>=1048576?(speed/1048576).toFixed(1)+' MB/s':Math.round(speed/1024)+' KB/s';}
 function statusText(s){var el=document.getElementById('status');if(typeof el.textContent!=='undefined'){el.textContent=s;}else{el.innerText=s;}}
 function invoke(command){try{window.external.invoke(command);nativeHost=true;}catch(error){statusText('介面 v3：連接失敗：'+(error.message||error.description||String(error))+'；文件模式：'+(document.documentMode||'其他'));document.getElementById('retry').disabled=false;}}
-function startUpdate(){document.getElementById('play').disabled=true;document.getElementById('retry').disabled=true;statusText('正在檢查更新，請稍候…');invoke('start_update');}
-function patchingStatusReady(){statusText('更新檢查完成，可以開始遊戲。');document.getElementById('play').disabled=false;document.getElementById('retry').disabled=false;}
-function patchingStatusError(message){statusText('更新失敗：'+message);document.getElementById('play').disabled=true;document.getElementById('retry').disabled=false;}
-function patchingStatusDownloading(done,total,speed){statusText('下載更新：'+done+' / '+total+'；速度 '+Math.round(speed/1024)+' KB/s');}
-function patchingStatusInstalling(done,total){statusText('安裝更新：'+done+' / '+total);}
+function startUpdate(){document.getElementById('play').disabled=true;document.getElementById('retry').disabled=true;setProgress(0,0,'檢查更新');statusText('正在檢查更新，請稍候…');invoke('start_update');}
+function patchingStatusReady(){document.getElementById('progressFill').style.width='100%';document.getElementById('progress').setAttribute('aria-valuenow','100');progressText('更新完成');statusText('更新檢查完成，可以開始遊戲。');document.getElementById('play').disabled=false;document.getElementById('retry').disabled=false;}
+function patchingStatusError(message){progressText('更新未完成，可按重新檢查更新重試');statusText('更新失敗：'+message);document.getElementById('play').disabled=true;document.getElementById('retry').disabled=false;}
+function patchingStatusDownloading(done,total,speed){setProgress(done,total,'下載進度');statusText('正在下載更新，速度 '+downloadSpeed(speed));}
+function patchingStatusInstalling(done,total){setProgress(done,total,'安裝進度');statusText('正在安裝更新，請勿關閉啟動器。');}
 function patchingStatusPatchApplied(name){statusText('已套用更新：'+name);}
 function initializeLauncher(){
   try {
