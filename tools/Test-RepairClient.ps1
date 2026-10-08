@@ -81,10 +81,154 @@ $stage=Join-Path $root ('.ro-repair-'+[Guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stage|Out-Null
 $archive=$null
 try{
+ $base=[Uri]$m.baseUrl
+ if($base.Scheme -ne 'https' -or $base.Host -ne 'github.com' -or $base.AbsolutePath -notmatch '^/rayjhih8263/RO-Launcher/releases/download/repair-v[0-9]+/@($bad|Where-Object {-not $_.path.ToLowerInvariant().EndsWith('.grf')})
+ if($small.Count -gt 0){
+  $url=[Uri]$m.archive.url
+  if($url.Scheme -ne 'https' -or $url.Host -ne 'github.com' -or $url.AbsolutePath -notmatch '^/rayjhih8263/RO-Launcher/releases/download/repair-v[0-9]+/client-small-files\.zip){throw "Invalid archive URL"}
+  $zipPath=Join-Path $stage 'small.zip'
+  Write-Host (U '\u6b63\u5728\u4e0b\u8f09\u5c0f\u6a94\u6848\u4fee\u5fa9\u5305\uff0c\u8acb\u7a0d\u5019\u2026')
+  DownloadWithProgress $url.AbsoluteUri $zipPath ([long]$m.archive.size) 'client-small-files.zip'
+  if(-not(ValidFile $zipPath $m.archive)){throw "Repair archive checksum failed"}
+  $archive=[IO.Compression.ZipFile]::OpenRead($zipPath)
+ }
+ # Verify every replacement before touching any existing game file.
+ $ready=@();$n=0
+ foreach($f in $bad){
+  $n++;$temp=Join-Path $stage ($n.ToString()+'.ready')
+  if($f.path.ToLowerInvariant().EndsWith('.grf')){
+   if($f.path.Contains('/')){throw "Unexpected GRF path"}
+   Write-Host ((U '\u6b63\u5728\u4e0b\u8f09\uff1a')+$f.path)
+   DownloadWithProgress ($m.baseUrl+[Uri]::EscapeDataString($f.path)) $temp ([long]$f.size) $f.path
+  }else{
+   $matches=@($archive.Entries|Where-Object {$_.FullName -ceq $f.path})
+   if($matches.Count -ne 1){throw "Missing or duplicate ZIP entry"}
+   if($matches[0].Length -ne [long]$f.size){throw "ZIP entry size mismatch"}
+   [IO.Compression.ZipFileExtensions]::ExtractToFile($matches[0],$temp,$false)
+  }
+  if(-not(ValidFile $temp $f)){throw ('Replacement checksum failed: '+$f.path)}
+  $ready+=,[pscustomobject]@{file=$f;temp=$temp}
+ }
+ if($archive){$archive.Dispose();$archive=$null}
+ if(Get-Process -Name '2021-11-03_Ragexe_patched','RO-Launcher' -ErrorAction SilentlyContinue){throw "Game or launcher was opened. Close it and retry."}
+ $backup=Join-Path $root ('.ro-repair-backup-'+[Guid]::NewGuid().ToString('N'))
+ foreach($item in $ready){
+  $target=SafePath $item.file.path
+  $parent=Split-Path $target -Parent
+  if(-not(Test-Path -LiteralPath $parent)){New-Item -ItemType Directory -Path $parent -Force|Out-Null}
+  if(Test-Path -LiteralPath $target){
+   $save=Join-Path $backup $item.file.path.Replace('/','\')
+   New-Item -ItemType Directory -Path (Split-Path $save -Parent) -Force|Out-Null
+   # Supply a real backup path: Windows PowerShell can bind $null as an empty string.
+   # Replace preserves the original at $save while installing the verified file.
+   [IO.File]::Replace([string]$item.temp,[string]$target,[string]$save)
+  }else{[IO.File]::Move($item.temp,$target)}
+  Write-Host ((U '\u5df2\u4fee\u5fa9\uff1a')+$item.file.path)
+ }
+ Write-Host (U '\u4fee\u5fa9\u5b8c\u6210\u3002')
+ if(Test-Path -LiteralPath $backup){Write-Host ((U '\u539f\u6a94\u6848\u5099\u4efd\u65bc\uff1a')+$backup)}
+}finally{
+ if($archive){$archive.Dispose()}
+ if(Test-Path -LiteralPath $stage){Remove-Item -LiteralPath $stage -Recurse -Force}
+}
+){throw "Invalid archive URL"}
+  $zipPath=Join-Path $stage 'small.zip'
+  Write-Host (U '\u6b63\u5728\u4e0b\u8f09\u5c0f\u6a94\u6848\u4fee\u5fa9\u5305\uff0c\u8acb\u7a0d\u5019\u2026')
+  DownloadWithProgress $url.AbsoluteUri $zipPath ([long]$m.archive.size) 'client-small-files.zip'
+  if(-not(ValidFile $zipPath $m.archive)){throw "Repair archive checksum failed"}
+  $archive=[IO.Compression.ZipFile]::OpenRead($zipPath)
+ }
+ # Verify every replacement before touching any existing game file.
+ $ready=@();$n=0
+ foreach($f in $bad){
+  $n++;$temp=Join-Path $stage ($n.ToString()+'.ready')
+  if($f.path.ToLowerInvariant().EndsWith('.grf')){
+   if($f.path.Contains('/')){throw "Unexpected GRF path"}
+   Write-Host ((U '\u6b63\u5728\u4e0b\u8f09\uff1a')+$f.path)
+   DownloadWithProgress ($m.baseUrl+[Uri]::EscapeDataString($f.path)) $temp ([long]$f.size) $f.path
+  }else{
+   $matches=@($archive.Entries|Where-Object {$_.FullName -ceq $f.path})
+   if($matches.Count -ne 1){throw "Missing or duplicate ZIP entry"}
+   if($matches[0].Length -ne [long]$f.size){throw "ZIP entry size mismatch"}
+   [IO.Compression.ZipFileExtensions]::ExtractToFile($matches[0],$temp,$false)
+  }
+  if(-not(ValidFile $temp $f)){throw ('Replacement checksum failed: '+$f.path)}
+  $ready+=,[pscustomobject]@{file=$f;temp=$temp}
+ }
+ if($archive){$archive.Dispose();$archive=$null}
+ if(Get-Process -Name '2021-11-03_Ragexe_patched','RO-Launcher' -ErrorAction SilentlyContinue){throw "Game or launcher was opened. Close it and retry."}
+ $backup=Join-Path $root ('.ro-repair-backup-'+[Guid]::NewGuid().ToString('N'))
+ foreach($item in $ready){
+  $target=SafePath $item.file.path
+  $parent=Split-Path $target -Parent
+  if(-not(Test-Path -LiteralPath $parent)){New-Item -ItemType Directory -Path $parent -Force|Out-Null}
+  if(Test-Path -LiteralPath $target){
+   $save=Join-Path $backup $item.file.path.Replace('/','\')
+   New-Item -ItemType Directory -Path (Split-Path $save -Parent) -Force|Out-Null
+   # Supply a real backup path: Windows PowerShell can bind $null as an empty string.
+   # Replace preserves the original at $save while installing the verified file.
+   [IO.File]::Replace([string]$item.temp,[string]$target,[string]$save)
+  }else{[IO.File]::Move($item.temp,$target)}
+  Write-Host ((U '\u5df2\u4fee\u5fa9\uff1a')+$item.file.path)
+ }
+ Write-Host (U '\u4fee\u5fa9\u5b8c\u6210\u3002')
+ if(Test-Path -LiteralPath $backup){Write-Host ((U '\u539f\u6a94\u6848\u5099\u4efd\u65bc\uff1a')+$backup)}
+}finally{
+ if($archive){$archive.Dispose()}
+ if(Test-Path -LiteralPath $stage){Remove-Item -LiteralPath $stage -Recurse -Force}
+}
+){throw 'Invalid repair base URL'}
+ if($m.archive.url -ne ($m.baseUrl+'client-small-files.zip')){throw 'Archive and GRF release tags do not match'}
  $small=@($bad|Where-Object {-not $_.path.ToLowerInvariant().EndsWith('.grf')})
  if($small.Count -gt 0){
   $url=[Uri]$m.archive.url
-  if($url.Scheme -ne 'https' -or $url.Host -ne 'github.com' -or -not $url.AbsolutePath.StartsWith('/rayjhih8263/RO-Launcher/releases/download/repair-v1/')){throw "Invalid archive URL"}
+  if($url.Scheme -ne 'https' -or $url.Host -ne 'github.com' -or $url.AbsolutePath -notmatch '^/rayjhih8263/RO-Launcher/releases/download/repair-v[0-9]+/client-small-files\.zip){throw "Invalid archive URL"}
+  $zipPath=Join-Path $stage 'small.zip'
+  Write-Host (U '\u6b63\u5728\u4e0b\u8f09\u5c0f\u6a94\u6848\u4fee\u5fa9\u5305\uff0c\u8acb\u7a0d\u5019\u2026')
+  DownloadWithProgress $url.AbsoluteUri $zipPath ([long]$m.archive.size) 'client-small-files.zip'
+  if(-not(ValidFile $zipPath $m.archive)){throw "Repair archive checksum failed"}
+  $archive=[IO.Compression.ZipFile]::OpenRead($zipPath)
+ }
+ # Verify every replacement before touching any existing game file.
+ $ready=@();$n=0
+ foreach($f in $bad){
+  $n++;$temp=Join-Path $stage ($n.ToString()+'.ready')
+  if($f.path.ToLowerInvariant().EndsWith('.grf')){
+   if($f.path.Contains('/')){throw "Unexpected GRF path"}
+   Write-Host ((U '\u6b63\u5728\u4e0b\u8f09\uff1a')+$f.path)
+   DownloadWithProgress ($m.baseUrl+[Uri]::EscapeDataString($f.path)) $temp ([long]$f.size) $f.path
+  }else{
+   $matches=@($archive.Entries|Where-Object {$_.FullName -ceq $f.path})
+   if($matches.Count -ne 1){throw "Missing or duplicate ZIP entry"}
+   if($matches[0].Length -ne [long]$f.size){throw "ZIP entry size mismatch"}
+   [IO.Compression.ZipFileExtensions]::ExtractToFile($matches[0],$temp,$false)
+  }
+  if(-not(ValidFile $temp $f)){throw ('Replacement checksum failed: '+$f.path)}
+  $ready+=,[pscustomobject]@{file=$f;temp=$temp}
+ }
+ if($archive){$archive.Dispose();$archive=$null}
+ if(Get-Process -Name '2021-11-03_Ragexe_patched','RO-Launcher' -ErrorAction SilentlyContinue){throw "Game or launcher was opened. Close it and retry."}
+ $backup=Join-Path $root ('.ro-repair-backup-'+[Guid]::NewGuid().ToString('N'))
+ foreach($item in $ready){
+  $target=SafePath $item.file.path
+  $parent=Split-Path $target -Parent
+  if(-not(Test-Path -LiteralPath $parent)){New-Item -ItemType Directory -Path $parent -Force|Out-Null}
+  if(Test-Path -LiteralPath $target){
+   $save=Join-Path $backup $item.file.path.Replace('/','\')
+   New-Item -ItemType Directory -Path (Split-Path $save -Parent) -Force|Out-Null
+   # Supply a real backup path: Windows PowerShell can bind $null as an empty string.
+   # Replace preserves the original at $save while installing the verified file.
+   [IO.File]::Replace([string]$item.temp,[string]$target,[string]$save)
+  }else{[IO.File]::Move($item.temp,$target)}
+  Write-Host ((U '\u5df2\u4fee\u5fa9\uff1a')+$item.file.path)
+ }
+ Write-Host (U '\u4fee\u5fa9\u5b8c\u6210\u3002')
+ if(Test-Path -LiteralPath $backup){Write-Host ((U '\u539f\u6a94\u6848\u5099\u4efd\u65bc\uff1a')+$backup)}
+}finally{
+ if($archive){$archive.Dispose()}
+ if(Test-Path -LiteralPath $stage){Remove-Item -LiteralPath $stage -Recurse -Force}
+}
+){throw "Invalid archive URL"}
   $zipPath=Join-Path $stage 'small.zip'
   Write-Host (U '\u6b63\u5728\u4e0b\u8f09\u5c0f\u6a94\u6848\u4fee\u5fa9\u5305\uff0c\u8acb\u7a0d\u5019\u2026')
   DownloadWithProgress $url.AbsoluteUri $zipPath ([long]$m.archive.size) 'client-small-files.zip'
