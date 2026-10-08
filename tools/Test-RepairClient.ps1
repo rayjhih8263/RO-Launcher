@@ -82,9 +82,9 @@ try{
   if(Test-Path -LiteralPath $target){
    $save=Join-Path $backup $item.file.path.Replace('/','\')
    New-Item -ItemType Directory -Path (Split-Path $save -Parent) -Force|Out-Null
-   # Keep the original until the verified staged replacement is ready.
-   Copy-Item -LiteralPath $target -Destination $save
-   [IO.File]::Replace($item.temp,$target,$null)
+   # Supply a real backup path: Windows PowerShell can bind $null as an empty string.
+   # Replace preserves the original at $save while installing the verified file.
+   [IO.File]::Replace([string]$item.temp,[string]$target,[string]$save)
   }else{[IO.File]::Move($item.temp,$target)}
   Write-Host ('Repaired: '+$item.file.path)
  }
