@@ -1,0 +1,26 @@
+# For rpatchur 0.3.x. Rename rpatchur.exe to RO-Launcher.exe.
+window:
+  title: "RO 遊戲啟動器"
+  width: 820
+  height: 640
+  resizable: false
+play:
+  path: "2021-11-03_Ragexe_patched.exe"
+  arguments: ["1sak1"]
+  exit_on_success: true
+setup:
+  path: "Setup_Plus.exe"
+  arguments: []
+  exit_on_success: false
+web:
+  index_url: "https://rayjhih8263.github.io/RO-Launcher/"
+  patch_servers:
+    - name: "GitHub"
+      plist_url: "https://rayjhih8263.github.io/RO-Launcher/plist.txt"
+      patch_url: "https://github.com/rayjhih8263/RO-Launcher/releases/download/patches/"
+client:
+  default_grf_name: "data.grf"
+patching:
+  in_place: false
+  check_integrity: true
+  create_grf: false
