@@ -14,11 +14,11 @@ $dir=Join-Path $out 'patch-data\data'
 New-Item -ItemType Directory -Path $dir -Force|Out-Null
 # Append an ASCII XML comment without decoding or changing EUC-KR bytes.
 $original=[IO.File]::ReadAllBytes($source)
-$marker=[Text.Encoding]::ASCII.GetBytes("\r\n<!-- RO synchronized update test 003 -->\r\n")
+$marker=[Text.Encoding]::ASCII.GetBytes("`r`n<!-- RO synchronized update test 003 -->`r`n")
 $target=Join-Path $dir 'pettalktable.xml'
 $stream=[IO.File]::Create($target)
 try{$stream.Write($original,0,$original.Length);$stream.Write($marker,0,$marker.Length)}finally{$stream.Dispose()}
-$config="use_grf_merging: false\r\ninclude_checksums: true\r\nentries:\r\n  - relative_path: data/pettalktable.xml\r\n"
+$config="use_grf_merging: false`r`ninclude_checksums: true`r`nentries:`r`n  - relative_path: data/pettalktable.xml`r`n"
 [IO.File]::WriteAllText((Join-Path $out 'test-patch.yml'),$config,(New-Object Text.UTF8Encoding($false)))
 Write-Host ('Prepared: '+$out)
 Write-Host ('XML SHA256: '+(Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash)
