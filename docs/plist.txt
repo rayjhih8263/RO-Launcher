@@ -1,2 +1,3 @@
 1 0001-test.thor
 2 0002-test.thor
+3 0003-repair-test.thor
