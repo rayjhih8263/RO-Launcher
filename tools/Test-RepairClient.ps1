@@ -24,6 +24,43 @@ function ValidFile([string]$path,$f){
  if((Get-Item -LiteralPath $path).Length -ne [long]$f.size){return $false}
  return ((Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash -eq $f.sha256)
 }
+
+# ASCII source keeps Chinese labels readable in Windows PowerShell 5.1.
+function U([string]$text){return [regex]::Unescape($text)}
+function DownloadWithProgress([string]$url,[string]$path,[long]$expected,[string]$label){
+ $response=$null;$inputStream=$null;$outputStream=$null
+ $clock=[Diagnostics.Stopwatch]::StartNew();$last=-1000L;$received=0L
+ $activity=(U '\u4e0b\u8f09\u4fee\u5fa9\u6a94\u6848')
+ try{
+  Write-Progress -Id 2 -Activity $activity -Status ((U '\u9023\u7dda\u4e2d\uff1a')+$label) -PercentComplete 0
+  $request=[Net.HttpWebRequest]::Create($url)
+  $request.Timeout=30000;$request.ReadWriteTimeout=30000
+  $response=$request.GetResponse()
+  $inputStream=$response.GetResponseStream()
+  $outputStream=[IO.File]::Create($path)
+  $buffer=New-Object byte[] 65536
+  while(($read=$inputStream.Read($buffer,0,$buffer.Length)) -gt 0){
+   $outputStream.Write($buffer,0,$read);$received+=$read
+   if($received -gt $expected){throw "Download exceeds expected size"}
+   if($clock.ElapsedMilliseconds-$last -ge 200){
+    $percent=0
+    if($expected -gt 0){$percent=[Math]::Min(100,[int](100.0*$received/$expected))}
+    $speed=($received/1MB)/[Math]::Max(0.001,$clock.Elapsed.TotalSeconds)
+    $status=('{0} | {1}% | {2:N1} / {3:N1} MB | {4:N1} MB/s' -f $label,$percent,($received/1MB),($expected/1MB),$speed)
+    Write-Progress -Id 2 -Activity $activity -Status $status -PercentComplete $percent
+    $last=$clock.ElapsedMilliseconds
+   }
+  }
+  if($received -ne $expected){throw "Download size mismatch"}
+ }finally{
+  if($outputStream){$outputStream.Dispose()}
+  if($inputStream){$inputStream.Dispose()}
+  if($response){$response.Close()}
+  Write-Progress -Id 2 -Activity $activity -Completed
+ }
+ Write-Host ((U '\u4e0b\u8f09\u5b8c\u6210\uff0c\u6b63\u5728\u9a57\u8b49\u6a94\u6848\uff1a')+$label)
+}
+
 $manifestUrl='https://raw.githubusercontent.com/rayjhih8263/RO-Launcher/main/repair/manifest-v1.json'
 $m=Invoke-RestMethod -Uri ($manifestUrl+'?t='+[DateTimeOffset]::UtcNow.ToUnixTimeSeconds())
 if($m.schemaVersion -ne 1 -or $m.purpose -ne 'repair-v1'){throw "Unsupported manifest"}
@@ -33,16 +70,15 @@ foreach($f in $m.files){
  if($seen.ContainsKey($p)){throw "Duplicate manifest path"}
  $seen[$p]=$true
  if($f.sha256 -notmatch '^[a-f0-9]{64}$' -or [long]$f.size -lt 0){throw "Invalid manifest hash or size"}
- $i++;Write-Progress -Activity 'Checking Client' -Status $f.path -PercentComplete (100*$i/$m.files.Count)
- if(-not(ValidFile $p $f)){Write-Host ('MISSING OR CHANGED: '+$f.path);$bad+=,$f}
+ $i++;Write-Progress -Activity (U '\u6aa2\u67e5\u904a\u6232\u6a94\u6848') -Status $f.path -PercentComplete (100*$i/$m.files.Count)
+ if(-not(ValidFile $p $f)){Write-Host ((U '\u7f3a\u5c11\u6216\u5df2\u8b8a\u66f4\uff1a')+$f.path);$bad+=,$f}
 }
-Write-Progress -Activity 'Checking Client' -Completed
-Write-Host ('Checked: '+$m.files.Count+'; missing or changed: '+$bad.Count)
-if(-not $Repair){Write-Host 'Check-only: no game files changed.';exit 0}
-if($bad.Count -eq 0){Write-Host 'All files match.';exit 0}
+Write-Progress -Activity (U '\u6aa2\u67e5\u904a\u6232\u6a94\u6848') -Completed
+Write-Host ((U '\u5df2\u6aa2\u67e5\uff1a')+$m.files.Count+(U '\uff1b\u9700\u4fee\u5fa9\uff1a')+$bad.Count)
+if(-not $Repair){Write-Host (U '\u50c5\u6aa2\u67e5\uff0c\u672a\u8b8a\u66f4\u904a\u6232\u6a94\u6848\u3002');exit 0}
+if($bad.Count -eq 0){Write-Host (U '\u6240\u6709\u6a94\u6848\u6b63\u5e38\u3002');exit 0}
 $stage=Join-Path $root ('.ro-repair-'+[Guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stage|Out-Null
-$wc=New-Object Net.WebClient
 $archive=$null
 try{
  $small=@($bad|Where-Object {-not $_.path.ToLowerInvariant().EndsWith('.grf')})
@@ -50,8 +86,8 @@ try{
   $url=[Uri]$m.archive.url
   if($url.Scheme -ne 'https' -or $url.Host -ne 'github.com' -or -not $url.AbsolutePath.StartsWith('/rayjhih8263/RO-Launcher/releases/download/repair-v1/')){throw "Invalid archive URL"}
   $zipPath=Join-Path $stage 'small.zip'
-  Write-Host 'Downloading small-file repair archive...'
-  $wc.DownloadFile($url.AbsoluteUri,$zipPath)
+  Write-Host (U '\u6b63\u5728\u4e0b\u8f09\u5c0f\u6a94\u6848\u4fee\u5fa9\u5305\uff0c\u8acb\u7a0d\u5019\u2026')
+  DownloadWithProgress $url.AbsoluteUri $zipPath ([long]$m.archive.size) 'client-small-files.zip'
   if(-not(ValidFile $zipPath $m.archive)){throw "Repair archive checksum failed"}
   $archive=[IO.Compression.ZipFile]::OpenRead($zipPath)
  }
@@ -61,8 +97,8 @@ try{
   $n++;$temp=Join-Path $stage ($n.ToString()+'.ready')
   if($f.path.ToLowerInvariant().EndsWith('.grf')){
    if($f.path.Contains('/')){throw "Unexpected GRF path"}
-   Write-Host ('Downloading: '+$f.path)
-   $wc.DownloadFile($m.baseUrl+[Uri]::EscapeDataString($f.path),$temp)
+   Write-Host ((U '\u6b63\u5728\u4e0b\u8f09\uff1a')+$f.path)
+   DownloadWithProgress ($m.baseUrl+[Uri]::EscapeDataString($f.path)) $temp ([long]$f.size) $f.path
   }else{
    $matches=@($archive.Entries|Where-Object {$_.FullName -ceq $f.path})
    if($matches.Count -ne 1){throw "Missing or duplicate ZIP entry"}
@@ -86,11 +122,11 @@ try{
    # Replace preserves the original at $save while installing the verified file.
    [IO.File]::Replace([string]$item.temp,[string]$target,[string]$save)
   }else{[IO.File]::Move($item.temp,$target)}
-  Write-Host ('Repaired: '+$item.file.path)
+  Write-Host ((U '\u5df2\u4fee\u5fa9\uff1a')+$item.file.path)
  }
- Write-Host ('Repair complete. Original changed files retained at: '+$backup)
+ Write-Host (U '\u4fee\u5fa9\u5b8c\u6210\u3002')
+ if(Test-Path -LiteralPath $backup){Write-Host ((U '\u539f\u6a94\u6848\u5099\u4efd\u65bc\uff1a')+$backup)}
 }finally{
  if($archive){$archive.Dispose()}
- $wc.Dispose()
  if(Test-Path -LiteralPath $stage){Remove-Item -LiteralPath $stage -Recurse -Force}
 }
