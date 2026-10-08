@@ -1849,8 +1849,9 @@
     },
     {
       "path": "data/pettalktable.xml",
-      "size": 368440,
-      "sha256": "1c3189938817ba04229fa067a3f0e15947da22bf307e53a085c23bba7d2d7a98"
+      "size": 368484,
+      "sha256": "8e6db4584dac0c44a22f33fcfa29bf28d411c8af42c76d59fa8a96dbd0c2ca2d",
+      "url": "https://github.com/rayjhih8263/RO-Launcher/releases/download/patches/pettalktable-0003.xml"
     },
     {
       "path": "data/resnametable.txt",
