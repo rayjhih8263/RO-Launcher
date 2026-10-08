@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RO 遊戲啟動器</title>
-<style>body{margin:0;background:#101925;color:#e7edf5;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{max-width:760px;margin:auto;padding:24px}h1{color:#f5cd86;margin:0}small{color:#aab9cb}article{background:#1a293a;border:1px solid #34465c;border-radius:10px;padding:20px;margin:18px 0}button{padding:12px 18px;margin:5px;border:0;border-radius:5px;background:#f5cd86;color:#172131;cursor:pointer;font:inherit}button:disabled{background:#546273;color:#ccd3dc;cursor:default}#status{min-height:50px}footer{color:#aab9cb;font-size:13px}</style></head>
+<style>body{margin:0;background:#101925;color:#e7edf5;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{display:block;max-width:760px;margin:0 auto;padding:18px}h1{color:#f5cd86;margin:0}small{color:#aab9cb}article{display:block;background:#1a293a;border:1px solid #34465c;border-radius:10px;padding:20px;margin:18px 0}button{padding:12px 18px;margin:5px;border:0;border-radius:5px;background:#f5cd86;color:#172131;cursor:pointer;font:inherit}button:disabled{background:#546273;color:#ccd3dc;cursor:default}#status{min-height:50px}footer{color:#aab9cb;font-size:13px}</style></head>
 <body><main><small>RAGNAROK ONLINE</small><h1>RO 遊戲啟動器</h1><p>伺服器公告與遊戲更新</p>
 <article><h2>歡迎來到我們的 RO 世界</h2><p>目前正在準備啟動器與更新服務。開放時間、連線方式及遊戲設定將於此公布。</p><p>更新時請先關閉遊戲，完成後再開始遊戲。</p></article>
 <article><h2>更新狀態</h2><p id="status" role="status">此頁為公告預覽。請使用電腦上的啟動器更新與開始遊戲。</p><button id="play" disabled onclick="invoke('play')">開始遊戲</button><button id="setup" disabled onclick="invoke('setup')">遊戲設定</button><button id="retry" disabled onclick="startUpdate()">重新檢查更新</button><button id="exit" disabled onclick="invoke('exit')">關閉</button></article>
 <footer>更新包檢查不等於完整 Client 檔案修復。</footer></main>
 <script>
-var nativeHost=!!(window.external && typeof window.external.invoke!=='undefined');
+var nativeHost=false;
 function statusText(s){document.getElementById('status').textContent=s;}
 function invoke(command){if(nativeHost){window.external.invoke(command);}}
 function startUpdate(){document.getElementById('play').disabled=true;document.getElementById('retry').disabled=true;statusText('正在檢查更新，請稍候…');invoke('start_update');}
@@ -15,5 +15,18 @@ function patchingStatusError(message){statusText('更新失敗：'+message);docu
 function patchingStatusDownloading(done,total,speed){statusText('下載更新：'+done+' / '+total+'；速度 '+Math.round(speed/1024)+' KB/s');}
 function patchingStatusInstalling(done,total){statusText('安裝更新：'+done+' / '+total);}
 function patchingStatusPatchApplied(name){statusText('已套用更新：'+name);}
-if(nativeHost){document.getElementById('setup').disabled=false;document.getElementById('exit').disabled=false;startUpdate();}
+function initializeLauncher(){
+  try {
+    window.external.invoke('start_update');
+    nativeHost=true;
+    document.getElementById('setup').disabled=false;
+    document.getElementById('exit').disabled=false;
+    document.getElementById('retry').disabled=false;
+    if(document.getElementById('play').disabled){statusText('正在檢查更新，請稍候…');}
+  } catch(error) {
+    nativeHost=false;
+  }
+}
+window.onload=function(){setTimeout(initializeLauncher,300);};
+
 </script></body></html>
